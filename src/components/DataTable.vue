@@ -55,8 +55,9 @@
         show-overflow-tooltip
       >
         <template #default="{ row }">
+          <!-- 针对催化剂_ID 列特殊处理 -->
           <span v-if="col.key === '催化剂_ID'" style="font-weight: 500; color: #409eff;">
-            {{ row[col.key] }}
+            {{ getDisplayId(row) }}
           </span>
           <span v-else-if="row[col.key] !== undefined && row[col.key] !== '' && row[col.key] !== null">
             {{ typeof row[col.key] === 'number' ? row[col.key].toFixed(4) : row[col.key] }}
@@ -130,6 +131,16 @@ const showColumnSelector = ref(false);
 const allColumns = ref([]);
 const selectedColumns = ref([]);
 
+// ---------- 核心修改 1：获取显示 ID（双原子添加 -CeO₂） ----------
+function getDisplayId(row) {
+  const id = row['催化剂_ID'] || '';
+  if (row['催化剂类型'] === '双原子') {
+    return id + '-CeO2';   // 使用下标 ₂ 更美观
+  }
+  return id;
+}
+
+// ---------- 核心修改 2：搜索时支持匹配显示 ID ----------
 // 初始化列
 function initColumns() {
   const data = store.allData;
@@ -173,10 +184,16 @@ const filteredData = computed(() => {
   
   if (searchText.value) {
     const s = searchText.value.toLowerCase();
-    data = data.filter(row => 
-      (row['催化剂_ID'] && row['催化剂_ID'].toLowerCase().includes(s)) ||
-      (row['掺杂金属'] && row['掺杂金属'].toLowerCase().includes(s))
-    );
+    data = data.filter(row => {
+      const id = row['催化剂_ID'] || '';
+      const metal = row['掺杂金属'] || '';
+      // 构造显示ID用于匹配
+      let displayId = id;
+      if (row['催化剂类型'] === '双原子') {
+        displayId = id + '-CeO₂';
+      }
+      return displayId.toLowerCase().includes(s) || metal.toLowerCase().includes(s);
+    });
   }
   if (filterType.value) {
     data = data.filter(row => row['催化剂类型'] === filterType.value);
@@ -200,7 +217,7 @@ function handleSort({ prop, order }) {
   ElMessage.info('排序已应用（当前页）');
 }
 
-// 导出 CSV
+// 导出 CSV（保持原始数据不变）
 function handleExport() {
   const data = filteredData.value;
   if (data.length === 0) return ElMessage.warning('没有数据可导出');
