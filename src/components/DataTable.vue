@@ -20,6 +20,9 @@
         <el-select v-model="filterMetal" placeholder="掺杂金属" clearable filterable style="width: 140px">
           <el-option v-for="m in store.metals" :key="m" :label="m" :value="m" />
         </el-select>
+        <el-button type="success" @click="openAddDialog">
+          <el-icon><Plus /></el-icon> 新增数据
+        </el-button>
         <el-button type="primary" @click="handleExport">
           <el-icon><Download /></el-icon> 导出 CSV
         </el-button>
@@ -65,6 +68,17 @@
           <span v-else style="color: #c0c4cc;">-</span>
         </template>
       </el-table-column>
+
+      <el-table-column label="操作" width="150" fixed="right">
+        <template #default="{ row }">
+          <el-button link type="primary" size="small" @click="openEditDialog(row)">
+            <el-icon><Edit /></el-icon> 编辑
+          </el-button>
+          <el-button link type="danger" size="small" @click="handleDelete(row)">
+            <el-icon><Delete /></el-icon> 删除
+          </el-button>
+        </template>
+      </el-table-column>
     </el-table>
 
     <!-- 分页 -->
@@ -96,6 +110,14 @@
         <el-button type="primary" @click="applyColumns">应用</el-button>
       </template>
     </el-dialog>
+
+    <DataEditorDialog
+      v-model="showEditor"
+      :mode="editorMode"
+      :row="editorRow"
+      :columns="editorColumns"
+      @saved="afterDataChanged"
+    />
   </el-card>
 </template>
 
@@ -103,7 +125,9 @@
 import { ref, computed, onMounted, watch } from 'vue';
 import { useDataStore } from '@/stores/dataStore';
 import { getColumnLabel, FIXED_COLUMNS } from '@/utils/constants';
-import { Download, Setting } from '@element-plus/icons-vue';
+import { Download, Setting, Plus, Edit, Delete } from '@element-plus/icons-vue';
+import DataEditorDialog from '@/components/DataEditorDialog.vue';
+import { ElMessageBox } from 'element-plus';
 import { ElMessage } from 'element-plus';
 
 // 接收 prop：是否应用元素筛选
@@ -130,6 +154,9 @@ const pageSize = ref(50);
 const showColumnSelector = ref(false);
 const allColumns = ref([]);
 const selectedColumns = ref([]);
+const showEditor = ref(false);
+const editorMode = ref('add');
+const editorRow = ref({});
 
 // ---------- 核心修改 1：获取显示 ID（双原子添加 -CeO₂） ----------
 function getDisplayId(row) {
@@ -145,25 +172,26 @@ function getDisplayId(row) {
 function initColumns() {
   const data = store.allData;
   if (data.length === 0) return;
-  
-  const keys = Object.keys(data[0]);
+  const keySet = new Set();
+  data.forEach(row => Object.keys(row).forEach(key => keySet.add(key)));
+  const keys = [...keySet];
+  const previous = new Set(selectedColumns.value);
   allColumns.value = keys.map(key => ({
     key,
     label: getColumnLabel(key),
     fixed: FIXED_COLUMNS.includes(key),
     width: key === '催化剂_ID' ? 180 : (key.includes('键长') || key.includes('能') ? 160 : 140)
   }));
-  
-  selectedColumns.value = keys;
+  selectedColumns.value = selectedColumns.value.length
+    ? keys.filter(key => previous.has(key))
+    : keys;
 }
 
 // 监听数据变化初始化列
 watch(
-  () => store.allData.length,
-  (newLen) => {
-    if (newLen > 0 && allColumns.value.length === 0) {
-      initColumns();
-    }
+  () => [store.allData.length, store.allData[0] ? Object.keys(store.allData[0]).length : 0],
+  (values) => {
+    if (values[0] > 0) initColumns();
   },
   { immediate: true }
 );
@@ -235,6 +263,45 @@ function handleExport() {
   ElMessage.success('导出成功');
 }
 
+const editorColumns = computed(() => allColumns.value.length ? allColumns.value : []);
+
+function openAddDialog() {
+  initColumns();
+  editorMode.value = 'add';
+  const blank = {};
+  editorColumns.value.forEach(col => { blank[col.key] = ''; });
+  editorRow.value = blank;
+  showEditor.value = true;
+}
+
+function openEditDialog(row) {
+  initColumns();
+  editorMode.value = 'edit';
+  editorRow.value = { ...row };
+  showEditor.value = true;
+}
+
+async function handleDelete(row) {
+  const id = row['催化剂_ID'] || '';
+  try {
+    await ElMessageBox.confirm(
+      `确认删除催化剂「${getDisplayId(row)}」？删除后会立即从当前浏览器数据集中移除。`,
+      '删除数据',
+      { type: 'warning', confirmButtonText: '删除', cancelButtonText: '取消' }
+    );
+    store.deleteRecord(id);
+    if (currentPage.value > 1 && paginatedData.value.length === 0) currentPage.value -= 1;
+    ElMessage.success(`已删除：${getDisplayId(row)}`);
+  } catch (e) {
+    // 用户取消无需提示
+  }
+}
+
+function afterDataChanged() {
+  initColumns();
+  currentPage.value = 1;
+}
+
 function resetColumns() {
   selectedColumns.value = allColumns.value.map(c => c.key);
 }
@@ -294,4 +361,5 @@ onMounted(() => {
 .el-table {
   overflow-x: auto;
 }
+.action-cell { display: flex; align-items: center; gap: 2px; }
 </style>

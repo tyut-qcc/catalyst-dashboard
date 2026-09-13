@@ -1,0 +1,13 @@
+node_modules/
+dist/
+.vite/
+*.local
+
+.DS_Store
+Thumbs.db
+
+# Temporary / generated archives
+*.zip
+
+# Nested extracted project copies
+catalyst-dashboard-aimd-v7/

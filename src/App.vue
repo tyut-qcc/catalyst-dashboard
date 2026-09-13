@@ -39,12 +39,13 @@
               <UploadPanel />
             </el-tab-pane>
 
-            <!-- 结构展示（已下线，保留注释以备后续启用） -->
-            <!--
             <el-tab-pane label="🧬 结构展示" name="structure">
               <StructureViewer />
             </el-tab-pane>
-            -->
+
+            <el-tab-pane label="⚛️ 动力学模拟" name="aimd">
+              <AIMDViewer :is-active="activeTab === 'aimd'" />
+            </el-tab-pane>
           </el-tabs>
         </div>
       </el-main>
@@ -59,6 +60,8 @@ import StatsCards from '@/components/StatsCards.vue';
 import PeriodicTable from '@/components/PeriodicTable.vue';
 import DataTable from '@/components/DataTable.vue';
 import UploadPanel from '@/components/UploadPanel.vue';
+import StructureViewer from '@/components/StructureViewer.vue';
+import AIMDViewer from '@/components/AIMDViewer.vue';
 
 const store = useDataStore();
 const activeTab = ref('browse');

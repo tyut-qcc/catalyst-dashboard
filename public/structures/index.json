@@ -1,0 +1,98 @@
+{
+  "version": 1,
+  "models": [
+    {
+      "id": "CeO2",
+      "name": "CeO2",
+      "file": "CeO2.xyz",
+      "url": "./structures/CeO2.xyz",
+      "elements": [
+        "Ce",
+        "O"
+      ]
+    },
+    {
+      "id": "Cu-CeO2",
+      "name": "Cu-CeO2",
+      "file": "Cu-CeO2.xyz",
+      "url": "./structures/Cu-CeO2.xyz",
+      "elements": [
+        "Ce",
+        "Cu",
+        "O"
+      ]
+    },
+    {
+      "id": "frame_0001",
+      "name": "frame_0001",
+      "file": "frame_0001.xyz",
+      "url": "./structures/frame_0001.xyz",
+      "elements": [
+        "Co",
+        "H",
+        "O",
+        "Si"
+      ]
+    },
+    {
+      "id": "frame_0005",
+      "name": "frame_0005",
+      "file": "frame_0005.xyz",
+      "url": "./structures/frame_0005.xyz",
+      "elements": [
+        "Co",
+        "H",
+        "O",
+        "Si"
+      ]
+    },
+    {
+      "id": "frame_0006",
+      "name": "frame_0006",
+      "file": "frame_0006.xyz",
+      "url": "./structures/frame_0006.xyz",
+      "elements": [
+        "Co",
+        "H",
+        "O",
+        "Si"
+      ]
+    },
+    {
+      "id": "frame_0007",
+      "name": "frame_0007",
+      "file": "frame_0007.xyz",
+      "url": "./structures/frame_0007.xyz",
+      "elements": [
+        "Co",
+        "H",
+        "O",
+        "Si"
+      ]
+    },
+    {
+      "id": "frame_0008",
+      "name": "frame_0008",
+      "file": "frame_0008.xyz",
+      "url": "./structures/frame_0008.xyz",
+      "elements": [
+        "Co",
+        "H",
+        "O",
+        "Si"
+      ]
+    },
+    {
+      "id": "frame_0099",
+      "name": "frame_0099",
+      "file": "frame_0099.xyz",
+      "url": "./structures/frame_0099.xyz",
+      "elements": [
+        "Co",
+        "H",
+        "O",
+        "Si"
+      ]
+    }
+  ]
+}
