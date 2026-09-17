@@ -1,0 +1,56 @@
+{
+  "version": 5,
+  "generatedAt": "2026-09-17T10:28:04.574Z",
+  "trajectoryCount": 3,
+  "counts": {
+    "trajectoryCount": 3,
+    "frameCount": 30001,
+    "candidateFrameCount": 30001,
+    "effectiveStructureCount": 146,
+    "totalEffectiveStructureCount": 146,
+    "energyFrameCount": 30001,
+    "reconstructionEvents": 1047,
+    "recurringStructureMerges": 904
+  },
+  "assumptions": {
+    "temperatureAssignment": "当前默认不从XYZ推断真实温度；每个有效结构模型按材料ID+代表帧进行可复现随机赋值，范围为0–400 ℃，用于界面统计展示。",
+    "temperatureSeed": "aimd-2026",
+    "dataPointFactor": 15,
+    "uniquenessScope": "每条 AIMD 轨迹独立进行结构有效性判定。"
+  },
+  "trajectories": [
+    {
+      "id": "Cu-CeO2",
+      "key": "T001",
+      "name": "Cu-CeO2",
+      "file": "Cu-CeO2.xyz",
+      "url": "./aimd/Cu-CeO2.xyz",
+      "frames": 10000,
+      "effectiveStructureCount": 62,
+      "analysisUrl": "./trajectories/T001.json",
+      "size": 49900000
+    },
+    {
+      "id": "Fe-CeO2",
+      "key": "T002",
+      "name": "Fe-CeO2",
+      "file": "Fe-CeO2.xyz",
+      "url": "./aimd/Fe-CeO2.xyz",
+      "frames": 10001,
+      "effectiveStructureCount": 1,
+      "analysisUrl": "./trajectories/T002.json",
+      "size": 53355335
+    },
+    {
+      "id": "Pd-CeO2",
+      "key": "T003",
+      "name": "Pd-CeO2",
+      "file": "Pd-CeO2.xyz",
+      "url": "./aimd/Pd-CeO2.xyz",
+      "frames": 10000,
+      "effectiveStructureCount": 83,
+      "analysisUrl": "./trajectories/T003.json",
+      "size": 49900000
+    }
+  ]
+}

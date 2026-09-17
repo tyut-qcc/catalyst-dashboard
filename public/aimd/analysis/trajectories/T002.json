@@ -1,0 +1,87 @@
+{
+  "version": 5,
+  "generatedAt": "2026-09-17T10:28:04.044Z",
+  "trajectory": {
+    "index": 1,
+    "id": "Fe-CeO2",
+    "file": "Fe-CeO2.xyz",
+    "key": "T002",
+    "name": "Fe-CeO2"
+  },
+  "assumptions": {
+    "temperatureAssignment": "当前默认不从XYZ推断真实温度；每个有效结构模型按材料ID+代表帧进行可复现随机赋值，范围为0–400 ℃，用于界面统计展示。",
+    "temperatureSeed": "aimd-2026",
+    "pbcDefinition": "根据相邻帧坐标反复出现的大周期跳变自动推断晶胞长度，并在 RMSD 中采用最小镜像约定。",
+    "reconstructionCriterion": "PBC-aware RMSD > 0.5 Å 且持续至少 2 帧，判定发生结构重构；单帧瞬态跳变不计入新结构。",
+    "globalUniquenessCriterion": "仅在当前 AIMD 轨迹内，与此前全部有效结构代表帧逐一进行 PBC-aware RMSD 去重；RMSD ≤ 0.5 Å 视为已出现结构，不新增模型。",
+    "candidateStrideFrames": 1
+  },
+  "counts": {
+    "trajectoryCount": 1,
+    "frameCount": 10001,
+    "candidateFrameCount": 10001,
+    "temperatureCount": 1,
+    "temperatureMinC": 207,
+    "temperatureMaxC": 207,
+    "effectiveStructureCount": 1,
+    "energyFrameCount": 10001,
+    "reconstructionEvents": 0,
+    "recurringStructureMerges": 0,
+    "exactRecurring": 0,
+    "persistentTransitions": 0
+  },
+  "rmsdDiagnostics": {
+    "count": 10000,
+    "min": 0.002962887794258711,
+    "p50": 0.005485633130914512,
+    "p90": 0.005999645615549391,
+    "p95": 0.006152233790551544,
+    "p99": 0.006445623964184148,
+    "max": 0.00693532440930135
+  },
+  "cellInfo": {
+    "cellLengthsA": [
+      null,
+      null,
+      null
+    ],
+    "periodicAxes": []
+  },
+  "temperatureStats": [
+    {
+      "temperatureC": 207,
+      "effectiveStructureCount": 1,
+      "modelIds": [
+        "AIMD-T002-SM-00001"
+      ],
+      "energyAverage": -1998.7839505051,
+      "energyMin": -1998.7839505051,
+      "energyMax": -1998.7839505051
+    }
+  ],
+  "models": [
+    {
+      "id": "AIMD-T002-SM-00001",
+      "trajectoryId": "Fe-CeO2",
+      "trajectoryFile": "Fe-CeO2.xyz",
+      "material": "Fe-CeO2",
+      "sourceFile": "Fe-CeO2.xyz",
+      "frame": 0,
+      "sourceIndex": 0,
+      "time": 0,
+      "energy": -1998.7839505051,
+      "temperatureC": 207,
+      "temperatureSource": "random-assumption-0-400C",
+      "atomCount": 81,
+      "structureHash": "f97e140949e0db9620a9f1af06ea364909dd9b25",
+      "triggerRmsdA": 0,
+      "triggerReason": "initial-structure",
+      "representativeFrameSpan": [
+        0,
+        10000
+      ],
+      "mergedFrameCount": 10001,
+      "coordinatesUrl": "../models/AIMD-T002-SM-00001.json"
+    }
+  ]
+}

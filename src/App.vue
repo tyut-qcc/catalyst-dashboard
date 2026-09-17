@@ -18,14 +18,14 @@
                 <el-tab-pane label="催化剂特征值" name="features">
                   <DataTable :apply-element-filter="false" />
                 </el-tab-pane>
-                <el-tab-pane label="XYZ 原子坐标" name="coordinates">
+                <el-tab-pane label="模型原子坐标" name="coordinates">
                   <StructureCoordinateTable />
                 </el-tab-pane>
               </el-tabs>
             </el-tab-pane>
 
-            <!-- 2. 数据搜索 -->
-            <el-tab-pane label="🔍 数据搜索" name="search">
+            <!-- 2. 催化剂特征值搜索 -->
+            <el-tab-pane label="🔍 催化剂特征值搜索" name="search">
               <div class="search-panel">
                 <PeriodicTable />
                 <div v-if="store.selectedElement" class="selected-element-row">

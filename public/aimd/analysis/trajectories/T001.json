@@ -1,0 +1,2094 @@
+{
+  "version": 5,
+  "generatedAt": "2026-09-17T10:28:03.531Z",
+  "trajectory": {
+    "index": 0,
+    "id": "Cu-CeO2",
+    "file": "Cu-CeO2.xyz",
+    "key": "T001",
+    "name": "Cu-CeO2"
+  },
+  "assumptions": {
+    "temperatureAssignment": "当前默认不从XYZ推断真实温度；每个有效结构模型按材料ID+代表帧进行可复现随机赋值，范围为0–400 ℃，用于界面统计展示。",
+    "temperatureSeed": "aimd-2026",
+    "pbcDefinition": "根据相邻帧坐标反复出现的大周期跳变自动推断晶胞长度，并在 RMSD 中采用最小镜像约定。",
+    "reconstructionCriterion": "PBC-aware RMSD > 0.5 Å 且持续至少 2 帧，判定发生结构重构；单帧瞬态跳变不计入新结构。",
+    "globalUniquenessCriterion": "仅在当前 AIMD 轨迹内，与此前全部有效结构代表帧逐一进行 PBC-aware RMSD 去重；RMSD ≤ 0.5 Å 视为已出现结构，不新增模型。",
+    "candidateStrideFrames": 1
+  },
+  "counts": {
+    "trajectoryCount": 1,
+    "frameCount": 10000,
+    "candidateFrameCount": 10000,
+    "temperatureCount": 61,
+    "temperatureMinC": 1,
+    "temperatureMaxC": 399,
+    "effectiveStructureCount": 62,
+    "energyFrameCount": 10000,
+    "reconstructionEvents": 452,
+    "recurringStructureMerges": 391,
+    "exactRecurring": 0,
+    "persistentTransitions": 452
+  },
+  "rmsdDiagnostics": {
+    "count": 9999,
+    "min": 0.005118992875566446,
+    "p50": 0.0067197533423447925,
+    "p90": 0.0075000219128746725,
+    "p95": 0.14155942318909498,
+    "p99": 0.6460602951054791,
+    "max": 0.9243864680644023
+  },
+  "cellInfo": {
+    "cellLengthsA": [
+      11.45,
+      9.95,
+      null
+    ],
+    "periodicAxes": [
+      "x",
+      "y"
+    ]
+  },
+  "temperatureStats": [
+    {
+      "temperatureC": 1,
+      "effectiveStructureCount": 1,
+      "modelIds": [
+        "AIMD-T001-SM-00032"
+      ],
+      "energyAverage": -633.2224788,
+      "energyMin": -633.2224788,
+      "energyMax": -633.2224788
+    },
+    {
+      "temperatureC": 6,
+      "effectiveStructureCount": 1,
+      "modelIds": [
+        "AIMD-T001-SM-00025"
+      ],
+      "energyAverage": -633.17191602,
+      "energyMin": -633.17191602,
+      "energyMax": -633.17191602
+    },
+    {
+      "temperatureC": 8,
+      "effectiveStructureCount": 1,
+      "modelIds": [
+        "AIMD-T001-SM-00044"
+      ],
+      "energyAverage": -632.30313809,
+      "energyMin": -632.30313809,
+      "energyMax": -632.30313809
+    },
+    {
+      "temperatureC": 15,
+      "effectiveStructureCount": 1,
+      "modelIds": [
+        "AIMD-T001-SM-00015"
+      ],
+      "energyAverage": -632.97643199,
+      "energyMin": -632.97643199,
+      "energyMax": -632.97643199
+    },
+    {
+      "temperatureC": 16,
+      "effectiveStructureCount": 1,
+      "modelIds": [
+        "AIMD-T001-SM-00052"
+      ],
+      "energyAverage": -631.63102708,
+      "energyMin": -631.63102708,
+      "energyMax": -631.63102708
+    },
+    {
+      "temperatureC": 22,
+      "effectiveStructureCount": 1,
+      "modelIds": [
+        "AIMD-T001-SM-00028"
+      ],
+      "energyAverage": -632.91562662,
+      "energyMin": -632.91562662,
+      "energyMax": -632.91562662
+    },
+    {
+      "temperatureC": 27,
+      "effectiveStructureCount": 1,
+      "modelIds": [
+        "AIMD-T001-SM-00020"
+      ],
+      "energyAverage": -632.29477865,
+      "energyMin": -632.29477865,
+      "energyMax": -632.29477865
+    },
+    {
+      "temperatureC": 43,
+      "effectiveStructureCount": 1,
+      "modelIds": [
+        "AIMD-T001-SM-00017"
+      ],
+      "energyAverage": -631.46836968,
+      "energyMin": -631.46836968,
+      "energyMax": -631.46836968
+    },
+    {
+      "temperatureC": 44,
+      "effectiveStructureCount": 1,
+      "modelIds": [
+        "AIMD-T001-SM-00027"
+      ],
+      "energyAverage": -633.17239592,
+      "energyMin": -633.17239592,
+      "energyMax": -633.17239592
+    },
+    {
+      "temperatureC": 47,
+      "effectiveStructureCount": 1,
+      "modelIds": [
+        "AIMD-T001-SM-00001"
+      ],
+      "energyAverage": -632.93741984,
+      "energyMin": -632.93741984,
+      "energyMax": -632.93741984
+    },
+    {
+      "temperatureC": 52,
+      "effectiveStructureCount": 1,
+      "modelIds": [
+        "AIMD-T001-SM-00039"
+      ],
+      "energyAverage": -633.00218055,
+      "energyMin": -633.00218055,
+      "energyMax": -633.00218055
+    },
+    {
+      "temperatureC": 64,
+      "effectiveStructureCount": 1,
+      "modelIds": [
+        "AIMD-T001-SM-00013"
+      ],
+      "energyAverage": -633.59902187,
+      "energyMin": -633.59902187,
+      "energyMax": -633.59902187
+    },
+    {
+      "temperatureC": 68,
+      "effectiveStructureCount": 1,
+      "modelIds": [
+        "AIMD-T001-SM-00014"
+      ],
+      "energyAverage": -633.5303201,
+      "energyMin": -633.5303201,
+      "energyMax": -633.5303201
+    },
+    {
+      "temperatureC": 72,
+      "effectiveStructureCount": 1,
+      "modelIds": [
+        "AIMD-T001-SM-00054"
+      ],
+      "energyAverage": -632.19938977,
+      "energyMin": -632.19938977,
+      "energyMax": -632.19938977
+    },
+    {
+      "temperatureC": 82,
+      "effectiveStructureCount": 1,
+      "modelIds": [
+        "AIMD-T001-SM-00029"
+      ],
+      "energyAverage": -632.91483088,
+      "energyMin": -632.91483088,
+      "energyMax": -632.91483088
+    },
+    {
+      "temperatureC": 83,
+      "effectiveStructureCount": 1,
+      "modelIds": [
+        "AIMD-T001-SM-00012"
+      ],
+      "energyAverage": -633.62867223,
+      "energyMin": -633.62867223,
+      "energyMax": -633.62867223
+    },
+    {
+      "temperatureC": 100,
+      "effectiveStructureCount": 1,
+      "modelIds": [
+        "AIMD-T001-SM-00053"
+      ],
+      "energyAverage": -631.9244327,
+      "energyMin": -631.9244327,
+      "energyMax": -631.9244327
+    },
+    {
+      "temperatureC": 116,
+      "effectiveStructureCount": 1,
+      "modelIds": [
+        "AIMD-T001-SM-00003"
+      ],
+      "energyAverage": -631.0997475,
+      "energyMin": -631.0997475,
+      "energyMax": -631.0997475
+    },
+    {
+      "temperatureC": 126,
+      "effectiveStructureCount": 1,
+      "modelIds": [
+        "AIMD-T001-SM-00049"
+      ],
+      "energyAverage": -632.28103659,
+      "energyMin": -632.28103659,
+      "energyMax": -632.28103659
+    },
+    {
+      "temperatureC": 136,
+      "effectiveStructureCount": 1,
+      "modelIds": [
+        "AIMD-T001-SM-00010"
+      ],
+      "energyAverage": -633.15062302,
+      "energyMin": -633.15062302,
+      "energyMax": -633.15062302
+    },
+    {
+      "temperatureC": 139,
+      "effectiveStructureCount": 1,
+      "modelIds": [
+        "AIMD-T001-SM-00047"
+      ],
+      "energyAverage": -632.91273957,
+      "energyMin": -632.91273957,
+      "energyMax": -632.91273957
+    },
+    {
+      "temperatureC": 148,
+      "effectiveStructureCount": 1,
+      "modelIds": [
+        "AIMD-T001-SM-00040"
+      ],
+      "energyAverage": -633.20683631,
+      "energyMin": -633.20683631,
+      "energyMax": -633.20683631
+    },
+    {
+      "temperatureC": 151,
+      "effectiveStructureCount": 1,
+      "modelIds": [
+        "AIMD-T001-SM-00055"
+      ],
+      "energyAverage": -632.11410281,
+      "energyMin": -632.11410281,
+      "energyMax": -632.11410281
+    },
+    {
+      "temperatureC": 164,
+      "effectiveStructureCount": 1,
+      "modelIds": [
+        "AIMD-T001-SM-00002"
+      ],
+      "energyAverage": -632.28390384,
+      "energyMin": -632.28390384,
+      "energyMax": -632.28390384
+    },
+    {
+      "temperatureC": 171,
+      "effectiveStructureCount": 1,
+      "modelIds": [
+        "AIMD-T001-SM-00057"
+      ],
+      "energyAverage": -632.82474293,
+      "energyMin": -632.82474293,
+      "energyMax": -632.82474293
+    },
+    {
+      "temperatureC": 174,
+      "effectiveStructureCount": 1,
+      "modelIds": [
+        "AIMD-T001-SM-00034"
+      ],
+      "energyAverage": -632.19662444,
+      "energyMin": -632.19662444,
+      "energyMax": -632.19662444
+    },
+    {
+      "temperatureC": 196,
+      "effectiveStructureCount": 1,
+      "modelIds": [
+        "AIMD-T001-SM-00007"
+      ],
+      "energyAverage": -632.71179684,
+      "energyMin": -632.71179684,
+      "energyMax": -632.71179684
+    },
+    {
+      "temperatureC": 201,
+      "effectiveStructureCount": 1,
+      "modelIds": [
+        "AIMD-T001-SM-00022"
+      ],
+      "energyAverage": -632.79632461,
+      "energyMin": -632.79632461,
+      "energyMax": -632.79632461
+    },
+    {
+      "temperatureC": 206,
+      "effectiveStructureCount": 1,
+      "modelIds": [
+        "AIMD-T001-SM-00016"
+      ],
+      "energyAverage": -631.70174841,
+      "energyMin": -631.70174841,
+      "energyMax": -631.70174841
+    },
+    {
+      "temperatureC": 208,
+      "effectiveStructureCount": 1,
+      "modelIds": [
+        "AIMD-T001-SM-00011"
+      ],
+      "energyAverage": -633.20787884,
+      "energyMin": -633.20787884,
+      "energyMax": -633.20787884
+    },
+    {
+      "temperatureC": 209,
+      "effectiveStructureCount": 1,
+      "modelIds": [
+        "AIMD-T001-SM-00043"
+      ],
+      "energyAverage": -632.08735619,
+      "energyMin": -632.08735619,
+      "energyMax": -632.08735619
+    },
+    {
+      "temperatureC": 212,
+      "effectiveStructureCount": 1,
+      "modelIds": [
+        "AIMD-T001-SM-00059"
+      ],
+      "energyAverage": -632.61442223,
+      "energyMin": -632.61442223,
+      "energyMax": -632.61442223
+    },
+    {
+      "temperatureC": 217,
+      "effectiveStructureCount": 1,
+      "modelIds": [
+        "AIMD-T001-SM-00060"
+      ],
+      "energyAverage": -632.48944864,
+      "energyMin": -632.48944864,
+      "energyMax": -632.48944864
+    },
+    {
+      "temperatureC": 221,
+      "effectiveStructureCount": 1,
+      "modelIds": [
+        "AIMD-T001-SM-00008"
+      ],
+      "energyAverage": -632.66987765,
+      "energyMin": -632.66987765,
+      "energyMax": -632.66987765
+    },
+    {
+      "temperatureC": 231,
+      "effectiveStructureCount": 1,
+      "modelIds": [
+        "AIMD-T001-SM-00030"
+      ],
+      "energyAverage": -632.53642041,
+      "energyMin": -632.53642041,
+      "energyMax": -632.53642041
+    },
+    {
+      "temperatureC": 234,
+      "effectiveStructureCount": 1,
+      "modelIds": [
+        "AIMD-T001-SM-00021"
+      ],
+      "energyAverage": -632.29798302,
+      "energyMin": -632.29798302,
+      "energyMax": -632.29798302
+    },
+    {
+      "temperatureC": 254,
+      "effectiveStructureCount": 1,
+      "modelIds": [
+        "AIMD-T001-SM-00050"
+      ],
+      "energyAverage": -632.95787601,
+      "energyMin": -632.95787601,
+      "energyMax": -632.95787601
+    },
+    {
+      "temperatureC": 256,
+      "effectiveStructureCount": 1,
+      "modelIds": [
+        "AIMD-T001-SM-00038"
+      ],
+      "energyAverage": -632.82732052,
+      "energyMin": -632.82732052,
+      "energyMax": -632.82732052
+    },
+    {
+      "temperatureC": 262,
+      "effectiveStructureCount": 1,
+      "modelIds": [
+        "AIMD-T001-SM-00019"
+      ],
+      "energyAverage": -632.277149,
+      "energyMin": -632.277149,
+      "energyMax": -632.277149
+    },
+    {
+      "temperatureC": 264,
+      "effectiveStructureCount": 1,
+      "modelIds": [
+        "AIMD-T001-SM-00046"
+      ],
+      "energyAverage": -631.98779885,
+      "energyMin": -631.98779885,
+      "energyMax": -631.98779885
+    },
+    {
+      "temperatureC": 265,
+      "effectiveStructureCount": 1,
+      "modelIds": [
+        "AIMD-T001-SM-00061"
+      ],
+      "energyAverage": -632.66137858,
+      "energyMin": -632.66137858,
+      "energyMax": -632.66137858
+    },
+    {
+      "temperatureC": 278,
+      "effectiveStructureCount": 1,
+      "modelIds": [
+        "AIMD-T001-SM-00051"
+      ],
+      "energyAverage": -631.68851176,
+      "energyMin": -631.68851176,
+      "energyMax": -631.68851176
+    },
+    {
+      "temperatureC": 282,
+      "effectiveStructureCount": 1,
+      "modelIds": [
+        "AIMD-T001-SM-00005"
+      ],
+      "energyAverage": -632.9140595,
+      "energyMin": -632.9140595,
+      "energyMax": -632.9140595
+    },
+    {
+      "temperatureC": 294,
+      "effectiveStructureCount": 1,
+      "modelIds": [
+        "AIMD-T001-SM-00041"
+      ],
+      "energyAverage": -632.77947397,
+      "energyMin": -632.77947397,
+      "energyMax": -632.77947397
+    },
+    {
+      "temperatureC": 299,
+      "effectiveStructureCount": 1,
+      "modelIds": [
+        "AIMD-T001-SM-00023"
+      ],
+      "energyAverage": -633.65864514,
+      "energyMin": -633.65864514,
+      "energyMax": -633.65864514
+    },
+    {
+      "temperatureC": 303,
+      "effectiveStructureCount": 1,
+      "modelIds": [
+        "AIMD-T001-SM-00048"
+      ],
+      "energyAverage": -633.24348598,
+      "energyMin": -633.24348598,
+      "energyMax": -633.24348598
+    },
+    {
+      "temperatureC": 325,
+      "effectiveStructureCount": 1,
+      "modelIds": [
+        "AIMD-T001-SM-00042"
+      ],
+      "energyAverage": -632.31223059,
+      "energyMin": -632.31223059,
+      "energyMax": -632.31223059
+    },
+    {
+      "temperatureC": 339,
+      "effectiveStructureCount": 1,
+      "modelIds": [
+        "AIMD-T001-SM-00018"
+      ],
+      "energyAverage": -631.79150651,
+      "energyMin": -631.79150651,
+      "energyMax": -631.79150651
+    },
+    {
+      "temperatureC": 341,
+      "effectiveStructureCount": 2,
+      "modelIds": [
+        "AIMD-T001-SM-00024",
+        "AIMD-T001-SM-00056"
+      ],
+      "energyAverage": -632.6238686500001,
+      "energyMin": -633.19398556,
+      "energyMax": -632.05375174
+    },
+    {
+      "temperatureC": 344,
+      "effectiveStructureCount": 1,
+      "modelIds": [
+        "AIMD-T001-SM-00058"
+      ],
+      "energyAverage": -633.23090956,
+      "energyMin": -633.23090956,
+      "energyMax": -633.23090956
+    },
+    {
+      "temperatureC": 352,
+      "effectiveStructureCount": 1,
+      "modelIds": [
+        "AIMD-T001-SM-00045"
+      ],
+      "energyAverage": -632.77154218,
+      "energyMin": -632.77154218,
+      "energyMax": -632.77154218
+    },
+    {
+      "temperatureC": 361,
+      "effectiveStructureCount": 1,
+      "modelIds": [
+        "AIMD-T001-SM-00062"
+      ],
+      "energyAverage": -631.85845091,
+      "energyMin": -631.85845091,
+      "energyMax": -631.85845091
+    },
+    {
+      "temperatureC": 365,
+      "effectiveStructureCount": 1,
+      "modelIds": [
+        "AIMD-T001-SM-00036"
+      ],
+      "energyAverage": -632.34751735,
+      "energyMin": -632.34751735,
+      "energyMax": -632.34751735
+    },
+    {
+      "temperatureC": 366,
+      "effectiveStructureCount": 1,
+      "modelIds": [
+        "AIMD-T001-SM-00033"
+      ],
+      "energyAverage": -632.17018936,
+      "energyMin": -632.17018936,
+      "energyMax": -632.17018936
+    },
+    {
+      "temperatureC": 370,
+      "effectiveStructureCount": 1,
+      "modelIds": [
+        "AIMD-T001-SM-00031"
+      ],
+      "energyAverage": -633.15139458,
+      "energyMin": -633.15139458,
+      "energyMax": -633.15139458
+    },
+    {
+      "temperatureC": 371,
+      "effectiveStructureCount": 1,
+      "modelIds": [
+        "AIMD-T001-SM-00035"
+      ],
+      "energyAverage": -632.3916733,
+      "energyMin": -632.3916733,
+      "energyMax": -632.3916733
+    },
+    {
+      "temperatureC": 374,
+      "effectiveStructureCount": 1,
+      "modelIds": [
+        "AIMD-T001-SM-00009"
+      ],
+      "energyAverage": -633.06577648,
+      "energyMin": -633.06577648,
+      "energyMax": -633.06577648
+    },
+    {
+      "temperatureC": 375,
+      "effectiveStructureCount": 1,
+      "modelIds": [
+        "AIMD-T001-SM-00026"
+      ],
+      "energyAverage": -633.26984612,
+      "energyMin": -633.26984612,
+      "energyMax": -633.26984612
+    },
+    {
+      "temperatureC": 385,
+      "effectiveStructureCount": 1,
+      "modelIds": [
+        "AIMD-T001-SM-00006"
+      ],
+      "energyAverage": -632.8563425,
+      "energyMin": -632.8563425,
+      "energyMax": -632.8563425
+    },
+    {
+      "temperatureC": 391,
+      "effectiveStructureCount": 1,
+      "modelIds": [
+        "AIMD-T001-SM-00004"
+      ],
+      "energyAverage": -631.75576162,
+      "energyMin": -631.75576162,
+      "energyMax": -631.75576162
+    },
+    {
+      "temperatureC": 399,
+      "effectiveStructureCount": 1,
+      "modelIds": [
+        "AIMD-T001-SM-00037"
+      ],
+      "energyAverage": -632.49986811,
+      "energyMin": -632.49986811,
+      "energyMax": -632.49986811
+    }
+  ],
+  "models": [
+    {
+      "id": "AIMD-T001-SM-00001",
+      "trajectoryId": "Cu-CeO2",
+      "trajectoryFile": "Cu-CeO2.xyz",
+      "material": "Cu-CeO2",
+      "sourceFile": "Cu-CeO2.xyz",
+      "frame": 0,
+      "sourceIndex": 0,
+      "time": null,
+      "energy": -632.93741984,
+      "temperatureC": 47,
+      "temperatureSource": "random-assumption-0-400C",
+      "atomCount": 81,
+      "structureHash": "20aa96fa0c0f29c7677a7525b83d41ea7a95f443",
+      "triggerRmsdA": 0,
+      "triggerReason": "initial-structure",
+      "representativeFrameSpan": [
+        0,
+        9753
+      ],
+      "mergedFrameCount": 75,
+      "coordinatesUrl": "../models/AIMD-T001-SM-00001.json"
+    },
+    {
+      "id": "AIMD-T001-SM-00002",
+      "trajectoryId": "Cu-CeO2",
+      "trajectoryFile": "Cu-CeO2.xyz",
+      "material": "Cu-CeO2",
+      "sourceFile": "Cu-CeO2.xyz",
+      "frame": 19,
+      "sourceIndex": 19,
+      "time": null,
+      "energy": -632.28390384,
+      "temperatureC": 164,
+      "temperatureSource": "random-assumption-0-400C",
+      "atomCount": 81,
+      "structureHash": "c01c6607fac54a2c6bf0964016adbcf958ca4403",
+      "triggerRmsdA": 0.652061,
+      "triggerReason": "persistent-pbc-rmsd-reconstruction",
+      "representativeFrameSpan": [
+        19,
+        9722
+      ],
+      "mergedFrameCount": 119,
+      "coordinatesUrl": "../models/AIMD-T001-SM-00002.json"
+    },
+    {
+      "id": "AIMD-T001-SM-00003",
+      "trajectoryId": "Cu-CeO2",
+      "trajectoryFile": "Cu-CeO2.xyz",
+      "material": "Cu-CeO2",
+      "sourceFile": "Cu-CeO2.xyz",
+      "frame": 32,
+      "sourceIndex": 32,
+      "time": null,
+      "energy": -631.0997475,
+      "temperatureC": 116,
+      "temperatureSource": "random-assumption-0-400C",
+      "atomCount": 81,
+      "structureHash": "89813a8b0bad808ec92a2d3946912251d228d0cb",
+      "triggerRmsdA": 0.655727,
+      "triggerReason": "persistent-pbc-rmsd-reconstruction",
+      "representativeFrameSpan": [
+        32,
+        9476
+      ],
+      "mergedFrameCount": 74,
+      "coordinatesUrl": "../models/AIMD-T001-SM-00003.json"
+    },
+    {
+      "id": "AIMD-T001-SM-00004",
+      "trajectoryId": "Cu-CeO2",
+      "trajectoryFile": "Cu-CeO2.xyz",
+      "material": "Cu-CeO2",
+      "sourceFile": "Cu-CeO2.xyz",
+      "frame": 87,
+      "sourceIndex": 87,
+      "time": null,
+      "energy": -631.75576162,
+      "temperatureC": 391,
+      "temperatureSource": "random-assumption-0-400C",
+      "atomCount": 81,
+      "structureHash": "9d1a409a610b413acb1963b1bc53adad098a5bd6",
+      "triggerRmsdA": 0.648411,
+      "triggerReason": "persistent-pbc-rmsd-reconstruction",
+      "representativeFrameSpan": [
+        87,
+        9696
+      ],
+      "mergedFrameCount": 59,
+      "coordinatesUrl": "../models/AIMD-T001-SM-00004.json"
+    },
+    {
+      "id": "AIMD-T001-SM-00005",
+      "trajectoryId": "Cu-CeO2",
+      "trajectoryFile": "Cu-CeO2.xyz",
+      "material": "Cu-CeO2",
+      "sourceFile": "Cu-CeO2.xyz",
+      "frame": 173,
+      "sourceIndex": 173,
+      "time": null,
+      "energy": -632.9140595,
+      "temperatureC": 282,
+      "temperatureSource": "random-assumption-0-400C",
+      "atomCount": 81,
+      "structureHash": "ef478c271f877749fab76d79fe0c7e8bc03acd0a",
+      "triggerRmsdA": 0.648775,
+      "triggerReason": "persistent-pbc-rmsd-reconstruction",
+      "representativeFrameSpan": [
+        173,
+        9680
+      ],
+      "mergedFrameCount": 79,
+      "coordinatesUrl": "../models/AIMD-T001-SM-00005.json"
+    },
+    {
+      "id": "AIMD-T001-SM-00006",
+      "trajectoryId": "Cu-CeO2",
+      "trajectoryFile": "Cu-CeO2.xyz",
+      "material": "Cu-CeO2",
+      "sourceFile": "Cu-CeO2.xyz",
+      "frame": 211,
+      "sourceIndex": 211,
+      "time": null,
+      "energy": -632.8563425,
+      "temperatureC": 385,
+      "temperatureSource": "random-assumption-0-400C",
+      "atomCount": 81,
+      "structureHash": "5940ec17fda16a956c5ed66ab1a74af4acd57470",
+      "triggerRmsdA": 0.771148,
+      "triggerReason": "persistent-pbc-rmsd-reconstruction",
+      "representativeFrameSpan": [
+        211,
+        8887
+      ],
+      "mergedFrameCount": 22,
+      "coordinatesUrl": "../models/AIMD-T001-SM-00006.json"
+    },
+    {
+      "id": "AIMD-T001-SM-00007",
+      "trajectoryId": "Cu-CeO2",
+      "trajectoryFile": "Cu-CeO2.xyz",
+      "material": "Cu-CeO2",
+      "sourceFile": "Cu-CeO2.xyz",
+      "frame": 217,
+      "sourceIndex": 217,
+      "time": null,
+      "energy": -632.71179684,
+      "temperatureC": 196,
+      "temperatureSource": "random-assumption-0-400C",
+      "atomCount": 81,
+      "structureHash": "f0899f43363ef9a4895abfb42b6d54ae905670b6",
+      "triggerRmsdA": 0.638118,
+      "triggerReason": "persistent-pbc-rmsd-reconstruction",
+      "representativeFrameSpan": [
+        217,
+        8863
+      ],
+      "mergedFrameCount": 26,
+      "coordinatesUrl": "../models/AIMD-T001-SM-00007.json"
+    },
+    {
+      "id": "AIMD-T001-SM-00008",
+      "trajectoryId": "Cu-CeO2",
+      "trajectoryFile": "Cu-CeO2.xyz",
+      "material": "Cu-CeO2",
+      "sourceFile": "Cu-CeO2.xyz",
+      "frame": 247,
+      "sourceIndex": 247,
+      "time": null,
+      "energy": -632.66987765,
+      "temperatureC": 221,
+      "temperatureSource": "random-assumption-0-400C",
+      "atomCount": 81,
+      "structureHash": "e775b8df998b734dc45fef6812ab1b49b1fd39ff",
+      "triggerRmsdA": 0.648584,
+      "triggerReason": "persistent-pbc-rmsd-reconstruction",
+      "representativeFrameSpan": [
+        247,
+        286
+      ],
+      "mergedFrameCount": 40,
+      "coordinatesUrl": "../models/AIMD-T001-SM-00008.json"
+    },
+    {
+      "id": "AIMD-T001-SM-00009",
+      "trajectoryId": "Cu-CeO2",
+      "trajectoryFile": "Cu-CeO2.xyz",
+      "material": "Cu-CeO2",
+      "sourceFile": "Cu-CeO2.xyz",
+      "frame": 287,
+      "sourceIndex": 287,
+      "time": null,
+      "energy": -633.06577648,
+      "temperatureC": 374,
+      "temperatureSource": "random-assumption-0-400C",
+      "atomCount": 81,
+      "structureHash": "6a9efe3911a6e8225442123fc583ee8ae966467e",
+      "triggerRmsdA": 0.682899,
+      "triggerReason": "persistent-pbc-rmsd-reconstruction",
+      "representativeFrameSpan": [
+        287,
+        4164
+      ],
+      "mergedFrameCount": 5,
+      "coordinatesUrl": "../models/AIMD-T001-SM-00009.json"
+    },
+    {
+      "id": "AIMD-T001-SM-00010",
+      "trajectoryId": "Cu-CeO2",
+      "trajectoryFile": "Cu-CeO2.xyz",
+      "material": "Cu-CeO2",
+      "sourceFile": "Cu-CeO2.xyz",
+      "frame": 290,
+      "sourceIndex": 290,
+      "time": null,
+      "energy": -633.15062302,
+      "temperatureC": 136,
+      "temperatureSource": "random-assumption-0-400C",
+      "atomCount": 81,
+      "structureHash": "a15bbba5e220b0064d3d725820888fe6859193cb",
+      "triggerRmsdA": 0.648598,
+      "triggerReason": "persistent-pbc-rmsd-reconstruction",
+      "representativeFrameSpan": [
+        290,
+        8030
+      ],
+      "mergedFrameCount": 12,
+      "coordinatesUrl": "../models/AIMD-T001-SM-00010.json"
+    },
+    {
+      "id": "AIMD-T001-SM-00011",
+      "trajectoryId": "Cu-CeO2",
+      "trajectoryFile": "Cu-CeO2.xyz",
+      "material": "Cu-CeO2",
+      "sourceFile": "Cu-CeO2.xyz",
+      "frame": 298,
+      "sourceIndex": 298,
+      "time": null,
+      "energy": -633.20787884,
+      "temperatureC": 208,
+      "temperatureSource": "random-assumption-0-400C",
+      "atomCount": 81,
+      "structureHash": "3a85c8ca0bdc6c24b0cbdb9b7ca39505236663b3",
+      "triggerRmsdA": 0.635734,
+      "triggerReason": "persistent-pbc-rmsd-reconstruction",
+      "representativeFrameSpan": [
+        298,
+        7194
+      ],
+      "mergedFrameCount": 20,
+      "coordinatesUrl": "../models/AIMD-T001-SM-00011.json"
+    },
+    {
+      "id": "AIMD-T001-SM-00012",
+      "trajectoryId": "Cu-CeO2",
+      "trajectoryFile": "Cu-CeO2.xyz",
+      "material": "Cu-CeO2",
+      "sourceFile": "Cu-CeO2.xyz",
+      "frame": 316,
+      "sourceIndex": 316,
+      "time": null,
+      "energy": -633.62867223,
+      "temperatureC": 83,
+      "temperatureSource": "random-assumption-0-400C",
+      "atomCount": 81,
+      "structureHash": "6c020c4ef6c713d4cff0d9edc950048f946b0578",
+      "triggerRmsdA": 0.664267,
+      "triggerReason": "persistent-pbc-rmsd-reconstruction",
+      "representativeFrameSpan": [
+        316,
+        7603
+      ],
+      "mergedFrameCount": 8,
+      "coordinatesUrl": "../models/AIMD-T001-SM-00012.json"
+    },
+    {
+      "id": "AIMD-T001-SM-00013",
+      "trajectoryId": "Cu-CeO2",
+      "trajectoryFile": "Cu-CeO2.xyz",
+      "material": "Cu-CeO2",
+      "sourceFile": "Cu-CeO2.xyz",
+      "frame": 318,
+      "sourceIndex": 318,
+      "time": null,
+      "energy": -633.59902187,
+      "temperatureC": 64,
+      "temperatureSource": "random-assumption-0-400C",
+      "atomCount": 81,
+      "structureHash": "868dafa8a0e8720564d4d20cb197d470344ce7cc",
+      "triggerRmsdA": 0.889027,
+      "triggerReason": "persistent-pbc-rmsd-reconstruction",
+      "representativeFrameSpan": [
+        318,
+        9992
+      ],
+      "mergedFrameCount": 36,
+      "coordinatesUrl": "../models/AIMD-T001-SM-00013.json"
+    },
+    {
+      "id": "AIMD-T001-SM-00014",
+      "trajectoryId": "Cu-CeO2",
+      "trajectoryFile": "Cu-CeO2.xyz",
+      "material": "Cu-CeO2",
+      "sourceFile": "Cu-CeO2.xyz",
+      "frame": 320,
+      "sourceIndex": 320,
+      "time": null,
+      "energy": -633.5303201,
+      "temperatureC": 68,
+      "temperatureSource": "random-assumption-0-400C",
+      "atomCount": 81,
+      "structureHash": "3437420918e2427a986feb2d4fc6f38050436c29",
+      "triggerRmsdA": 0.641903,
+      "triggerReason": "persistent-pbc-rmsd-reconstruction",
+      "representativeFrameSpan": [
+        320,
+        9812
+      ],
+      "mergedFrameCount": 39,
+      "coordinatesUrl": "../models/AIMD-T001-SM-00014.json"
+    },
+    {
+      "id": "AIMD-T001-SM-00015",
+      "trajectoryId": "Cu-CeO2",
+      "trajectoryFile": "Cu-CeO2.xyz",
+      "material": "Cu-CeO2",
+      "sourceFile": "Cu-CeO2.xyz",
+      "frame": 343,
+      "sourceIndex": 343,
+      "time": null,
+      "energy": -632.97643199,
+      "temperatureC": 15,
+      "temperatureSource": "random-assumption-0-400C",
+      "atomCount": 81,
+      "structureHash": "253294a19cdd8793eecc3a75631349df469c9487",
+      "triggerRmsdA": 0.660252,
+      "triggerReason": "persistent-pbc-rmsd-reconstruction",
+      "representativeFrameSpan": [
+        343,
+        9796
+      ],
+      "mergedFrameCount": 58,
+      "coordinatesUrl": "../models/AIMD-T001-SM-00015.json"
+    },
+    {
+      "id": "AIMD-T001-SM-00016",
+      "trajectoryId": "Cu-CeO2",
+      "trajectoryFile": "Cu-CeO2.xyz",
+      "material": "Cu-CeO2",
+      "sourceFile": "Cu-CeO2.xyz",
+      "frame": 379,
+      "sourceIndex": 379,
+      "time": null,
+      "energy": -631.70174841,
+      "temperatureC": 206,
+      "temperatureSource": "random-assumption-0-400C",
+      "atomCount": 81,
+      "structureHash": "5661df3d326230e73b7e0a01fc73c896cf071e58",
+      "triggerRmsdA": 0.697529,
+      "triggerReason": "persistent-pbc-rmsd-reconstruction",
+      "representativeFrameSpan": [
+        379,
+        6392
+      ],
+      "mergedFrameCount": 15,
+      "coordinatesUrl": "../models/AIMD-T001-SM-00016.json"
+    },
+    {
+      "id": "AIMD-T001-SM-00017",
+      "trajectoryId": "Cu-CeO2",
+      "trajectoryFile": "Cu-CeO2.xyz",
+      "material": "Cu-CeO2",
+      "sourceFile": "Cu-CeO2.xyz",
+      "frame": 390,
+      "sourceIndex": 390,
+      "time": null,
+      "energy": -631.46836968,
+      "temperatureC": 43,
+      "temperatureSource": "random-assumption-0-400C",
+      "atomCount": 81,
+      "structureHash": "2ac218f42570cce2dbf51a79d232636e440be408",
+      "triggerRmsdA": 0.649333,
+      "triggerReason": "persistent-pbc-rmsd-reconstruction",
+      "representativeFrameSpan": [
+        390,
+        3781
+      ],
+      "mergedFrameCount": 6,
+      "coordinatesUrl": "../models/AIMD-T001-SM-00017.json"
+    },
+    {
+      "id": "AIMD-T001-SM-00018",
+      "trajectoryId": "Cu-CeO2",
+      "trajectoryFile": "Cu-CeO2.xyz",
+      "material": "Cu-CeO2",
+      "sourceFile": "Cu-CeO2.xyz",
+      "frame": 429,
+      "sourceIndex": 429,
+      "time": null,
+      "energy": -631.79150651,
+      "temperatureC": 339,
+      "temperatureSource": "random-assumption-0-400C",
+      "atomCount": 81,
+      "structureHash": "204b6c97c9336683ed76809af0ce7ce49458d2a6",
+      "triggerRmsdA": 0.668679,
+      "triggerReason": "persistent-pbc-rmsd-reconstruction",
+      "representativeFrameSpan": [
+        429,
+        9877
+      ],
+      "mergedFrameCount": 116,
+      "coordinatesUrl": "../models/AIMD-T001-SM-00018.json"
+    },
+    {
+      "id": "AIMD-T001-SM-00019",
+      "trajectoryId": "Cu-CeO2",
+      "trajectoryFile": "Cu-CeO2.xyz",
+      "material": "Cu-CeO2",
+      "sourceFile": "Cu-CeO2.xyz",
+      "frame": 467,
+      "sourceIndex": 467,
+      "time": null,
+      "energy": -632.277149,
+      "temperatureC": 262,
+      "temperatureSource": "random-assumption-0-400C",
+      "atomCount": 81,
+      "structureHash": "bd3fe7e5c455386108c3ee492129ce4946367cbf",
+      "triggerRmsdA": 0.651179,
+      "triggerReason": "persistent-pbc-rmsd-reconstruction",
+      "representativeFrameSpan": [
+        467,
+        9241
+      ],
+      "mergedFrameCount": 50,
+      "coordinatesUrl": "../models/AIMD-T001-SM-00019.json"
+    },
+    {
+      "id": "AIMD-T001-SM-00020",
+      "trajectoryId": "Cu-CeO2",
+      "trajectoryFile": "Cu-CeO2.xyz",
+      "material": "Cu-CeO2",
+      "sourceFile": "Cu-CeO2.xyz",
+      "frame": 694,
+      "sourceIndex": 694,
+      "time": null,
+      "energy": -632.29477865,
+      "temperatureC": 27,
+      "temperatureSource": "random-assumption-0-400C",
+      "atomCount": 81,
+      "structureHash": "6e62b78357d02f5d8f262d7ca4892b544af31ae4",
+      "triggerRmsdA": 0.669636,
+      "triggerReason": "persistent-pbc-rmsd-reconstruction",
+      "representativeFrameSpan": [
+        694,
+        9355
+      ],
+      "mergedFrameCount": 12,
+      "coordinatesUrl": "../models/AIMD-T001-SM-00020.json"
+    },
+    {
+      "id": "AIMD-T001-SM-00021",
+      "trajectoryId": "Cu-CeO2",
+      "trajectoryFile": "Cu-CeO2.xyz",
+      "material": "Cu-CeO2",
+      "sourceFile": "Cu-CeO2.xyz",
+      "frame": 696,
+      "sourceIndex": 696,
+      "time": null,
+      "energy": -632.29798302,
+      "temperatureC": 234,
+      "temperatureSource": "random-assumption-0-400C",
+      "atomCount": 81,
+      "structureHash": "4a5338832f37aab8cca5d41ae89cefa0b018377c",
+      "triggerRmsdA": 0.643008,
+      "triggerReason": "persistent-pbc-rmsd-reconstruction",
+      "representativeFrameSpan": [
+        696,
+        9794
+      ],
+      "mergedFrameCount": 23,
+      "coordinatesUrl": "../models/AIMD-T001-SM-00021.json"
+    },
+    {
+      "id": "AIMD-T001-SM-00022",
+      "trajectoryId": "Cu-CeO2",
+      "trajectoryFile": "Cu-CeO2.xyz",
+      "material": "Cu-CeO2",
+      "sourceFile": "Cu-CeO2.xyz",
+      "frame": 707,
+      "sourceIndex": 707,
+      "time": null,
+      "energy": -632.79632461,
+      "temperatureC": 201,
+      "temperatureSource": "random-assumption-0-400C",
+      "atomCount": 81,
+      "structureHash": "fa163d3439f773c25bd507e3be3f1942702625b7",
+      "triggerRmsdA": 0.649647,
+      "triggerReason": "persistent-pbc-rmsd-reconstruction",
+      "representativeFrameSpan": [
+        707,
+        8924
+      ],
+      "mergedFrameCount": 12,
+      "coordinatesUrl": "../models/AIMD-T001-SM-00022.json"
+    },
+    {
+      "id": "AIMD-T001-SM-00023",
+      "trajectoryId": "Cu-CeO2",
+      "trajectoryFile": "Cu-CeO2.xyz",
+      "material": "Cu-CeO2",
+      "sourceFile": "Cu-CeO2.xyz",
+      "frame": 737,
+      "sourceIndex": 737,
+      "time": null,
+      "energy": -633.65864514,
+      "temperatureC": 299,
+      "temperatureSource": "random-assumption-0-400C",
+      "atomCount": 81,
+      "structureHash": "21940c1a01c7197d3e6c5675ce5b48b716f38b90",
+      "triggerRmsdA": 0.66012,
+      "triggerReason": "persistent-pbc-rmsd-reconstruction",
+      "representativeFrameSpan": [
+        737,
+        9826
+      ],
+      "mergedFrameCount": 24,
+      "coordinatesUrl": "../models/AIMD-T001-SM-00023.json"
+    },
+    {
+      "id": "AIMD-T001-SM-00024",
+      "trajectoryId": "Cu-CeO2",
+      "trajectoryFile": "Cu-CeO2.xyz",
+      "material": "Cu-CeO2",
+      "sourceFile": "Cu-CeO2.xyz",
+      "frame": 755,
+      "sourceIndex": 755,
+      "time": null,
+      "energy": -633.19398556,
+      "temperatureC": 341,
+      "temperatureSource": "random-assumption-0-400C",
+      "atomCount": 81,
+      "structureHash": "8be61260037f7c4353eafc846db430ecbeea954c",
+      "triggerRmsdA": 0.910271,
+      "triggerReason": "persistent-pbc-rmsd-reconstruction",
+      "representativeFrameSpan": [
+        755,
+        9839
+      ],
+      "mergedFrameCount": 14,
+      "coordinatesUrl": "../models/AIMD-T001-SM-00024.json"
+    },
+    {
+      "id": "AIMD-T001-SM-00025",
+      "trajectoryId": "Cu-CeO2",
+      "trajectoryFile": "Cu-CeO2.xyz",
+      "material": "Cu-CeO2",
+      "sourceFile": "Cu-CeO2.xyz",
+      "frame": 761,
+      "sourceIndex": 761,
+      "time": null,
+      "energy": -633.17191602,
+      "temperatureC": 6,
+      "temperatureSource": "random-assumption-0-400C",
+      "atomCount": 81,
+      "structureHash": "dc377c2d85057ce34b298b1469fab24b524fcf94",
+      "triggerRmsdA": 0.646848,
+      "triggerReason": "persistent-pbc-rmsd-reconstruction",
+      "representativeFrameSpan": [
+        761,
+        9783
+      ],
+      "mergedFrameCount": 22,
+      "coordinatesUrl": "../models/AIMD-T001-SM-00025.json"
+    },
+    {
+      "id": "AIMD-T001-SM-00026",
+      "trajectoryId": "Cu-CeO2",
+      "trajectoryFile": "Cu-CeO2.xyz",
+      "material": "Cu-CeO2",
+      "sourceFile": "Cu-CeO2.xyz",
+      "frame": 1138,
+      "sourceIndex": 1138,
+      "time": null,
+      "energy": -633.26984612,
+      "temperatureC": 375,
+      "temperatureSource": "random-assumption-0-400C",
+      "atomCount": 81,
+      "structureHash": "3aedd0de13e078cb1ed116888899cc5ccf4b8c98",
+      "triggerRmsdA": 0.643797,
+      "triggerReason": "persistent-pbc-rmsd-reconstruction",
+      "representativeFrameSpan": [
+        1138,
+        6785
+      ],
+      "mergedFrameCount": 22,
+      "coordinatesUrl": "../models/AIMD-T001-SM-00026.json"
+    },
+    {
+      "id": "AIMD-T001-SM-00027",
+      "trajectoryId": "Cu-CeO2",
+      "trajectoryFile": "Cu-CeO2.xyz",
+      "material": "Cu-CeO2",
+      "sourceFile": "Cu-CeO2.xyz",
+      "frame": 1154,
+      "sourceIndex": 1154,
+      "time": null,
+      "energy": -633.17239592,
+      "temperatureC": 44,
+      "temperatureSource": "random-assumption-0-400C",
+      "atomCount": 81,
+      "structureHash": "3ce9e8ea39a19afdcc9ce3429c45e1dae73b9b34",
+      "triggerRmsdA": 0.639097,
+      "triggerReason": "persistent-pbc-rmsd-reconstruction",
+      "representativeFrameSpan": [
+        1154,
+        6854
+      ],
+      "mergedFrameCount": 31,
+      "coordinatesUrl": "../models/AIMD-T001-SM-00027.json"
+    },
+    {
+      "id": "AIMD-T001-SM-00028",
+      "trajectoryId": "Cu-CeO2",
+      "trajectoryFile": "Cu-CeO2.xyz",
+      "material": "Cu-CeO2",
+      "sourceFile": "Cu-CeO2.xyz",
+      "frame": 1171,
+      "sourceIndex": 1171,
+      "time": null,
+      "energy": -632.91562662,
+      "temperatureC": 22,
+      "temperatureSource": "random-assumption-0-400C",
+      "atomCount": 81,
+      "structureHash": "f0989d5b9b4f79f94111542d0e18158a2a984a5f",
+      "triggerRmsdA": 0.676955,
+      "triggerReason": "persistent-pbc-rmsd-reconstruction",
+      "representativeFrameSpan": [
+        1171,
+        9372
+      ],
+      "mergedFrameCount": 31,
+      "coordinatesUrl": "../models/AIMD-T001-SM-00028.json"
+    },
+    {
+      "id": "AIMD-T001-SM-00029",
+      "trajectoryId": "Cu-CeO2",
+      "trajectoryFile": "Cu-CeO2.xyz",
+      "material": "Cu-CeO2",
+      "sourceFile": "Cu-CeO2.xyz",
+      "frame": 1186,
+      "sourceIndex": 1186,
+      "time": null,
+      "energy": -632.91483088,
+      "temperatureC": 82,
+      "temperatureSource": "random-assumption-0-400C",
+      "atomCount": 81,
+      "structureHash": "aac8870ea0bd51b33435d5caee843f37aa3d515d",
+      "triggerRmsdA": 0.709557,
+      "triggerReason": "persistent-pbc-rmsd-reconstruction",
+      "representativeFrameSpan": [
+        1186,
+        9366
+      ],
+      "mergedFrameCount": 14,
+      "coordinatesUrl": "../models/AIMD-T001-SM-00029.json"
+    },
+    {
+      "id": "AIMD-T001-SM-00030",
+      "trajectoryId": "Cu-CeO2",
+      "trajectoryFile": "Cu-CeO2.xyz",
+      "material": "Cu-CeO2",
+      "sourceFile": "Cu-CeO2.xyz",
+      "frame": 1248,
+      "sourceIndex": 1248,
+      "time": null,
+      "energy": -632.53642041,
+      "temperatureC": 231,
+      "temperatureSource": "random-assumption-0-400C",
+      "atomCount": 81,
+      "structureHash": "857c4aeb58a00fdb4eabc0f1a88358872dc4ba0e",
+      "triggerRmsdA": 0.674715,
+      "triggerReason": "persistent-pbc-rmsd-reconstruction",
+      "representativeFrameSpan": [
+        1248,
+        1632
+      ],
+      "mergedFrameCount": 6,
+      "coordinatesUrl": "../models/AIMD-T001-SM-00030.json"
+    },
+    {
+      "id": "AIMD-T001-SM-00031",
+      "trajectoryId": "Cu-CeO2",
+      "trajectoryFile": "Cu-CeO2.xyz",
+      "material": "Cu-CeO2",
+      "sourceFile": "Cu-CeO2.xyz",
+      "frame": 1264,
+      "sourceIndex": 1264,
+      "time": null,
+      "energy": -633.15139458,
+      "temperatureC": 370,
+      "temperatureSource": "random-assumption-0-400C",
+      "atomCount": 81,
+      "structureHash": "e8574747da8ed72b9a920c919b66471cbd8ba33e",
+      "triggerRmsdA": 0.650108,
+      "triggerReason": "persistent-pbc-rmsd-reconstruction",
+      "representativeFrameSpan": [
+        1264,
+        6556
+      ],
+      "mergedFrameCount": 13,
+      "coordinatesUrl": "../models/AIMD-T001-SM-00031.json"
+    },
+    {
+      "id": "AIMD-T001-SM-00032",
+      "trajectoryId": "Cu-CeO2",
+      "trajectoryFile": "Cu-CeO2.xyz",
+      "material": "Cu-CeO2",
+      "sourceFile": "Cu-CeO2.xyz",
+      "frame": 1271,
+      "sourceIndex": 1271,
+      "time": null,
+      "energy": -633.2224788,
+      "temperatureC": 1,
+      "temperatureSource": "random-assumption-0-400C",
+      "atomCount": 81,
+      "structureHash": "4c0b09ac4a34f2540ada16653c3af0c2254f385f",
+      "triggerRmsdA": 0.647067,
+      "triggerReason": "persistent-pbc-rmsd-reconstruction",
+      "representativeFrameSpan": [
+        1271,
+        9853
+      ],
+      "mergedFrameCount": 32,
+      "coordinatesUrl": "../models/AIMD-T001-SM-00032.json"
+    },
+    {
+      "id": "AIMD-T001-SM-00033",
+      "trajectoryId": "Cu-CeO2",
+      "trajectoryFile": "Cu-CeO2.xyz",
+      "material": "Cu-CeO2",
+      "sourceFile": "Cu-CeO2.xyz",
+      "frame": 1508,
+      "sourceIndex": 1508,
+      "time": null,
+      "energy": -632.17018936,
+      "temperatureC": 366,
+      "temperatureSource": "random-assumption-0-400C",
+      "atomCount": 81,
+      "structureHash": "5b0fea434d58bb264fe49db754954f039cd6d5df",
+      "triggerRmsdA": 0.646215,
+      "triggerReason": "persistent-pbc-rmsd-reconstruction",
+      "representativeFrameSpan": [
+        1508,
+        5890
+      ],
+      "mergedFrameCount": 21,
+      "coordinatesUrl": "../models/AIMD-T001-SM-00033.json"
+    },
+    {
+      "id": "AIMD-T001-SM-00034",
+      "trajectoryId": "Cu-CeO2",
+      "trajectoryFile": "Cu-CeO2.xyz",
+      "material": "Cu-CeO2",
+      "sourceFile": "Cu-CeO2.xyz",
+      "frame": 1525,
+      "sourceIndex": 1525,
+      "time": null,
+      "energy": -632.19662444,
+      "temperatureC": 174,
+      "temperatureSource": "random-assumption-0-400C",
+      "atomCount": 81,
+      "structureHash": "2b3c3549fe1360cd3e5c91eb8a52747f9fba33eb",
+      "triggerRmsdA": 0.649911,
+      "triggerReason": "persistent-pbc-rmsd-reconstruction",
+      "representativeFrameSpan": [
+        1525,
+        5896
+      ],
+      "mergedFrameCount": 11,
+      "coordinatesUrl": "../models/AIMD-T001-SM-00034.json"
+    },
+    {
+      "id": "AIMD-T001-SM-00035",
+      "trajectoryId": "Cu-CeO2",
+      "trajectoryFile": "Cu-CeO2.xyz",
+      "material": "Cu-CeO2",
+      "sourceFile": "Cu-CeO2.xyz",
+      "frame": 1594,
+      "sourceIndex": 1594,
+      "time": null,
+      "energy": -632.3916733,
+      "temperatureC": 371,
+      "temperatureSource": "random-assumption-0-400C",
+      "atomCount": 81,
+      "structureHash": "13e8840d82e924e9108ef6642c45d5a93f75684a",
+      "triggerRmsdA": 0.650737,
+      "triggerReason": "persistent-pbc-rmsd-reconstruction",
+      "representativeFrameSpan": [
+        1594,
+        9305
+      ],
+      "mergedFrameCount": 27,
+      "coordinatesUrl": "../models/AIMD-T001-SM-00035.json"
+    },
+    {
+      "id": "AIMD-T001-SM-00036",
+      "trajectoryId": "Cu-CeO2",
+      "trajectoryFile": "Cu-CeO2.xyz",
+      "material": "Cu-CeO2",
+      "sourceFile": "Cu-CeO2.xyz",
+      "frame": 1615,
+      "sourceIndex": 1615,
+      "time": null,
+      "energy": -632.34751735,
+      "temperatureC": 365,
+      "temperatureSource": "random-assumption-0-400C",
+      "atomCount": 81,
+      "structureHash": "06b71dfd575bd4632e83bed7e5e9a74fd76bb42f",
+      "triggerRmsdA": 0.662288,
+      "triggerReason": "persistent-pbc-rmsd-reconstruction",
+      "representativeFrameSpan": [
+        1615,
+        9299
+      ],
+      "mergedFrameCount": 18,
+      "coordinatesUrl": "../models/AIMD-T001-SM-00036.json"
+    },
+    {
+      "id": "AIMD-T001-SM-00037",
+      "trajectoryId": "Cu-CeO2",
+      "trajectoryFile": "Cu-CeO2.xyz",
+      "material": "Cu-CeO2",
+      "sourceFile": "Cu-CeO2.xyz",
+      "frame": 1653,
+      "sourceIndex": 1653,
+      "time": null,
+      "energy": -632.49986811,
+      "temperatureC": 399,
+      "temperatureSource": "random-assumption-0-400C",
+      "atomCount": 81,
+      "structureHash": "22abf5c4b1b9eefb04a67385891d335f77e8aa77",
+      "triggerRmsdA": 0.727935,
+      "triggerReason": "persistent-pbc-rmsd-reconstruction",
+      "representativeFrameSpan": [
+        1653,
+        1659
+      ],
+      "mergedFrameCount": 7,
+      "coordinatesUrl": "../models/AIMD-T001-SM-00037.json"
+    },
+    {
+      "id": "AIMD-T001-SM-00038",
+      "trajectoryId": "Cu-CeO2",
+      "trajectoryFile": "Cu-CeO2.xyz",
+      "material": "Cu-CeO2",
+      "sourceFile": "Cu-CeO2.xyz",
+      "frame": 1960,
+      "sourceIndex": 1960,
+      "time": null,
+      "energy": -632.82732052,
+      "temperatureC": 256,
+      "temperatureSource": "random-assumption-0-400C",
+      "atomCount": 81,
+      "structureHash": "32259445f86d29726aaac162feff72010d688685",
+      "triggerRmsdA": 0.661391,
+      "triggerReason": "persistent-pbc-rmsd-reconstruction",
+      "representativeFrameSpan": [
+        1960,
+        6781
+      ],
+      "mergedFrameCount": 7,
+      "coordinatesUrl": "../models/AIMD-T001-SM-00038.json"
+    },
+    {
+      "id": "AIMD-T001-SM-00039",
+      "trajectoryId": "Cu-CeO2",
+      "trajectoryFile": "Cu-CeO2.xyz",
+      "material": "Cu-CeO2",
+      "sourceFile": "Cu-CeO2.xyz",
+      "frame": 1965,
+      "sourceIndex": 1965,
+      "time": null,
+      "energy": -633.00218055,
+      "temperatureC": 52,
+      "temperatureSource": "random-assumption-0-400C",
+      "atomCount": 81,
+      "structureHash": "37e3e2620aaea8299d825154c41f9fc46939be8c",
+      "triggerRmsdA": 0.648023,
+      "triggerReason": "persistent-pbc-rmsd-reconstruction",
+      "representativeFrameSpan": [
+        1965,
+        9406
+      ],
+      "mergedFrameCount": 20,
+      "coordinatesUrl": "../models/AIMD-T001-SM-00039.json"
+    },
+    {
+      "id": "AIMD-T001-SM-00040",
+      "trajectoryId": "Cu-CeO2",
+      "trajectoryFile": "Cu-CeO2.xyz",
+      "material": "Cu-CeO2",
+      "sourceFile": "Cu-CeO2.xyz",
+      "frame": 1979,
+      "sourceIndex": 1979,
+      "time": null,
+      "energy": -633.20683631,
+      "temperatureC": 148,
+      "temperatureSource": "random-assumption-0-400C",
+      "atomCount": 81,
+      "structureHash": "9348b0f6979855f9324ea3e8258ae64d40192962",
+      "triggerRmsdA": 0.645489,
+      "triggerReason": "persistent-pbc-rmsd-reconstruction",
+      "representativeFrameSpan": [
+        1979,
+        9411
+      ],
+      "mergedFrameCount": 40,
+      "coordinatesUrl": "../models/AIMD-T001-SM-00040.json"
+    },
+    {
+      "id": "AIMD-T001-SM-00041",
+      "trajectoryId": "Cu-CeO2",
+      "trajectoryFile": "Cu-CeO2.xyz",
+      "material": "Cu-CeO2",
+      "sourceFile": "Cu-CeO2.xyz",
+      "frame": 2007,
+      "sourceIndex": 2007,
+      "time": null,
+      "energy": -632.77947397,
+      "temperatureC": 294,
+      "temperatureSource": "random-assumption-0-400C",
+      "atomCount": 81,
+      "structureHash": "6b09d8dea7e710062dbcec05451b74c5ed21e216",
+      "triggerRmsdA": 0.674801,
+      "triggerReason": "persistent-pbc-rmsd-reconstruction",
+      "representativeFrameSpan": [
+        2007,
+        7168
+      ],
+      "mergedFrameCount": 20,
+      "coordinatesUrl": "../models/AIMD-T001-SM-00041.json"
+    },
+    {
+      "id": "AIMD-T001-SM-00042",
+      "trajectoryId": "Cu-CeO2",
+      "trajectoryFile": "Cu-CeO2.xyz",
+      "material": "Cu-CeO2",
+      "sourceFile": "Cu-CeO2.xyz",
+      "frame": 2063,
+      "sourceIndex": 2063,
+      "time": null,
+      "energy": -632.31223059,
+      "temperatureC": 325,
+      "temperatureSource": "random-assumption-0-400C",
+      "atomCount": 81,
+      "structureHash": "5e8127e3bf337b68229a4e0160db5c0516b272ec",
+      "triggerRmsdA": 0.676605,
+      "triggerReason": "persistent-pbc-rmsd-reconstruction",
+      "representativeFrameSpan": [
+        2063,
+        5563
+      ],
+      "mergedFrameCount": 22,
+      "coordinatesUrl": "../models/AIMD-T001-SM-00042.json"
+    },
+    {
+      "id": "AIMD-T001-SM-00043",
+      "trajectoryId": "Cu-CeO2",
+      "trajectoryFile": "Cu-CeO2.xyz",
+      "material": "Cu-CeO2",
+      "sourceFile": "Cu-CeO2.xyz",
+      "frame": 2075,
+      "sourceIndex": 2075,
+      "time": null,
+      "energy": -632.08735619,
+      "temperatureC": 209,
+      "temperatureSource": "random-assumption-0-400C",
+      "atomCount": 81,
+      "structureHash": "3941a1f0a2bc4864346983aa9454b1f6613393d1",
+      "triggerRmsdA": 0.639815,
+      "triggerReason": "persistent-pbc-rmsd-reconstruction",
+      "representativeFrameSpan": [
+        2075,
+        8480
+      ],
+      "mergedFrameCount": 72,
+      "coordinatesUrl": "../models/AIMD-T001-SM-00043.json"
+    },
+    {
+      "id": "AIMD-T001-SM-00044",
+      "trajectoryId": "Cu-CeO2",
+      "trajectoryFile": "Cu-CeO2.xyz",
+      "material": "Cu-CeO2",
+      "sourceFile": "Cu-CeO2.xyz",
+      "frame": 2123,
+      "sourceIndex": 2123,
+      "time": null,
+      "energy": -632.30313809,
+      "temperatureC": 8,
+      "temperatureSource": "random-assumption-0-400C",
+      "atomCount": 81,
+      "structureHash": "b993399149613b513b293a3c3bd44815651e984e",
+      "triggerRmsdA": 0.754882,
+      "triggerReason": "persistent-pbc-rmsd-reconstruction",
+      "representativeFrameSpan": [
+        2123,
+        9849
+      ],
+      "mergedFrameCount": 21,
+      "coordinatesUrl": "../models/AIMD-T001-SM-00044.json"
+    },
+    {
+      "id": "AIMD-T001-SM-00045",
+      "trajectoryId": "Cu-CeO2",
+      "trajectoryFile": "Cu-CeO2.xyz",
+      "material": "Cu-CeO2",
+      "sourceFile": "Cu-CeO2.xyz",
+      "frame": 2379,
+      "sourceIndex": 2379,
+      "time": null,
+      "energy": -632.77154218,
+      "temperatureC": 352,
+      "temperatureSource": "random-assumption-0-400C",
+      "atomCount": 81,
+      "structureHash": "c3a47197ca6e8a68efde9e7e65e011bb26e88f20",
+      "triggerRmsdA": 0.896148,
+      "triggerReason": "persistent-pbc-rmsd-reconstruction",
+      "representativeFrameSpan": [
+        2379,
+        2380
+      ],
+      "mergedFrameCount": 2,
+      "coordinatesUrl": "../models/AIMD-T001-SM-00045.json"
+    },
+    {
+      "id": "AIMD-T001-SM-00046",
+      "trajectoryId": "Cu-CeO2",
+      "trajectoryFile": "Cu-CeO2.xyz",
+      "material": "Cu-CeO2",
+      "sourceFile": "Cu-CeO2.xyz",
+      "frame": 2787,
+      "sourceIndex": 2787,
+      "time": null,
+      "energy": -631.98779885,
+      "temperatureC": 264,
+      "temperatureSource": "random-assumption-0-400C",
+      "atomCount": 81,
+      "structureHash": "bde32e21c40e8eff3c064812a05982f3b2eb6fcb",
+      "triggerRmsdA": 0.683974,
+      "triggerReason": "persistent-pbc-rmsd-reconstruction",
+      "representativeFrameSpan": [
+        2787,
+        8538
+      ],
+      "mergedFrameCount": 47,
+      "coordinatesUrl": "../models/AIMD-T001-SM-00046.json"
+    },
+    {
+      "id": "AIMD-T001-SM-00047",
+      "trajectoryId": "Cu-CeO2",
+      "trajectoryFile": "Cu-CeO2.xyz",
+      "material": "Cu-CeO2",
+      "sourceFile": "Cu-CeO2.xyz",
+      "frame": 2832,
+      "sourceIndex": 2832,
+      "time": null,
+      "energy": -632.91273957,
+      "temperatureC": 139,
+      "temperatureSource": "random-assumption-0-400C",
+      "atomCount": 81,
+      "structureHash": "436e8600ff9553e8e345f1e1c34b3c65b55a0c63",
+      "triggerRmsdA": 0.674918,
+      "triggerReason": "persistent-pbc-rmsd-reconstruction",
+      "representativeFrameSpan": [
+        2832,
+        8562
+      ],
+      "mergedFrameCount": 25,
+      "coordinatesUrl": "../models/AIMD-T001-SM-00047.json"
+    },
+    {
+      "id": "AIMD-T001-SM-00048",
+      "trajectoryId": "Cu-CeO2",
+      "trajectoryFile": "Cu-CeO2.xyz",
+      "material": "Cu-CeO2",
+      "sourceFile": "Cu-CeO2.xyz",
+      "frame": 2932,
+      "sourceIndex": 2932,
+      "time": null,
+      "energy": -633.24348598,
+      "temperatureC": 303,
+      "temperatureSource": "random-assumption-0-400C",
+      "atomCount": 81,
+      "structureHash": "890e01683d6deaa929be993e7e68573e44cddfd3",
+      "triggerRmsdA": 0.654555,
+      "triggerReason": "persistent-pbc-rmsd-reconstruction",
+      "representativeFrameSpan": [
+        2932,
+        9096
+      ],
+      "mergedFrameCount": 13,
+      "coordinatesUrl": "../models/AIMD-T001-SM-00048.json"
+    },
+    {
+      "id": "AIMD-T001-SM-00049",
+      "trajectoryId": "Cu-CeO2",
+      "trajectoryFile": "Cu-CeO2.xyz",
+      "material": "Cu-CeO2",
+      "sourceFile": "Cu-CeO2.xyz",
+      "frame": 3322,
+      "sourceIndex": 3322,
+      "time": null,
+      "energy": -632.28103659,
+      "temperatureC": 126,
+      "temperatureSource": "random-assumption-0-400C",
+      "atomCount": 81,
+      "structureHash": "46cc57b45279ec78e1a870c0561968097fcbec74",
+      "triggerRmsdA": 0.64518,
+      "triggerReason": "persistent-pbc-rmsd-reconstruction",
+      "representativeFrameSpan": [
+        3322,
+        5391
+      ],
+      "mergedFrameCount": 31,
+      "coordinatesUrl": "../models/AIMD-T001-SM-00049.json"
+    },
+    {
+      "id": "AIMD-T001-SM-00050",
+      "trajectoryId": "Cu-CeO2",
+      "trajectoryFile": "Cu-CeO2.xyz",
+      "material": "Cu-CeO2",
+      "sourceFile": "Cu-CeO2.xyz",
+      "frame": 4188,
+      "sourceIndex": 4188,
+      "time": null,
+      "energy": -632.95787601,
+      "temperatureC": 254,
+      "temperatureSource": "random-assumption-0-400C",
+      "atomCount": 81,
+      "structureHash": "70520f51976f27404796748dac3d3eb6f3f07b92",
+      "triggerRmsdA": 0.645725,
+      "triggerReason": "persistent-pbc-rmsd-reconstruction",
+      "representativeFrameSpan": [
+        4188,
+        6358
+      ],
+      "mergedFrameCount": 4,
+      "coordinatesUrl": "../models/AIMD-T001-SM-00050.json"
+    },
+    {
+      "id": "AIMD-T001-SM-00051",
+      "trajectoryId": "Cu-CeO2",
+      "trajectoryFile": "Cu-CeO2.xyz",
+      "material": "Cu-CeO2",
+      "sourceFile": "Cu-CeO2.xyz",
+      "frame": 5199,
+      "sourceIndex": 5199,
+      "time": null,
+      "energy": -631.68851176,
+      "temperatureC": 278,
+      "temperatureSource": "random-assumption-0-400C",
+      "atomCount": 81,
+      "structureHash": "77d4943b44855316e293e4eec790755ad8ec8530",
+      "triggerRmsdA": 0.646467,
+      "triggerReason": "persistent-pbc-rmsd-reconstruction",
+      "representativeFrameSpan": [
+        5199,
+        7647
+      ],
+      "mergedFrameCount": 10,
+      "coordinatesUrl": "../models/AIMD-T001-SM-00051.json"
+    },
+    {
+      "id": "AIMD-T001-SM-00052",
+      "trajectoryId": "Cu-CeO2",
+      "trajectoryFile": "Cu-CeO2.xyz",
+      "material": "Cu-CeO2",
+      "sourceFile": "Cu-CeO2.xyz",
+      "frame": 5205,
+      "sourceIndex": 5205,
+      "time": null,
+      "energy": -631.63102708,
+      "temperatureC": 16,
+      "temperatureSource": "random-assumption-0-400C",
+      "atomCount": 81,
+      "structureHash": "cd22627ff2b21f2ef2de53c2666066e93534b70b",
+      "triggerRmsdA": 0.639465,
+      "triggerReason": "persistent-pbc-rmsd-reconstruction",
+      "representativeFrameSpan": [
+        5205,
+        8054
+      ],
+      "mergedFrameCount": 18,
+      "coordinatesUrl": "../models/AIMD-T001-SM-00052.json"
+    },
+    {
+      "id": "AIMD-T001-SM-00053",
+      "trajectoryId": "Cu-CeO2",
+      "trajectoryFile": "Cu-CeO2.xyz",
+      "material": "Cu-CeO2",
+      "sourceFile": "Cu-CeO2.xyz",
+      "frame": 5219,
+      "sourceIndex": 5219,
+      "time": null,
+      "energy": -631.9244327,
+      "temperatureC": 100,
+      "temperatureSource": "random-assumption-0-400C",
+      "atomCount": 81,
+      "structureHash": "82efdf4259b449d0e57dbc0b07231429513e0946",
+      "triggerRmsdA": 1.145992,
+      "triggerReason": "persistent-pbc-rmsd-reconstruction",
+      "representativeFrameSpan": [
+        5219,
+        8503
+      ],
+      "mergedFrameCount": 6,
+      "coordinatesUrl": "../models/AIMD-T001-SM-00053.json"
+    },
+    {
+      "id": "AIMD-T001-SM-00054",
+      "trajectoryId": "Cu-CeO2",
+      "trajectoryFile": "Cu-CeO2.xyz",
+      "material": "Cu-CeO2",
+      "sourceFile": "Cu-CeO2.xyz",
+      "frame": 5374,
+      "sourceIndex": 5374,
+      "time": null,
+      "energy": -632.19938977,
+      "temperatureC": 72,
+      "temperatureSource": "random-assumption-0-400C",
+      "atomCount": 81,
+      "structureHash": "f425e6d610f185daad9be6d528ab2a9f269f248f",
+      "triggerRmsdA": 0.661716,
+      "triggerReason": "persistent-pbc-rmsd-reconstruction",
+      "representativeFrameSpan": [
+        5374,
+        5421
+      ],
+      "mergedFrameCount": 5,
+      "coordinatesUrl": "../models/AIMD-T001-SM-00054.json"
+    },
+    {
+      "id": "AIMD-T001-SM-00055",
+      "trajectoryId": "Cu-CeO2",
+      "trajectoryFile": "Cu-CeO2.xyz",
+      "material": "Cu-CeO2",
+      "sourceFile": "Cu-CeO2.xyz",
+      "frame": 5377,
+      "sourceIndex": 5377,
+      "time": null,
+      "energy": -632.11410281,
+      "temperatureC": 151,
+      "temperatureSource": "random-assumption-0-400C",
+      "atomCount": 81,
+      "structureHash": "d4802230d15cc1c779f4b1c7d2e80d1e905ded32",
+      "triggerRmsdA": 0.650798,
+      "triggerReason": "persistent-pbc-rmsd-reconstruction",
+      "representativeFrameSpan": [
+        5377,
+        5389
+      ],
+      "mergedFrameCount": 13,
+      "coordinatesUrl": "../models/AIMD-T001-SM-00055.json"
+    },
+    {
+      "id": "AIMD-T001-SM-00056",
+      "trajectoryId": "Cu-CeO2",
+      "trajectoryFile": "Cu-CeO2.xyz",
+      "material": "Cu-CeO2",
+      "sourceFile": "Cu-CeO2.xyz",
+      "frame": 5412,
+      "sourceIndex": 5412,
+      "time": null,
+      "energy": -632.05375174,
+      "temperatureC": 341,
+      "temperatureSource": "random-assumption-0-400C",
+      "atomCount": 81,
+      "structureHash": "48ff5454edee75bb17a4f4bf3282e3b051ec60e4",
+      "triggerRmsdA": 0.712449,
+      "triggerReason": "persistent-pbc-rmsd-reconstruction",
+      "representativeFrameSpan": [
+        5412,
+        5419
+      ],
+      "mergedFrameCount": 8,
+      "coordinatesUrl": "../models/AIMD-T001-SM-00056.json"
+    },
+    {
+      "id": "AIMD-T001-SM-00057",
+      "trajectoryId": "Cu-CeO2",
+      "trajectoryFile": "Cu-CeO2.xyz",
+      "material": "Cu-CeO2",
+      "sourceFile": "Cu-CeO2.xyz",
+      "frame": 5436,
+      "sourceIndex": 5436,
+      "time": null,
+      "energy": -632.82474293,
+      "temperatureC": 171,
+      "temperatureSource": "random-assumption-0-400C",
+      "atomCount": 81,
+      "structureHash": "000cd405ea002ff15c5e3afe235afa9002c99626",
+      "triggerRmsdA": 0.674557,
+      "triggerReason": "persistent-pbc-rmsd-reconstruction",
+      "representativeFrameSpan": [
+        5436,
+        5445
+      ],
+      "mergedFrameCount": 10,
+      "coordinatesUrl": "../models/AIMD-T001-SM-00057.json"
+    },
+    {
+      "id": "AIMD-T001-SM-00058",
+      "trajectoryId": "Cu-CeO2",
+      "trajectoryFile": "Cu-CeO2.xyz",
+      "material": "Cu-CeO2",
+      "sourceFile": "Cu-CeO2.xyz",
+      "frame": 8032,
+      "sourceIndex": 8032,
+      "time": null,
+      "energy": -633.23090956,
+      "temperatureC": 344,
+      "temperatureSource": "random-assumption-0-400C",
+      "atomCount": 81,
+      "structureHash": "3a316852e7ce70dab74d1693ce3cdc1464bf7266",
+      "triggerRmsdA": 0.648635,
+      "triggerReason": "persistent-pbc-rmsd-reconstruction",
+      "representativeFrameSpan": [
+        8032,
+        8045
+      ],
+      "mergedFrameCount": 14,
+      "coordinatesUrl": "../models/AIMD-T001-SM-00058.json"
+    },
+    {
+      "id": "AIMD-T001-SM-00059",
+      "trajectoryId": "Cu-CeO2",
+      "trajectoryFile": "Cu-CeO2.xyz",
+      "material": "Cu-CeO2",
+      "sourceFile": "Cu-CeO2.xyz",
+      "frame": 8076,
+      "sourceIndex": 8076,
+      "time": null,
+      "energy": -632.61442223,
+      "temperatureC": 212,
+      "temperatureSource": "random-assumption-0-400C",
+      "atomCount": 81,
+      "structureHash": "abe34922b005bde5efe3e068106ad8102022bb5d",
+      "triggerRmsdA": 0.583126,
+      "triggerReason": "persistent-pbc-rmsd-reconstruction",
+      "representativeFrameSpan": [
+        8076,
+        8499
+      ],
+      "mergedFrameCount": 8,
+      "coordinatesUrl": "../models/AIMD-T001-SM-00059.json"
+    },
+    {
+      "id": "AIMD-T001-SM-00060",
+      "trajectoryId": "Cu-CeO2",
+      "trajectoryFile": "Cu-CeO2.xyz",
+      "material": "Cu-CeO2",
+      "sourceFile": "Cu-CeO2.xyz",
+      "frame": 8082,
+      "sourceIndex": 8082,
+      "time": null,
+      "energy": -632.48944864,
+      "temperatureC": 217,
+      "temperatureSource": "random-assumption-0-400C",
+      "atomCount": 81,
+      "structureHash": "7f7182b383aa457118a0aea3f5f71c3afd17d181",
+      "triggerRmsdA": 0.650195,
+      "triggerReason": "persistent-pbc-rmsd-reconstruction",
+      "representativeFrameSpan": [
+        8082,
+        8088
+      ],
+      "mergedFrameCount": 7,
+      "coordinatesUrl": "../models/AIMD-T001-SM-00060.json"
+    },
+    {
+      "id": "AIMD-T001-SM-00061",
+      "trajectoryId": "Cu-CeO2",
+      "trajectoryFile": "Cu-CeO2.xyz",
+      "material": "Cu-CeO2",
+      "sourceFile": "Cu-CeO2.xyz",
+      "frame": 8091,
+      "sourceIndex": 8091,
+      "time": null,
+      "energy": -632.66137858,
+      "temperatureC": 265,
+      "temperatureSource": "random-assumption-0-400C",
+      "atomCount": 81,
+      "structureHash": "ab77d5d8ef1948a3588f34ef8b5914d4b9cb796f",
+      "triggerRmsdA": 0.6447,
+      "triggerReason": "persistent-pbc-rmsd-reconstruction",
+      "representativeFrameSpan": [
+        8091,
+        9790
+      ],
+      "mergedFrameCount": 23,
+      "coordinatesUrl": "../models/AIMD-T001-SM-00061.json"
+    },
+    {
+      "id": "AIMD-T001-SM-00062",
+      "trajectoryId": "Cu-CeO2",
+      "trajectoryFile": "Cu-CeO2.xyz",
+      "material": "Cu-CeO2",
+      "sourceFile": "Cu-CeO2.xyz",
+      "frame": 8988,
+      "sourceIndex": 8988,
+      "time": null,
+      "energy": -631.85845091,
+      "temperatureC": 361,
+      "temperatureSource": "random-assumption-0-400C",
+      "atomCount": 81,
+      "structureHash": "58e184496a546aa9ed3cbfe13ef9352d3a5daf88",
+      "triggerRmsdA": 0.681928,
+      "triggerReason": "persistent-pbc-rmsd-reconstruction",
+      "representativeFrameSpan": [
+        8988,
+        9325
+      ],
+      "mergedFrameCount": 8,
+      "coordinatesUrl": "../models/AIMD-T001-SM-00062.json"
+    }
+  ]
+}

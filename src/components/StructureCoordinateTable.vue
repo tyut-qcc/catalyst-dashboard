@@ -49,7 +49,7 @@
       <el-card shadow="never" class="table-card">
         <template #header>
           <div class="section-header">
-            <span>XYZ 原子坐标</span>
+            <span>模型原子坐标</span>
             <el-tag v-if="selectedPathLabel" type="info" size="small">{{ selectedPathLabel }}</el-tag>
           </div>
         </template>

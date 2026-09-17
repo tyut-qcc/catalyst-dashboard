@@ -1,0 +1,2688 @@
+{
+  "version": 5,
+  "generatedAt": "2026-09-17T10:28:04.572Z",
+  "trajectory": {
+    "index": 2,
+    "id": "Pd-CeO2",
+    "file": "Pd-CeO2.xyz",
+    "key": "T003",
+    "name": "Pd-CeO2"
+  },
+  "assumptions": {
+    "temperatureAssignment": "当前默认不从XYZ推断真实温度；每个有效结构模型按材料ID+代表帧进行可复现随机赋值，范围为0–400 ℃，用于界面统计展示。",
+    "temperatureSeed": "aimd-2026",
+    "pbcDefinition": "根据相邻帧坐标反复出现的大周期跳变自动推断晶胞长度，并在 RMSD 中采用最小镜像约定。",
+    "reconstructionCriterion": "PBC-aware RMSD > 0.5 Å 且持续至少 2 帧，判定发生结构重构；单帧瞬态跳变不计入新结构。",
+    "globalUniquenessCriterion": "仅在当前 AIMD 轨迹内，与此前全部有效结构代表帧逐一进行 PBC-aware RMSD 去重；RMSD ≤ 0.5 Å 视为已出现结构，不新增模型。",
+    "candidateStrideFrames": 1
+  },
+  "counts": {
+    "trajectoryCount": 1,
+    "frameCount": 10000,
+    "candidateFrameCount": 10000,
+    "temperatureCount": 71,
+    "temperatureMinC": 4,
+    "temperatureMaxC": 384,
+    "effectiveStructureCount": 83,
+    "energyFrameCount": 10000,
+    "reconstructionEvents": 595,
+    "recurringStructureMerges": 513,
+    "exactRecurring": 0,
+    "persistentTransitions": 595
+  },
+  "rmsdDiagnostics": {
+    "count": 9999,
+    "min": 0.005488864462443994,
+    "p50": 0.00672219490955236,
+    "p90": 0.1415299466372336,
+    "p95": 0.6451116164584703,
+    "p99": 0.6462058022350926,
+    "max": 0.9351062560685087
+  },
+  "cellInfo": {
+    "cellLengthsA": [
+      11.45,
+      9.95,
+      null
+    ],
+    "periodicAxes": [
+      "x",
+      "y"
+    ]
+  },
+  "temperatureStats": [
+    {
+      "temperatureC": 4,
+      "effectiveStructureCount": 1,
+      "modelIds": [
+        "AIMD-T003-SM-00055"
+      ],
+      "energyAverage": -634.5164209,
+      "energyMin": -634.5164209,
+      "energyMax": -634.5164209
+    },
+    {
+      "temperatureC": 14,
+      "effectiveStructureCount": 1,
+      "modelIds": [
+        "AIMD-T003-SM-00009"
+      ],
+      "energyAverage": -634.29684841,
+      "energyMin": -634.29684841,
+      "energyMax": -634.29684841
+    },
+    {
+      "temperatureC": 25,
+      "effectiveStructureCount": 1,
+      "modelIds": [
+        "AIMD-T003-SM-00081"
+      ],
+      "energyAverage": -633.5511247,
+      "energyMin": -633.5511247,
+      "energyMax": -633.5511247
+    },
+    {
+      "temperatureC": 26,
+      "effectiveStructureCount": 1,
+      "modelIds": [
+        "AIMD-T003-SM-00077"
+      ],
+      "energyAverage": -633.94104403,
+      "energyMin": -633.94104403,
+      "energyMax": -633.94104403
+    },
+    {
+      "temperatureC": 29,
+      "effectiveStructureCount": 1,
+      "modelIds": [
+        "AIMD-T003-SM-00043"
+      ],
+      "energyAverage": -633.66416459,
+      "energyMin": -633.66416459,
+      "energyMax": -633.66416459
+    },
+    {
+      "temperatureC": 32,
+      "effectiveStructureCount": 2,
+      "modelIds": [
+        "AIMD-T003-SM-00031",
+        "AIMD-T003-SM-00068"
+      ],
+      "energyAverage": -633.665644195,
+      "energyMin": -634.04190912,
+      "energyMax": -633.28937927
+    },
+    {
+      "temperatureC": 41,
+      "effectiveStructureCount": 1,
+      "modelIds": [
+        "AIMD-T003-SM-00011"
+      ],
+      "energyAverage": -634.72907921,
+      "energyMin": -634.72907921,
+      "energyMax": -634.72907921
+    },
+    {
+      "temperatureC": 55,
+      "effectiveStructureCount": 1,
+      "modelIds": [
+        "AIMD-T003-SM-00050"
+      ],
+      "energyAverage": -633.67176181,
+      "energyMin": -633.67176181,
+      "energyMax": -633.67176181
+    },
+    {
+      "temperatureC": 57,
+      "effectiveStructureCount": 1,
+      "modelIds": [
+        "AIMD-T003-SM-00074"
+      ],
+      "energyAverage": -634.2374413,
+      "energyMin": -634.2374413,
+      "energyMax": -634.2374413
+    },
+    {
+      "temperatureC": 60,
+      "effectiveStructureCount": 1,
+      "modelIds": [
+        "AIMD-T003-SM-00071"
+      ],
+      "energyAverage": -634.52073619,
+      "energyMin": -634.52073619,
+      "energyMax": -634.52073619
+    },
+    {
+      "temperatureC": 63,
+      "effectiveStructureCount": 1,
+      "modelIds": [
+        "AIMD-T003-SM-00057"
+      ],
+      "energyAverage": -634.47480372,
+      "energyMin": -634.47480372,
+      "energyMax": -634.47480372
+    },
+    {
+      "temperatureC": 72,
+      "effectiveStructureCount": 1,
+      "modelIds": [
+        "AIMD-T003-SM-00062"
+      ],
+      "energyAverage": -633.83401007,
+      "energyMin": -633.83401007,
+      "energyMax": -633.83401007
+    },
+    {
+      "temperatureC": 73,
+      "effectiveStructureCount": 1,
+      "modelIds": [
+        "AIMD-T003-SM-00069"
+      ],
+      "energyAverage": -633.40412902,
+      "energyMin": -633.40412902,
+      "energyMax": -633.40412902
+    },
+    {
+      "temperatureC": 84,
+      "effectiveStructureCount": 1,
+      "modelIds": [
+        "AIMD-T003-SM-00047"
+      ],
+      "energyAverage": -634.7913164,
+      "energyMin": -634.7913164,
+      "energyMax": -634.7913164
+    },
+    {
+      "temperatureC": 89,
+      "effectiveStructureCount": 1,
+      "modelIds": [
+        "AIMD-T003-SM-00058"
+      ],
+      "energyAverage": -633.44100385,
+      "energyMin": -633.44100385,
+      "energyMax": -633.44100385
+    },
+    {
+      "temperatureC": 92,
+      "effectiveStructureCount": 1,
+      "modelIds": [
+        "AIMD-T003-SM-00012"
+      ],
+      "energyAverage": -634.29458687,
+      "energyMin": -634.29458687,
+      "energyMax": -634.29458687
+    },
+    {
+      "temperatureC": 94,
+      "effectiveStructureCount": 1,
+      "modelIds": [
+        "AIMD-T003-SM-00042"
+      ],
+      "energyAverage": -634.29019333,
+      "energyMin": -634.29019333,
+      "energyMax": -634.29019333
+    },
+    {
+      "temperatureC": 100,
+      "effectiveStructureCount": 1,
+      "modelIds": [
+        "AIMD-T003-SM-00033"
+      ],
+      "energyAverage": -634.08161412,
+      "energyMin": -634.08161412,
+      "energyMax": -634.08161412
+    },
+    {
+      "temperatureC": 102,
+      "effectiveStructureCount": 1,
+      "modelIds": [
+        "AIMD-T003-SM-00039"
+      ],
+      "energyAverage": -634.55884365,
+      "energyMin": -634.55884365,
+      "energyMax": -634.55884365
+    },
+    {
+      "temperatureC": 110,
+      "effectiveStructureCount": 2,
+      "modelIds": [
+        "AIMD-T003-SM-00044",
+        "AIMD-T003-SM-00079"
+      ],
+      "energyAverage": -633.682695815,
+      "energyMin": -633.9580273,
+      "energyMax": -633.40736433
+    },
+    {
+      "temperatureC": 113,
+      "effectiveStructureCount": 1,
+      "modelIds": [
+        "AIMD-T003-SM-00006"
+      ],
+      "energyAverage": -633.6442292,
+      "energyMin": -633.6442292,
+      "energyMax": -633.6442292
+    },
+    {
+      "temperatureC": 117,
+      "effectiveStructureCount": 2,
+      "modelIds": [
+        "AIMD-T003-SM-00001",
+        "AIMD-T003-SM-00010"
+      ],
+      "energyAverage": -633.965555985,
+      "energyMin": -634.77550639,
+      "energyMax": -633.15560558
+    },
+    {
+      "temperatureC": 124,
+      "effectiveStructureCount": 1,
+      "modelIds": [
+        "AIMD-T003-SM-00038"
+      ],
+      "energyAverage": -634.9811654,
+      "energyMin": -634.9811654,
+      "energyMax": -634.9811654
+    },
+    {
+      "temperatureC": 125,
+      "effectiveStructureCount": 1,
+      "modelIds": [
+        "AIMD-T003-SM-00054"
+      ],
+      "energyAverage": -633.45341979,
+      "energyMin": -633.45341979,
+      "energyMax": -633.45341979
+    },
+    {
+      "temperatureC": 127,
+      "effectiveStructureCount": 1,
+      "modelIds": [
+        "AIMD-T003-SM-00036"
+      ],
+      "energyAverage": -634.47479109,
+      "energyMin": -634.47479109,
+      "energyMax": -634.47479109
+    },
+    {
+      "temperatureC": 130,
+      "effectiveStructureCount": 1,
+      "modelIds": [
+        "AIMD-T003-SM-00056"
+      ],
+      "energyAverage": -634.65336558,
+      "energyMin": -634.65336558,
+      "energyMax": -634.65336558
+    },
+    {
+      "temperatureC": 133,
+      "effectiveStructureCount": 2,
+      "modelIds": [
+        "AIMD-T003-SM-00076",
+        "AIMD-T003-SM-00082"
+      ],
+      "energyAverage": -633.5882121449999,
+      "energyMin": -633.88856275,
+      "energyMax": -633.28786154
+    },
+    {
+      "temperatureC": 134,
+      "effectiveStructureCount": 1,
+      "modelIds": [
+        "AIMD-T003-SM-00051"
+      ],
+      "energyAverage": -633.26640611,
+      "energyMin": -633.26640611,
+      "energyMax": -633.26640611
+    },
+    {
+      "temperatureC": 137,
+      "effectiveStructureCount": 1,
+      "modelIds": [
+        "AIMD-T003-SM-00005"
+      ],
+      "energyAverage": -633.72826452,
+      "energyMin": -633.72826452,
+      "energyMax": -633.72826452
+    },
+    {
+      "temperatureC": 141,
+      "effectiveStructureCount": 2,
+      "modelIds": [
+        "AIMD-T003-SM-00037",
+        "AIMD-T003-SM-00048"
+      ],
+      "energyAverage": -634.7945810900001,
+      "energyMin": -634.80496138,
+      "energyMax": -634.7842008
+    },
+    {
+      "temperatureC": 144,
+      "effectiveStructureCount": 1,
+      "modelIds": [
+        "AIMD-T003-SM-00002"
+      ],
+      "energyAverage": -633.66229199,
+      "energyMin": -633.66229199,
+      "energyMax": -633.66229199
+    },
+    {
+      "temperatureC": 145,
+      "effectiveStructureCount": 2,
+      "modelIds": [
+        "AIMD-T003-SM-00026",
+        "AIMD-T003-SM-00060"
+      ],
+      "energyAverage": -634.12828859,
+      "energyMin": -634.33301202,
+      "energyMax": -633.92356516
+    },
+    {
+      "temperatureC": 152,
+      "effectiveStructureCount": 1,
+      "modelIds": [
+        "AIMD-T003-SM-00066"
+      ],
+      "energyAverage": -634.29290771,
+      "energyMin": -634.29290771,
+      "energyMax": -634.29290771
+    },
+    {
+      "temperatureC": 162,
+      "effectiveStructureCount": 1,
+      "modelIds": [
+        "AIMD-T003-SM-00025"
+      ],
+      "energyAverage": -634.40797773,
+      "energyMin": -634.40797773,
+      "energyMax": -634.40797773
+    },
+    {
+      "temperatureC": 166,
+      "effectiveStructureCount": 2,
+      "modelIds": [
+        "AIMD-T003-SM-00015",
+        "AIMD-T003-SM-00023"
+      ],
+      "energyAverage": -634.0450096699999,
+      "energyMin": -634.28227205,
+      "energyMax": -633.80774729
+    },
+    {
+      "temperatureC": 167,
+      "effectiveStructureCount": 1,
+      "modelIds": [
+        "AIMD-T003-SM-00027"
+      ],
+      "energyAverage": -633.67776478,
+      "energyMin": -633.67776478,
+      "energyMax": -633.67776478
+    },
+    {
+      "temperatureC": 178,
+      "effectiveStructureCount": 1,
+      "modelIds": [
+        "AIMD-T003-SM-00013"
+      ],
+      "energyAverage": -633.96797057,
+      "energyMin": -633.96797057,
+      "energyMax": -633.96797057
+    },
+    {
+      "temperatureC": 184,
+      "effectiveStructureCount": 1,
+      "modelIds": [
+        "AIMD-T003-SM-00064"
+      ],
+      "energyAverage": -634.30877186,
+      "energyMin": -634.30877186,
+      "energyMax": -634.30877186
+    },
+    {
+      "temperatureC": 190,
+      "effectiveStructureCount": 1,
+      "modelIds": [
+        "AIMD-T003-SM-00030"
+      ],
+      "energyAverage": -634.57021307,
+      "energyMin": -634.57021307,
+      "energyMax": -634.57021307
+    },
+    {
+      "temperatureC": 192,
+      "effectiveStructureCount": 1,
+      "modelIds": [
+        "AIMD-T003-SM-00008"
+      ],
+      "energyAverage": -634.3755343,
+      "energyMin": -634.3755343,
+      "energyMax": -634.3755343
+    },
+    {
+      "temperatureC": 198,
+      "effectiveStructureCount": 1,
+      "modelIds": [
+        "AIMD-T003-SM-00053"
+      ],
+      "energyAverage": -634.66253266,
+      "energyMin": -634.66253266,
+      "energyMax": -634.66253266
+    },
+    {
+      "temperatureC": 200,
+      "effectiveStructureCount": 1,
+      "modelIds": [
+        "AIMD-T003-SM-00073"
+      ],
+      "energyAverage": -634.40233909,
+      "energyMin": -634.40233909,
+      "energyMax": -634.40233909
+    },
+    {
+      "temperatureC": 218,
+      "effectiveStructureCount": 1,
+      "modelIds": [
+        "AIMD-T003-SM-00041"
+      ],
+      "energyAverage": -634.2052931,
+      "energyMin": -634.2052931,
+      "energyMax": -634.2052931
+    },
+    {
+      "temperatureC": 219,
+      "effectiveStructureCount": 1,
+      "modelIds": [
+        "AIMD-T003-SM-00018"
+      ],
+      "energyAverage": -633.30732812,
+      "energyMin": -633.30732812,
+      "energyMax": -633.30732812
+    },
+    {
+      "temperatureC": 222,
+      "effectiveStructureCount": 1,
+      "modelIds": [
+        "AIMD-T003-SM-00070"
+      ],
+      "energyAverage": -634.72200168,
+      "energyMin": -634.72200168,
+      "energyMax": -634.72200168
+    },
+    {
+      "temperatureC": 227,
+      "effectiveStructureCount": 1,
+      "modelIds": [
+        "AIMD-T003-SM-00083"
+      ],
+      "energyAverage": -633.24893854,
+      "energyMin": -633.24893854,
+      "energyMax": -633.24893854
+    },
+    {
+      "temperatureC": 237,
+      "effectiveStructureCount": 1,
+      "modelIds": [
+        "AIMD-T003-SM-00063"
+      ],
+      "energyAverage": -633.94648642,
+      "energyMin": -633.94648642,
+      "energyMax": -633.94648642
+    },
+    {
+      "temperatureC": 240,
+      "effectiveStructureCount": 1,
+      "modelIds": [
+        "AIMD-T003-SM-00029"
+      ],
+      "energyAverage": -634.55259665,
+      "energyMin": -634.55259665,
+      "energyMax": -634.55259665
+    },
+    {
+      "temperatureC": 254,
+      "effectiveStructureCount": 2,
+      "modelIds": [
+        "AIMD-T003-SM-00004",
+        "AIMD-T003-SM-00007"
+      ],
+      "energyAverage": -634.0069503049999,
+      "energyMin": -634.60667598,
+      "energyMax": -633.40722463
+    },
+    {
+      "temperatureC": 255,
+      "effectiveStructureCount": 1,
+      "modelIds": [
+        "AIMD-T003-SM-00034"
+      ],
+      "energyAverage": -633.02138732,
+      "energyMin": -633.02138732,
+      "energyMax": -633.02138732
+    },
+    {
+      "temperatureC": 257,
+      "effectiveStructureCount": 2,
+      "modelIds": [
+        "AIMD-T003-SM-00017",
+        "AIMD-T003-SM-00040"
+      ],
+      "energyAverage": -633.628134525,
+      "energyMin": -634.00741945,
+      "energyMax": -633.2488496
+    },
+    {
+      "temperatureC": 258,
+      "effectiveStructureCount": 1,
+      "modelIds": [
+        "AIMD-T003-SM-00065"
+      ],
+      "energyAverage": -634.29714098,
+      "energyMin": -634.29714098,
+      "energyMax": -634.29714098
+    },
+    {
+      "temperatureC": 267,
+      "effectiveStructureCount": 1,
+      "modelIds": [
+        "AIMD-T003-SM-00059"
+      ],
+      "energyAverage": -634.23969613,
+      "energyMin": -634.23969613,
+      "energyMax": -634.23969613
+    },
+    {
+      "temperatureC": 276,
+      "effectiveStructureCount": 2,
+      "modelIds": [
+        "AIMD-T003-SM-00072",
+        "AIMD-T003-SM-00078"
+      ],
+      "energyAverage": -634.45868382,
+      "energyMin": -634.94987901,
+      "energyMax": -633.96748863
+    },
+    {
+      "temperatureC": 279,
+      "effectiveStructureCount": 1,
+      "modelIds": [
+        "AIMD-T003-SM-00003"
+      ],
+      "energyAverage": -633.47610925,
+      "energyMin": -633.47610925,
+      "energyMax": -633.47610925
+    },
+    {
+      "temperatureC": 291,
+      "effectiveStructureCount": 3,
+      "modelIds": [
+        "AIMD-T003-SM-00014",
+        "AIMD-T003-SM-00016",
+        "AIMD-T003-SM-00028"
+      ],
+      "energyAverage": -633.5719430633334,
+      "energyMin": -634.1408617,
+      "energyMax": -633.11060709
+    },
+    {
+      "temperatureC": 292,
+      "effectiveStructureCount": 1,
+      "modelIds": [
+        "AIMD-T003-SM-00049"
+      ],
+      "energyAverage": -634.77200286,
+      "energyMin": -634.77200286,
+      "energyMax": -634.77200286
+    },
+    {
+      "temperatureC": 303,
+      "effectiveStructureCount": 1,
+      "modelIds": [
+        "AIMD-T003-SM-00067"
+      ],
+      "energyAverage": -634.49155421,
+      "energyMin": -634.49155421,
+      "energyMax": -634.49155421
+    },
+    {
+      "temperatureC": 305,
+      "effectiveStructureCount": 1,
+      "modelIds": [
+        "AIMD-T003-SM-00075"
+      ],
+      "energyAverage": -633.70579578,
+      "energyMin": -633.70579578,
+      "energyMax": -633.70579578
+    },
+    {
+      "temperatureC": 310,
+      "effectiveStructureCount": 1,
+      "modelIds": [
+        "AIMD-T003-SM-00061"
+      ],
+      "energyAverage": -633.88587882,
+      "energyMin": -633.88587882,
+      "energyMax": -633.88587882
+    },
+    {
+      "temperatureC": 323,
+      "effectiveStructureCount": 1,
+      "modelIds": [
+        "AIMD-T003-SM-00032"
+      ],
+      "energyAverage": -634.07041374,
+      "energyMin": -634.07041374,
+      "energyMax": -634.07041374
+    },
+    {
+      "temperatureC": 326,
+      "effectiveStructureCount": 1,
+      "modelIds": [
+        "AIMD-T003-SM-00046"
+      ],
+      "energyAverage": -634.5156312,
+      "energyMin": -634.5156312,
+      "energyMax": -634.5156312
+    },
+    {
+      "temperatureC": 333,
+      "effectiveStructureCount": 1,
+      "modelIds": [
+        "AIMD-T003-SM-00024"
+      ],
+      "energyAverage": -634.00830864,
+      "energyMin": -634.00830864,
+      "energyMax": -634.00830864
+    },
+    {
+      "temperatureC": 336,
+      "effectiveStructureCount": 1,
+      "modelIds": [
+        "AIMD-T003-SM-00052"
+      ],
+      "energyAverage": -633.21297961,
+      "energyMin": -633.21297961,
+      "energyMax": -633.21297961
+    },
+    {
+      "temperatureC": 346,
+      "effectiveStructureCount": 1,
+      "modelIds": [
+        "AIMD-T003-SM-00035"
+      ],
+      "energyAverage": -633.88038287,
+      "energyMin": -633.88038287,
+      "energyMax": -633.88038287
+    },
+    {
+      "temperatureC": 348,
+      "effectiveStructureCount": 1,
+      "modelIds": [
+        "AIMD-T003-SM-00022"
+      ],
+      "energyAverage": -634.55046807,
+      "energyMin": -634.55046807,
+      "energyMax": -634.55046807
+    },
+    {
+      "temperatureC": 353,
+      "effectiveStructureCount": 1,
+      "modelIds": [
+        "AIMD-T003-SM-00045"
+      ],
+      "energyAverage": -634.62573509,
+      "energyMin": -634.62573509,
+      "energyMax": -634.62573509
+    },
+    {
+      "temperatureC": 361,
+      "effectiveStructureCount": 1,
+      "modelIds": [
+        "AIMD-T003-SM-00021"
+      ],
+      "energyAverage": -634.74343841,
+      "energyMin": -634.74343841,
+      "energyMax": -634.74343841
+    },
+    {
+      "temperatureC": 369,
+      "effectiveStructureCount": 1,
+      "modelIds": [
+        "AIMD-T003-SM-00019"
+      ],
+      "energyAverage": -634.77735925,
+      "energyMin": -634.77735925,
+      "energyMax": -634.77735925
+    },
+    {
+      "temperatureC": 382,
+      "effectiveStructureCount": 1,
+      "modelIds": [
+        "AIMD-T003-SM-00080"
+      ],
+      "energyAverage": -633.30566628,
+      "energyMin": -633.30566628,
+      "energyMax": -633.30566628
+    },
+    {
+      "temperatureC": 384,
+      "effectiveStructureCount": 1,
+      "modelIds": [
+        "AIMD-T003-SM-00020"
+      ],
+      "energyAverage": -634.75690173,
+      "energyMin": -634.75690173,
+      "energyMax": -634.75690173
+    }
+  ],
+  "models": [
+    {
+      "id": "AIMD-T003-SM-00001",
+      "trajectoryId": "Pd-CeO2",
+      "trajectoryFile": "Pd-CeO2.xyz",
+      "material": "Pd-CeO2",
+      "sourceFile": "Pd-CeO2.xyz",
+      "frame": 0,
+      "sourceIndex": 0,
+      "time": null,
+      "energy": -633.15560558,
+      "temperatureC": 117,
+      "temperatureSource": "random-assumption-0-400C",
+      "atomCount": 81,
+      "structureHash": "e50f8d5700414e485946740c1ffc9f51b63b525d",
+      "triggerRmsdA": 0,
+      "triggerReason": "initial-structure",
+      "representativeFrameSpan": [
+        0,
+        9742
+      ],
+      "mergedFrameCount": 21,
+      "coordinatesUrl": "../models/AIMD-T003-SM-00001.json"
+    },
+    {
+      "id": "AIMD-T003-SM-00002",
+      "trajectoryId": "Pd-CeO2",
+      "trajectoryFile": "Pd-CeO2.xyz",
+      "material": "Pd-CeO2",
+      "sourceFile": "Pd-CeO2.xyz",
+      "frame": 9,
+      "sourceIndex": 9,
+      "time": null,
+      "energy": -633.66229199,
+      "temperatureC": 144,
+      "temperatureSource": "random-assumption-0-400C",
+      "atomCount": 81,
+      "structureHash": "4cdb928719011f67c9feec823480c94de1524d80",
+      "triggerRmsdA": 0.676882,
+      "triggerReason": "persistent-pbc-rmsd-reconstruction",
+      "representativeFrameSpan": [
+        9,
+        8818
+      ],
+      "mergedFrameCount": 18,
+      "coordinatesUrl": "../models/AIMD-T003-SM-00002.json"
+    },
+    {
+      "id": "AIMD-T003-SM-00003",
+      "trajectoryId": "Pd-CeO2",
+      "trajectoryFile": "Pd-CeO2.xyz",
+      "material": "Pd-CeO2",
+      "sourceFile": "Pd-CeO2.xyz",
+      "frame": 17,
+      "sourceIndex": 17,
+      "time": null,
+      "energy": -633.47610925,
+      "temperatureC": 279,
+      "temperatureSource": "random-assumption-0-400C",
+      "atomCount": 81,
+      "structureHash": "463e549bdec42e42750a6ca026c76acf28a78fa7",
+      "triggerRmsdA": 0.919301,
+      "triggerReason": "persistent-pbc-rmsd-reconstruction",
+      "representativeFrameSpan": [
+        17,
+        6103
+      ],
+      "mergedFrameCount": 14,
+      "coordinatesUrl": "../models/AIMD-T003-SM-00003.json"
+    },
+    {
+      "id": "AIMD-T003-SM-00004",
+      "trajectoryId": "Pd-CeO2",
+      "trajectoryFile": "Pd-CeO2.xyz",
+      "material": "Pd-CeO2",
+      "sourceFile": "Pd-CeO2.xyz",
+      "frame": 19,
+      "sourceIndex": 19,
+      "time": null,
+      "energy": -633.40722463,
+      "temperatureC": 254,
+      "temperatureSource": "random-assumption-0-400C",
+      "atomCount": 81,
+      "structureHash": "5498cef2f433b841a29704cf83809d4ef6d8d510",
+      "triggerRmsdA": 0.645126,
+      "triggerReason": "persistent-pbc-rmsd-reconstruction",
+      "representativeFrameSpan": [
+        19,
+        8766
+      ],
+      "mergedFrameCount": 43,
+      "coordinatesUrl": "../models/AIMD-T003-SM-00004.json"
+    },
+    {
+      "id": "AIMD-T003-SM-00005",
+      "trajectoryId": "Pd-CeO2",
+      "trajectoryFile": "Pd-CeO2.xyz",
+      "material": "Pd-CeO2",
+      "sourceFile": "Pd-CeO2.xyz",
+      "frame": 40,
+      "sourceIndex": 40,
+      "time": null,
+      "energy": -633.72826452,
+      "temperatureC": 137,
+      "temperatureSource": "random-assumption-0-400C",
+      "atomCount": 81,
+      "structureHash": "64a415b5a14fd06da6f2b923ae99d34aaadcba8b",
+      "triggerRmsdA": 0.643726,
+      "triggerReason": "persistent-pbc-rmsd-reconstruction",
+      "representativeFrameSpan": [
+        40,
+        8916
+      ],
+      "mergedFrameCount": 29,
+      "coordinatesUrl": "../models/AIMD-T003-SM-00005.json"
+    },
+    {
+      "id": "AIMD-T003-SM-00006",
+      "trajectoryId": "Pd-CeO2",
+      "trajectoryFile": "Pd-CeO2.xyz",
+      "material": "Pd-CeO2",
+      "sourceFile": "Pd-CeO2.xyz",
+      "frame": 47,
+      "sourceIndex": 47,
+      "time": null,
+      "energy": -633.6442292,
+      "temperatureC": 113,
+      "temperatureSource": "random-assumption-0-400C",
+      "atomCount": 81,
+      "structureHash": "c3e216716647dfae502bd52db25aa1fd549a69d0",
+      "triggerRmsdA": 0.645546,
+      "triggerReason": "persistent-pbc-rmsd-reconstruction",
+      "representativeFrameSpan": [
+        47,
+        9942
+      ],
+      "mergedFrameCount": 48,
+      "coordinatesUrl": "../models/AIMD-T003-SM-00006.json"
+    },
+    {
+      "id": "AIMD-T003-SM-00007",
+      "trajectoryId": "Pd-CeO2",
+      "trajectoryFile": "Pd-CeO2.xyz",
+      "material": "Pd-CeO2",
+      "sourceFile": "Pd-CeO2.xyz",
+      "frame": 71,
+      "sourceIndex": 71,
+      "time": null,
+      "energy": -634.60667598,
+      "temperatureC": 254,
+      "temperatureSource": "random-assumption-0-400C",
+      "atomCount": 81,
+      "structureHash": "7604dee49962b404a7d14a444df55f990befb4d1",
+      "triggerRmsdA": 0.657231,
+      "triggerReason": "persistent-pbc-rmsd-reconstruction",
+      "representativeFrameSpan": [
+        71,
+        9774
+      ],
+      "mergedFrameCount": 21,
+      "coordinatesUrl": "../models/AIMD-T003-SM-00007.json"
+    },
+    {
+      "id": "AIMD-T003-SM-00008",
+      "trajectoryId": "Pd-CeO2",
+      "trajectoryFile": "Pd-CeO2.xyz",
+      "material": "Pd-CeO2",
+      "sourceFile": "Pd-CeO2.xyz",
+      "frame": 80,
+      "sourceIndex": 80,
+      "time": null,
+      "energy": -634.3755343,
+      "temperatureC": 192,
+      "temperatureSource": "random-assumption-0-400C",
+      "atomCount": 81,
+      "structureHash": "54b22a5c2e4854cf89eba947855ffe433b801623",
+      "triggerRmsdA": 0.638859,
+      "triggerReason": "persistent-pbc-rmsd-reconstruction",
+      "representativeFrameSpan": [
+        80,
+        7594
+      ],
+      "mergedFrameCount": 9,
+      "coordinatesUrl": "../models/AIMD-T003-SM-00008.json"
+    },
+    {
+      "id": "AIMD-T003-SM-00009",
+      "trajectoryId": "Pd-CeO2",
+      "trajectoryFile": "Pd-CeO2.xyz",
+      "material": "Pd-CeO2",
+      "sourceFile": "Pd-CeO2.xyz",
+      "frame": 83,
+      "sourceIndex": 83,
+      "time": null,
+      "energy": -634.29684841,
+      "temperatureC": 14,
+      "temperatureSource": "random-assumption-0-400C",
+      "atomCount": 81,
+      "structureHash": "5695097812b3d1681dedd9af619524cd741fda5c",
+      "triggerRmsdA": 0.6425,
+      "triggerReason": "persistent-pbc-rmsd-reconstruction",
+      "representativeFrameSpan": [
+        83,
+        9964
+      ],
+      "mergedFrameCount": 36,
+      "coordinatesUrl": "../models/AIMD-T003-SM-00009.json"
+    },
+    {
+      "id": "AIMD-T003-SM-00010",
+      "trajectoryId": "Pd-CeO2",
+      "trajectoryFile": "Pd-CeO2.xyz",
+      "material": "Pd-CeO2",
+      "sourceFile": "Pd-CeO2.xyz",
+      "frame": 106,
+      "sourceIndex": 106,
+      "time": null,
+      "energy": -634.77550639,
+      "temperatureC": 117,
+      "temperatureSource": "random-assumption-0-400C",
+      "atomCount": 81,
+      "structureHash": "3ec39deaa79492baf16a9a378efb9c8375e9da40",
+      "triggerRmsdA": 0.645409,
+      "triggerReason": "persistent-pbc-rmsd-reconstruction",
+      "representativeFrameSpan": [
+        106,
+        9612
+      ],
+      "mergedFrameCount": 34,
+      "coordinatesUrl": "../models/AIMD-T003-SM-00010.json"
+    },
+    {
+      "id": "AIMD-T003-SM-00011",
+      "trajectoryId": "Pd-CeO2",
+      "trajectoryFile": "Pd-CeO2.xyz",
+      "material": "Pd-CeO2",
+      "sourceFile": "Pd-CeO2.xyz",
+      "frame": 114,
+      "sourceIndex": 114,
+      "time": null,
+      "energy": -634.72907921,
+      "temperatureC": 41,
+      "temperatureSource": "random-assumption-0-400C",
+      "atomCount": 81,
+      "structureHash": "5cbab06b6bb23870cb122f804f84a639fdbc0586",
+      "triggerRmsdA": 0.646501,
+      "triggerReason": "persistent-pbc-rmsd-reconstruction",
+      "representativeFrameSpan": [
+        114,
+        9617
+      ],
+      "mergedFrameCount": 37,
+      "coordinatesUrl": "../models/AIMD-T003-SM-00011.json"
+    },
+    {
+      "id": "AIMD-T003-SM-00012",
+      "trajectoryId": "Pd-CeO2",
+      "trajectoryFile": "Pd-CeO2.xyz",
+      "material": "Pd-CeO2",
+      "sourceFile": "Pd-CeO2.xyz",
+      "frame": 134,
+      "sourceIndex": 134,
+      "time": null,
+      "energy": -634.29458687,
+      "temperatureC": 92,
+      "temperatureSource": "random-assumption-0-400C",
+      "atomCount": 81,
+      "structureHash": "d09d28d6563e7dbe9d0e63cbc204786f19b35c0b",
+      "triggerRmsdA": 0.66558,
+      "triggerReason": "persistent-pbc-rmsd-reconstruction",
+      "representativeFrameSpan": [
+        134,
+        8749
+      ],
+      "mergedFrameCount": 43,
+      "coordinatesUrl": "../models/AIMD-T003-SM-00012.json"
+    },
+    {
+      "id": "AIMD-T003-SM-00013",
+      "trajectoryId": "Pd-CeO2",
+      "trajectoryFile": "Pd-CeO2.xyz",
+      "material": "Pd-CeO2",
+      "sourceFile": "Pd-CeO2.xyz",
+      "frame": 169,
+      "sourceIndex": 169,
+      "time": null,
+      "energy": -633.96797057,
+      "temperatureC": 178,
+      "temperatureSource": "random-assumption-0-400C",
+      "atomCount": 81,
+      "structureHash": "671c0a4001b109edf3238569d22f1390254d93be",
+      "triggerRmsdA": 0.648186,
+      "triggerReason": "persistent-pbc-rmsd-reconstruction",
+      "representativeFrameSpan": [
+        169,
+        8712
+      ],
+      "mergedFrameCount": 35,
+      "coordinatesUrl": "../models/AIMD-T003-SM-00013.json"
+    },
+    {
+      "id": "AIMD-T003-SM-00014",
+      "trajectoryId": "Pd-CeO2",
+      "trajectoryFile": "Pd-CeO2.xyz",
+      "material": "Pd-CeO2",
+      "sourceFile": "Pd-CeO2.xyz",
+      "frame": 180,
+      "sourceIndex": 180,
+      "time": null,
+      "energy": -634.1408617,
+      "temperatureC": 291,
+      "temperatureSource": "random-assumption-0-400C",
+      "atomCount": 81,
+      "structureHash": "3814fd29127a914ca0ed5fb6628da6f38eee098f",
+      "triggerRmsdA": 0.652781,
+      "triggerReason": "persistent-pbc-rmsd-reconstruction",
+      "representativeFrameSpan": [
+        180,
+        7924
+      ],
+      "mergedFrameCount": 30,
+      "coordinatesUrl": "../models/AIMD-T003-SM-00014.json"
+    },
+    {
+      "id": "AIMD-T003-SM-00015",
+      "trajectoryId": "Pd-CeO2",
+      "trajectoryFile": "Pd-CeO2.xyz",
+      "material": "Pd-CeO2",
+      "sourceFile": "Pd-CeO2.xyz",
+      "frame": 184,
+      "sourceIndex": 184,
+      "time": null,
+      "energy": -633.80774729,
+      "temperatureC": 166,
+      "temperatureSource": "random-assumption-0-400C",
+      "atomCount": 81,
+      "structureHash": "465dc8d6da0dce29c8410e167dc3d655e7679a5d",
+      "triggerRmsdA": 0.649448,
+      "triggerReason": "persistent-pbc-rmsd-reconstruction",
+      "representativeFrameSpan": [
+        184,
+        8845
+      ],
+      "mergedFrameCount": 29,
+      "coordinatesUrl": "../models/AIMD-T003-SM-00015.json"
+    },
+    {
+      "id": "AIMD-T003-SM-00016",
+      "trajectoryId": "Pd-CeO2",
+      "trajectoryFile": "Pd-CeO2.xyz",
+      "material": "Pd-CeO2",
+      "sourceFile": "Pd-CeO2.xyz",
+      "frame": 187,
+      "sourceIndex": 187,
+      "time": null,
+      "energy": -633.4643604,
+      "temperatureC": 291,
+      "temperatureSource": "random-assumption-0-400C",
+      "atomCount": 81,
+      "structureHash": "be97a2f23c76bc3417687cc0477dba0146d6def7",
+      "triggerRmsdA": 0.645982,
+      "triggerReason": "persistent-pbc-rmsd-reconstruction",
+      "representativeFrameSpan": [
+        187,
+        8879
+      ],
+      "mergedFrameCount": 22,
+      "coordinatesUrl": "../models/AIMD-T003-SM-00016.json"
+    },
+    {
+      "id": "AIMD-T003-SM-00017",
+      "trajectoryId": "Pd-CeO2",
+      "trajectoryFile": "Pd-CeO2.xyz",
+      "material": "Pd-CeO2",
+      "sourceFile": "Pd-CeO2.xyz",
+      "frame": 189,
+      "sourceIndex": 189,
+      "time": null,
+      "energy": -633.2488496,
+      "temperatureC": 257,
+      "temperatureSource": "random-assumption-0-400C",
+      "atomCount": 81,
+      "structureHash": "4fb5781d068532c1e556c41a19342959e227fac7",
+      "triggerRmsdA": 0.645817,
+      "triggerReason": "persistent-pbc-rmsd-reconstruction",
+      "representativeFrameSpan": [
+        189,
+        9592
+      ],
+      "mergedFrameCount": 38,
+      "coordinatesUrl": "../models/AIMD-T003-SM-00017.json"
+    },
+    {
+      "id": "AIMD-T003-SM-00018",
+      "trajectoryId": "Pd-CeO2",
+      "trajectoryFile": "Pd-CeO2.xyz",
+      "material": "Pd-CeO2",
+      "sourceFile": "Pd-CeO2.xyz",
+      "frame": 219,
+      "sourceIndex": 219,
+      "time": null,
+      "energy": -633.30732812,
+      "temperatureC": 219,
+      "temperatureSource": "random-assumption-0-400C",
+      "atomCount": 81,
+      "structureHash": "839058d76802a3ed7bd4e8c37a46599c68aecc12",
+      "triggerRmsdA": 0.65955,
+      "triggerReason": "persistent-pbc-rmsd-reconstruction",
+      "representativeFrameSpan": [
+        219,
+        9515
+      ],
+      "mergedFrameCount": 59,
+      "coordinatesUrl": "../models/AIMD-T003-SM-00018.json"
+    },
+    {
+      "id": "AIMD-T003-SM-00019",
+      "trajectoryId": "Pd-CeO2",
+      "trajectoryFile": "Pd-CeO2.xyz",
+      "material": "Pd-CeO2",
+      "sourceFile": "Pd-CeO2.xyz",
+      "frame": 252,
+      "sourceIndex": 252,
+      "time": null,
+      "energy": -634.77735925,
+      "temperatureC": 369,
+      "temperatureSource": "random-assumption-0-400C",
+      "atomCount": 81,
+      "structureHash": "047ea50b275fb07d89ad6a17735b74eda4d1c69d",
+      "triggerRmsdA": 0.708041,
+      "triggerReason": "persistent-pbc-rmsd-reconstruction",
+      "representativeFrameSpan": [
+        252,
+        6792
+      ],
+      "mergedFrameCount": 14,
+      "coordinatesUrl": "../models/AIMD-T003-SM-00019.json"
+    },
+    {
+      "id": "AIMD-T003-SM-00020",
+      "trajectoryId": "Pd-CeO2",
+      "trajectoryFile": "Pd-CeO2.xyz",
+      "material": "Pd-CeO2",
+      "sourceFile": "Pd-CeO2.xyz",
+      "frame": 258,
+      "sourceIndex": 258,
+      "time": null,
+      "energy": -634.75690173,
+      "temperatureC": 384,
+      "temperatureSource": "random-assumption-0-400C",
+      "atomCount": 81,
+      "structureHash": "29811b1d952e3345e87d67fa0711262f385e7e8c",
+      "triggerRmsdA": 0.648332,
+      "triggerReason": "persistent-pbc-rmsd-reconstruction",
+      "representativeFrameSpan": [
+        258,
+        9770
+      ],
+      "mergedFrameCount": 9,
+      "coordinatesUrl": "../models/AIMD-T003-SM-00020.json"
+    },
+    {
+      "id": "AIMD-T003-SM-00021",
+      "trajectoryId": "Pd-CeO2",
+      "trajectoryFile": "Pd-CeO2.xyz",
+      "material": "Pd-CeO2",
+      "sourceFile": "Pd-CeO2.xyz",
+      "frame": 263,
+      "sourceIndex": 263,
+      "time": null,
+      "energy": -634.74343841,
+      "temperatureC": 361,
+      "temperatureSource": "random-assumption-0-400C",
+      "atomCount": 81,
+      "structureHash": "1648568bfe24b5d8ebd2c29d12f66b7f3c7efb30",
+      "triggerRmsdA": 0.647351,
+      "triggerReason": "persistent-pbc-rmsd-reconstruction",
+      "representativeFrameSpan": [
+        263,
+        7971
+      ],
+      "mergedFrameCount": 14,
+      "coordinatesUrl": "../models/AIMD-T003-SM-00021.json"
+    },
+    {
+      "id": "AIMD-T003-SM-00022",
+      "trajectoryId": "Pd-CeO2",
+      "trajectoryFile": "Pd-CeO2.xyz",
+      "material": "Pd-CeO2",
+      "sourceFile": "Pd-CeO2.xyz",
+      "frame": 269,
+      "sourceIndex": 269,
+      "time": null,
+      "energy": -634.55046807,
+      "temperatureC": 348,
+      "temperatureSource": "random-assumption-0-400C",
+      "atomCount": 81,
+      "structureHash": "650ca8e487cfd113604d11318475d727545ace9e",
+      "triggerRmsdA": 0.640934,
+      "triggerReason": "persistent-pbc-rmsd-reconstruction",
+      "representativeFrameSpan": [
+        269,
+        8366
+      ],
+      "mergedFrameCount": 27,
+      "coordinatesUrl": "../models/AIMD-T003-SM-00022.json"
+    },
+    {
+      "id": "AIMD-T003-SM-00023",
+      "trajectoryId": "Pd-CeO2",
+      "trajectoryFile": "Pd-CeO2.xyz",
+      "material": "Pd-CeO2",
+      "sourceFile": "Pd-CeO2.xyz",
+      "frame": 274,
+      "sourceIndex": 274,
+      "time": null,
+      "energy": -634.28227205,
+      "temperatureC": 166,
+      "temperatureSource": "random-assumption-0-400C",
+      "atomCount": 81,
+      "structureHash": "a20d0e86e1419c8a08e412e9377ad7ab6b0dcfad",
+      "triggerRmsdA": 0.642663,
+      "triggerReason": "persistent-pbc-rmsd-reconstruction",
+      "representativeFrameSpan": [
+        274,
+        9844
+      ],
+      "mergedFrameCount": 48,
+      "coordinatesUrl": "../models/AIMD-T003-SM-00023.json"
+    },
+    {
+      "id": "AIMD-T003-SM-00024",
+      "trajectoryId": "Pd-CeO2",
+      "trajectoryFile": "Pd-CeO2.xyz",
+      "material": "Pd-CeO2",
+      "sourceFile": "Pd-CeO2.xyz",
+      "frame": 282,
+      "sourceIndex": 282,
+      "time": null,
+      "energy": -634.00830864,
+      "temperatureC": 333,
+      "temperatureSource": "random-assumption-0-400C",
+      "atomCount": 81,
+      "structureHash": "6fb170550f40bb2f092e6f5dfc5131311a7d2983",
+      "triggerRmsdA": 0.661547,
+      "triggerReason": "persistent-pbc-rmsd-reconstruction",
+      "representativeFrameSpan": [
+        282,
+        9905
+      ],
+      "mergedFrameCount": 131,
+      "coordinatesUrl": "../models/AIMD-T003-SM-00024.json"
+    },
+    {
+      "id": "AIMD-T003-SM-00025",
+      "trajectoryId": "Pd-CeO2",
+      "trajectoryFile": "Pd-CeO2.xyz",
+      "material": "Pd-CeO2",
+      "sourceFile": "Pd-CeO2.xyz",
+      "frame": 313,
+      "sourceIndex": 313,
+      "time": null,
+      "energy": -634.40797773,
+      "temperatureC": 162,
+      "temperatureSource": "random-assumption-0-400C",
+      "atomCount": 81,
+      "structureHash": "deaf6d3a3be26d2681e114337846aa762da72ffd",
+      "triggerRmsdA": 0.673598,
+      "triggerReason": "persistent-pbc-rmsd-reconstruction",
+      "representativeFrameSpan": [
+        313,
+        9913
+      ],
+      "mergedFrameCount": 107,
+      "coordinatesUrl": "../models/AIMD-T003-SM-00025.json"
+    },
+    {
+      "id": "AIMD-T003-SM-00026",
+      "trajectoryId": "Pd-CeO2",
+      "trajectoryFile": "Pd-CeO2.xyz",
+      "material": "Pd-CeO2",
+      "sourceFile": "Pd-CeO2.xyz",
+      "frame": 408,
+      "sourceIndex": 408,
+      "time": null,
+      "energy": -633.92356516,
+      "temperatureC": 145,
+      "temperatureSource": "random-assumption-0-400C",
+      "atomCount": 81,
+      "structureHash": "436d68c1357e51bdde94bb730f24a06b55f658f4",
+      "triggerRmsdA": 0.674548,
+      "triggerReason": "persistent-pbc-rmsd-reconstruction",
+      "representativeFrameSpan": [
+        408,
+        9989
+      ],
+      "mergedFrameCount": 71,
+      "coordinatesUrl": "../models/AIMD-T003-SM-00026.json"
+    },
+    {
+      "id": "AIMD-T003-SM-00027",
+      "trajectoryId": "Pd-CeO2",
+      "trajectoryFile": "Pd-CeO2.xyz",
+      "material": "Pd-CeO2",
+      "sourceFile": "Pd-CeO2.xyz",
+      "frame": 539,
+      "sourceIndex": 539,
+      "time": null,
+      "energy": -633.67776478,
+      "temperatureC": 167,
+      "temperatureSource": "random-assumption-0-400C",
+      "atomCount": 81,
+      "structureHash": "25b711a530d9d373ab2e7120f3866270c8b528ed",
+      "triggerRmsdA": 0.671697,
+      "triggerReason": "persistent-pbc-rmsd-reconstruction",
+      "representativeFrameSpan": [
+        539,
+        9849
+      ],
+      "mergedFrameCount": 49,
+      "coordinatesUrl": "../models/AIMD-T003-SM-00027.json"
+    },
+    {
+      "id": "AIMD-T003-SM-00028",
+      "trajectoryId": "Pd-CeO2",
+      "trajectoryFile": "Pd-CeO2.xyz",
+      "material": "Pd-CeO2",
+      "sourceFile": "Pd-CeO2.xyz",
+      "frame": 562,
+      "sourceIndex": 562,
+      "time": null,
+      "energy": -633.11060709,
+      "temperatureC": 291,
+      "temperatureSource": "random-assumption-0-400C",
+      "atomCount": 81,
+      "structureHash": "f985c02096b253829c01bf1c51a7a0d164974c3e",
+      "triggerRmsdA": 0.643242,
+      "triggerReason": "persistent-pbc-rmsd-reconstruction",
+      "representativeFrameSpan": [
+        562,
+        9161
+      ],
+      "mergedFrameCount": 42,
+      "coordinatesUrl": "../models/AIMD-T003-SM-00028.json"
+    },
+    {
+      "id": "AIMD-T003-SM-00029",
+      "trajectoryId": "Pd-CeO2",
+      "trajectoryFile": "Pd-CeO2.xyz",
+      "material": "Pd-CeO2",
+      "sourceFile": "Pd-CeO2.xyz",
+      "frame": 634,
+      "sourceIndex": 634,
+      "time": null,
+      "energy": -634.55259665,
+      "temperatureC": 240,
+      "temperatureSource": "random-assumption-0-400C",
+      "atomCount": 81,
+      "structureHash": "8e39cc60bbedcac324512d12b9da9d0d8cb8db6e",
+      "triggerRmsdA": 0.799434,
+      "triggerReason": "persistent-pbc-rmsd-reconstruction",
+      "representativeFrameSpan": [
+        634,
+        5499
+      ],
+      "mergedFrameCount": 10,
+      "coordinatesUrl": "../models/AIMD-T003-SM-00029.json"
+    },
+    {
+      "id": "AIMD-T003-SM-00030",
+      "trajectoryId": "Pd-CeO2",
+      "trajectoryFile": "Pd-CeO2.xyz",
+      "material": "Pd-CeO2",
+      "sourceFile": "Pd-CeO2.xyz",
+      "frame": 636,
+      "sourceIndex": 636,
+      "time": null,
+      "energy": -634.57021307,
+      "temperatureC": 190,
+      "temperatureSource": "random-assumption-0-400C",
+      "atomCount": 81,
+      "structureHash": "ad862a8cef3140740d832d585ca5ca43c1322e23",
+      "triggerRmsdA": 0.644668,
+      "triggerReason": "persistent-pbc-rmsd-reconstruction",
+      "representativeFrameSpan": [
+        636,
+        9233
+      ],
+      "mergedFrameCount": 35,
+      "coordinatesUrl": "../models/AIMD-T003-SM-00030.json"
+    },
+    {
+      "id": "AIMD-T003-SM-00031",
+      "trajectoryId": "Pd-CeO2",
+      "trajectoryFile": "Pd-CeO2.xyz",
+      "material": "Pd-CeO2",
+      "sourceFile": "Pd-CeO2.xyz",
+      "frame": 713,
+      "sourceIndex": 713,
+      "time": null,
+      "energy": -634.04190912,
+      "temperatureC": 32,
+      "temperatureSource": "random-assumption-0-400C",
+      "atomCount": 81,
+      "structureHash": "14c8bb30e02390632491a2300536f9d31a58b1bb",
+      "triggerRmsdA": 0.649734,
+      "triggerReason": "persistent-pbc-rmsd-reconstruction",
+      "representativeFrameSpan": [
+        713,
+        9575
+      ],
+      "mergedFrameCount": 40,
+      "coordinatesUrl": "../models/AIMD-T003-SM-00031.json"
+    },
+    {
+      "id": "AIMD-T003-SM-00032",
+      "trajectoryId": "Pd-CeO2",
+      "trajectoryFile": "Pd-CeO2.xyz",
+      "material": "Pd-CeO2",
+      "sourceFile": "Pd-CeO2.xyz",
+      "frame": 741,
+      "sourceIndex": 741,
+      "time": null,
+      "energy": -634.07041374,
+      "temperatureC": 323,
+      "temperatureSource": "random-assumption-0-400C",
+      "atomCount": 81,
+      "structureHash": "439ef11d2b7a2b40fa5f8c99508b7fecdce894bd",
+      "triggerRmsdA": 0.731395,
+      "triggerReason": "persistent-pbc-rmsd-reconstruction",
+      "representativeFrameSpan": [
+        741,
+        9573
+      ],
+      "mergedFrameCount": 17,
+      "coordinatesUrl": "../models/AIMD-T003-SM-00032.json"
+    },
+    {
+      "id": "AIMD-T003-SM-00033",
+      "trajectoryId": "Pd-CeO2",
+      "trajectoryFile": "Pd-CeO2.xyz",
+      "material": "Pd-CeO2",
+      "sourceFile": "Pd-CeO2.xyz",
+      "frame": 748,
+      "sourceIndex": 748,
+      "time": null,
+      "energy": -634.08161412,
+      "temperatureC": 100,
+      "temperatureSource": "random-assumption-0-400C",
+      "atomCount": 81,
+      "structureHash": "c1643c55f663b33bf0155dcbd27fa6467716b8e1",
+      "triggerRmsdA": 0.642283,
+      "triggerReason": "persistent-pbc-rmsd-reconstruction",
+      "representativeFrameSpan": [
+        748,
+        9554
+      ],
+      "mergedFrameCount": 51,
+      "coordinatesUrl": "../models/AIMD-T003-SM-00033.json"
+    },
+    {
+      "id": "AIMD-T003-SM-00034",
+      "trajectoryId": "Pd-CeO2",
+      "trajectoryFile": "Pd-CeO2.xyz",
+      "material": "Pd-CeO2",
+      "sourceFile": "Pd-CeO2.xyz",
+      "frame": 785,
+      "sourceIndex": 785,
+      "time": null,
+      "energy": -633.02138732,
+      "temperatureC": 255,
+      "temperatureSource": "random-assumption-0-400C",
+      "atomCount": 81,
+      "structureHash": "b6d98b19f98859934132cb1e41257d63c704390a",
+      "triggerRmsdA": 0.67894,
+      "triggerReason": "persistent-pbc-rmsd-reconstruction",
+      "representativeFrameSpan": [
+        785,
+        6342
+      ],
+      "mergedFrameCount": 25,
+      "coordinatesUrl": "../models/AIMD-T003-SM-00034.json"
+    },
+    {
+      "id": "AIMD-T003-SM-00035",
+      "trajectoryId": "Pd-CeO2",
+      "trajectoryFile": "Pd-CeO2.xyz",
+      "material": "Pd-CeO2",
+      "sourceFile": "Pd-CeO2.xyz",
+      "frame": 800,
+      "sourceIndex": 800,
+      "time": null,
+      "energy": -633.88038287,
+      "temperatureC": 346,
+      "temperatureSource": "random-assumption-0-400C",
+      "atomCount": 81,
+      "structureHash": "f7e4ee94a06f0a3a42c712cb3e224cb1412abb63",
+      "triggerRmsdA": 0.656197,
+      "triggerReason": "persistent-pbc-rmsd-reconstruction",
+      "representativeFrameSpan": [
+        800,
+        9127
+      ],
+      "mergedFrameCount": 32,
+      "coordinatesUrl": "../models/AIMD-T003-SM-00035.json"
+    },
+    {
+      "id": "AIMD-T003-SM-00036",
+      "trajectoryId": "Pd-CeO2",
+      "trajectoryFile": "Pd-CeO2.xyz",
+      "material": "Pd-CeO2",
+      "sourceFile": "Pd-CeO2.xyz",
+      "frame": 812,
+      "sourceIndex": 812,
+      "time": null,
+      "energy": -634.47479109,
+      "temperatureC": 127,
+      "temperatureSource": "random-assumption-0-400C",
+      "atomCount": 81,
+      "structureHash": "93188ffbc4eb6a0936bb98fd0d0f20eef6818d75",
+      "triggerRmsdA": 0.65065,
+      "triggerReason": "persistent-pbc-rmsd-reconstruction",
+      "representativeFrameSpan": [
+        812,
+        8772
+      ],
+      "mergedFrameCount": 24,
+      "coordinatesUrl": "../models/AIMD-T003-SM-00036.json"
+    },
+    {
+      "id": "AIMD-T003-SM-00037",
+      "trajectoryId": "Pd-CeO2",
+      "trajectoryFile": "Pd-CeO2.xyz",
+      "material": "Pd-CeO2",
+      "sourceFile": "Pd-CeO2.xyz",
+      "frame": 818,
+      "sourceIndex": 818,
+      "time": null,
+      "energy": -634.80496138,
+      "temperatureC": 141,
+      "temperatureSource": "random-assumption-0-400C",
+      "atomCount": 81,
+      "structureHash": "3d35a3e5c9e5924e85945aa353a2495f181eab3e",
+      "triggerRmsdA": 0.648911,
+      "triggerReason": "persistent-pbc-rmsd-reconstruction",
+      "representativeFrameSpan": [
+        818,
+        8775
+      ],
+      "mergedFrameCount": 14,
+      "coordinatesUrl": "../models/AIMD-T003-SM-00037.json"
+    },
+    {
+      "id": "AIMD-T003-SM-00038",
+      "trajectoryId": "Pd-CeO2",
+      "trajectoryFile": "Pd-CeO2.xyz",
+      "material": "Pd-CeO2",
+      "sourceFile": "Pd-CeO2.xyz",
+      "frame": 824,
+      "sourceIndex": 824,
+      "time": null,
+      "energy": -634.9811654,
+      "temperatureC": 124,
+      "temperatureSource": "random-assumption-0-400C",
+      "atomCount": 81,
+      "structureHash": "22bc849ada1b7a3ef7ed344dbc512e593b700508",
+      "triggerRmsdA": 0.649736,
+      "triggerReason": "persistent-pbc-rmsd-reconstruction",
+      "representativeFrameSpan": [
+        824,
+        6389
+      ],
+      "mergedFrameCount": 24,
+      "coordinatesUrl": "../models/AIMD-T003-SM-00038.json"
+    },
+    {
+      "id": "AIMD-T003-SM-00039",
+      "trajectoryId": "Pd-CeO2",
+      "trajectoryFile": "Pd-CeO2.xyz",
+      "material": "Pd-CeO2",
+      "sourceFile": "Pd-CeO2.xyz",
+      "frame": 840,
+      "sourceIndex": 840,
+      "time": null,
+      "energy": -634.55884365,
+      "temperatureC": 102,
+      "temperatureSource": "random-assumption-0-400C",
+      "atomCount": 81,
+      "structureHash": "4b547b8f1dad1af093b5adc2024eaa3e6e0767b4",
+      "triggerRmsdA": 0.649473,
+      "triggerReason": "persistent-pbc-rmsd-reconstruction",
+      "representativeFrameSpan": [
+        840,
+        5051
+      ],
+      "mergedFrameCount": 30,
+      "coordinatesUrl": "../models/AIMD-T003-SM-00039.json"
+    },
+    {
+      "id": "AIMD-T003-SM-00040",
+      "trajectoryId": "Pd-CeO2",
+      "trajectoryFile": "Pd-CeO2.xyz",
+      "material": "Pd-CeO2",
+      "sourceFile": "Pd-CeO2.xyz",
+      "frame": 868,
+      "sourceIndex": 868,
+      "time": null,
+      "energy": -634.00741945,
+      "temperatureC": 257,
+      "temperatureSource": "random-assumption-0-400C",
+      "atomCount": 81,
+      "structureHash": "d267312f8192b76ffb29ce6d59546844ee9c4636",
+      "triggerRmsdA": 0.653589,
+      "triggerReason": "persistent-pbc-rmsd-reconstruction",
+      "representativeFrameSpan": [
+        868,
+        9689
+      ],
+      "mergedFrameCount": 11,
+      "coordinatesUrl": "../models/AIMD-T003-SM-00040.json"
+    },
+    {
+      "id": "AIMD-T003-SM-00041",
+      "trajectoryId": "Pd-CeO2",
+      "trajectoryFile": "Pd-CeO2.xyz",
+      "material": "Pd-CeO2",
+      "sourceFile": "Pd-CeO2.xyz",
+      "frame": 875,
+      "sourceIndex": 875,
+      "time": null,
+      "energy": -634.2052931,
+      "temperatureC": 218,
+      "temperatureSource": "random-assumption-0-400C",
+      "atomCount": 81,
+      "structureHash": "f5319d5d1603066fdf663bc7c447c5b292c1947e",
+      "triggerRmsdA": 0.640554,
+      "triggerReason": "persistent-pbc-rmsd-reconstruction",
+      "representativeFrameSpan": [
+        875,
+        9397
+      ],
+      "mergedFrameCount": 11,
+      "coordinatesUrl": "../models/AIMD-T003-SM-00041.json"
+    },
+    {
+      "id": "AIMD-T003-SM-00042",
+      "trajectoryId": "Pd-CeO2",
+      "trajectoryFile": "Pd-CeO2.xyz",
+      "material": "Pd-CeO2",
+      "sourceFile": "Pd-CeO2.xyz",
+      "frame": 878,
+      "sourceIndex": 878,
+      "time": null,
+      "energy": -634.29019333,
+      "temperatureC": 94,
+      "temperatureSource": "random-assumption-0-400C",
+      "atomCount": 81,
+      "structureHash": "f76f33e02c3431fc1d9f3e716cd32573dad01cec",
+      "triggerRmsdA": 0.665513,
+      "triggerReason": "persistent-pbc-rmsd-reconstruction",
+      "representativeFrameSpan": [
+        878,
+        8770
+      ],
+      "mergedFrameCount": 35,
+      "coordinatesUrl": "../models/AIMD-T003-SM-00042.json"
+    },
+    {
+      "id": "AIMD-T003-SM-00043",
+      "trajectoryId": "Pd-CeO2",
+      "trajectoryFile": "Pd-CeO2.xyz",
+      "material": "Pd-CeO2",
+      "sourceFile": "Pd-CeO2.xyz",
+      "frame": 909,
+      "sourceIndex": 909,
+      "time": null,
+      "energy": -633.66416459,
+      "temperatureC": 29,
+      "temperatureSource": "random-assumption-0-400C",
+      "atomCount": 81,
+      "structureHash": "5c87bd427d2568f4671769d731d5976720c032f9",
+      "triggerRmsdA": 0.704701,
+      "triggerReason": "persistent-pbc-rmsd-reconstruction",
+      "representativeFrameSpan": [
+        909,
+        9644
+      ],
+      "mergedFrameCount": 11,
+      "coordinatesUrl": "../models/AIMD-T003-SM-00043.json"
+    },
+    {
+      "id": "AIMD-T003-SM-00044",
+      "trajectoryId": "Pd-CeO2",
+      "trajectoryFile": "Pd-CeO2.xyz",
+      "material": "Pd-CeO2",
+      "sourceFile": "Pd-CeO2.xyz",
+      "frame": 1012,
+      "sourceIndex": 1012,
+      "time": null,
+      "energy": -633.9580273,
+      "temperatureC": 110,
+      "temperatureSource": "random-assumption-0-400C",
+      "atomCount": 81,
+      "structureHash": "dafd0a63a56782b23ab8d1d7e900023a68a65d3f",
+      "triggerRmsdA": 0.935231,
+      "triggerReason": "persistent-pbc-rmsd-reconstruction",
+      "representativeFrameSpan": [
+        1012,
+        8933
+      ],
+      "mergedFrameCount": 14,
+      "coordinatesUrl": "../models/AIMD-T003-SM-00044.json"
+    },
+    {
+      "id": "AIMD-T003-SM-00045",
+      "trajectoryId": "Pd-CeO2",
+      "trajectoryFile": "Pd-CeO2.xyz",
+      "material": "Pd-CeO2",
+      "sourceFile": "Pd-CeO2.xyz",
+      "frame": 1250,
+      "sourceIndex": 1250,
+      "time": null,
+      "energy": -634.62573509,
+      "temperatureC": 353,
+      "temperatureSource": "random-assumption-0-400C",
+      "atomCount": 81,
+      "structureHash": "340b9e728de0424c77a0ca16a1a7d4dd32a97f58",
+      "triggerRmsdA": 0.650123,
+      "triggerReason": "persistent-pbc-rmsd-reconstruction",
+      "representativeFrameSpan": [
+        1250,
+        8075
+      ],
+      "mergedFrameCount": 42,
+      "coordinatesUrl": "../models/AIMD-T003-SM-00045.json"
+    },
+    {
+      "id": "AIMD-T003-SM-00046",
+      "trajectoryId": "Pd-CeO2",
+      "trajectoryFile": "Pd-CeO2.xyz",
+      "material": "Pd-CeO2",
+      "sourceFile": "Pd-CeO2.xyz",
+      "frame": 1436,
+      "sourceIndex": 1436,
+      "time": null,
+      "energy": -634.5156312,
+      "temperatureC": 326,
+      "temperatureSource": "random-assumption-0-400C",
+      "atomCount": 81,
+      "structureHash": "65b41ebb660d81655057aa1e8647518dfea29735",
+      "triggerRmsdA": 0.649788,
+      "triggerReason": "persistent-pbc-rmsd-reconstruction",
+      "representativeFrameSpan": [
+        1436,
+        8956
+      ],
+      "mergedFrameCount": 26,
+      "coordinatesUrl": "../models/AIMD-T003-SM-00046.json"
+    },
+    {
+      "id": "AIMD-T003-SM-00047",
+      "trajectoryId": "Pd-CeO2",
+      "trajectoryFile": "Pd-CeO2.xyz",
+      "material": "Pd-CeO2",
+      "sourceFile": "Pd-CeO2.xyz",
+      "frame": 1450,
+      "sourceIndex": 1450,
+      "time": null,
+      "energy": -634.7913164,
+      "temperatureC": 84,
+      "temperatureSource": "random-assumption-0-400C",
+      "atomCount": 81,
+      "structureHash": "b1791565a44ecff0e8e387ff47d8425d7bad0684",
+      "triggerRmsdA": 0.647188,
+      "triggerReason": "persistent-pbc-rmsd-reconstruction",
+      "representativeFrameSpan": [
+        1450,
+        8964
+      ],
+      "mergedFrameCount": 14,
+      "coordinatesUrl": "../models/AIMD-T003-SM-00047.json"
+    },
+    {
+      "id": "AIMD-T003-SM-00048",
+      "trajectoryId": "Pd-CeO2",
+      "trajectoryFile": "Pd-CeO2.xyz",
+      "material": "Pd-CeO2",
+      "sourceFile": "Pd-CeO2.xyz",
+      "frame": 1458,
+      "sourceIndex": 1458,
+      "time": null,
+      "energy": -634.7842008,
+      "temperatureC": 141,
+      "temperatureSource": "random-assumption-0-400C",
+      "atomCount": 81,
+      "structureHash": "db4729759f14ef755ba10697eae8f944d2fa90aa",
+      "triggerRmsdA": 0.645492,
+      "triggerReason": "persistent-pbc-rmsd-reconstruction",
+      "representativeFrameSpan": [
+        1458,
+        9341
+      ],
+      "mergedFrameCount": 27,
+      "coordinatesUrl": "../models/AIMD-T003-SM-00048.json"
+    },
+    {
+      "id": "AIMD-T003-SM-00049",
+      "trajectoryId": "Pd-CeO2",
+      "trajectoryFile": "Pd-CeO2.xyz",
+      "material": "Pd-CeO2",
+      "sourceFile": "Pd-CeO2.xyz",
+      "frame": 1461,
+      "sourceIndex": 1461,
+      "time": null,
+      "energy": -634.77200286,
+      "temperatureC": 292,
+      "temperatureSource": "random-assumption-0-400C",
+      "atomCount": 81,
+      "structureHash": "b151bd0b1d4225fe0a2f60e8a7de482d950973a6",
+      "triggerRmsdA": 0.647679,
+      "triggerReason": "persistent-pbc-rmsd-reconstruction",
+      "representativeFrameSpan": [
+        1461,
+        6701
+      ],
+      "mergedFrameCount": 46,
+      "coordinatesUrl": "../models/AIMD-T003-SM-00049.json"
+    },
+    {
+      "id": "AIMD-T003-SM-00050",
+      "trajectoryId": "Pd-CeO2",
+      "trajectoryFile": "Pd-CeO2.xyz",
+      "material": "Pd-CeO2",
+      "sourceFile": "Pd-CeO2.xyz",
+      "frame": 1535,
+      "sourceIndex": 1535,
+      "time": null,
+      "energy": -633.67176181,
+      "temperatureC": 55,
+      "temperatureSource": "random-assumption-0-400C",
+      "atomCount": 81,
+      "structureHash": "85796210fa33b68a9859b19e160c02141cce9d44",
+      "triggerRmsdA": 0.925431,
+      "triggerReason": "persistent-pbc-rmsd-reconstruction",
+      "representativeFrameSpan": [
+        1535,
+        3367
+      ],
+      "mergedFrameCount": 43,
+      "coordinatesUrl": "../models/AIMD-T003-SM-00050.json"
+    },
+    {
+      "id": "AIMD-T003-SM-00051",
+      "trajectoryId": "Pd-CeO2",
+      "trajectoryFile": "Pd-CeO2.xyz",
+      "material": "Pd-CeO2",
+      "sourceFile": "Pd-CeO2.xyz",
+      "frame": 1599,
+      "sourceIndex": 1599,
+      "time": null,
+      "energy": -633.26640611,
+      "temperatureC": 134,
+      "temperatureSource": "random-assumption-0-400C",
+      "atomCount": 81,
+      "structureHash": "e5ae045a552d95002700aa002cd470c940b33807",
+      "triggerRmsdA": 0.923959,
+      "triggerReason": "persistent-pbc-rmsd-reconstruction",
+      "representativeFrameSpan": [
+        1599,
+        9444
+      ],
+      "mergedFrameCount": 18,
+      "coordinatesUrl": "../models/AIMD-T003-SM-00051.json"
+    },
+    {
+      "id": "AIMD-T003-SM-00052",
+      "trajectoryId": "Pd-CeO2",
+      "trajectoryFile": "Pd-CeO2.xyz",
+      "material": "Pd-CeO2",
+      "sourceFile": "Pd-CeO2.xyz",
+      "frame": 1601,
+      "sourceIndex": 1601,
+      "time": null,
+      "energy": -633.21297961,
+      "temperatureC": 336,
+      "temperatureSource": "random-assumption-0-400C",
+      "atomCount": 81,
+      "structureHash": "1caa125249a4d8fb87d83fb8830a70af86d52c56",
+      "triggerRmsdA": 0.645808,
+      "triggerReason": "persistent-pbc-rmsd-reconstruction",
+      "representativeFrameSpan": [
+        1601,
+        8555
+      ],
+      "mergedFrameCount": 29,
+      "coordinatesUrl": "../models/AIMD-T003-SM-00052.json"
+    },
+    {
+      "id": "AIMD-T003-SM-00053",
+      "trajectoryId": "Pd-CeO2",
+      "trajectoryFile": "Pd-CeO2.xyz",
+      "material": "Pd-CeO2",
+      "sourceFile": "Pd-CeO2.xyz",
+      "frame": 1788,
+      "sourceIndex": 1788,
+      "time": null,
+      "energy": -634.66253266,
+      "temperatureC": 198,
+      "temperatureSource": "random-assumption-0-400C",
+      "atomCount": 81,
+      "structureHash": "a924e98e904da3d079ba33c87955474af59775b8",
+      "triggerRmsdA": 0.646959,
+      "triggerReason": "persistent-pbc-rmsd-reconstruction",
+      "representativeFrameSpan": [
+        1788,
+        8737
+      ],
+      "mergedFrameCount": 27,
+      "coordinatesUrl": "../models/AIMD-T003-SM-00053.json"
+    },
+    {
+      "id": "AIMD-T003-SM-00054",
+      "trajectoryId": "Pd-CeO2",
+      "trajectoryFile": "Pd-CeO2.xyz",
+      "material": "Pd-CeO2",
+      "sourceFile": "Pd-CeO2.xyz",
+      "frame": 1988,
+      "sourceIndex": 1988,
+      "time": null,
+      "energy": -633.45341979,
+      "temperatureC": 125,
+      "temperatureSource": "random-assumption-0-400C",
+      "atomCount": 81,
+      "structureHash": "7dc666ce4d88a072db4a1a76387e3bec153147ba",
+      "triggerRmsdA": 0.659262,
+      "triggerReason": "persistent-pbc-rmsd-reconstruction",
+      "representativeFrameSpan": [
+        1988,
+        9701
+      ],
+      "mergedFrameCount": 9,
+      "coordinatesUrl": "../models/AIMD-T003-SM-00054.json"
+    },
+    {
+      "id": "AIMD-T003-SM-00055",
+      "trajectoryId": "Pd-CeO2",
+      "trajectoryFile": "Pd-CeO2.xyz",
+      "material": "Pd-CeO2",
+      "sourceFile": "Pd-CeO2.xyz",
+      "frame": 2003,
+      "sourceIndex": 2003,
+      "time": null,
+      "energy": -634.5164209,
+      "temperatureC": 4,
+      "temperatureSource": "random-assumption-0-400C",
+      "atomCount": 81,
+      "structureHash": "7536ad9c1769f73f5e02e1c77a7d3dfea21d2edd",
+      "triggerRmsdA": 0.653868,
+      "triggerReason": "persistent-pbc-rmsd-reconstruction",
+      "representativeFrameSpan": [
+        2003,
+        2776
+      ],
+      "mergedFrameCount": 4,
+      "coordinatesUrl": "../models/AIMD-T003-SM-00055.json"
+    },
+    {
+      "id": "AIMD-T003-SM-00056",
+      "trajectoryId": "Pd-CeO2",
+      "trajectoryFile": "Pd-CeO2.xyz",
+      "material": "Pd-CeO2",
+      "sourceFile": "Pd-CeO2.xyz",
+      "frame": 2005,
+      "sourceIndex": 2005,
+      "time": null,
+      "energy": -634.65336558,
+      "temperatureC": 130,
+      "temperatureSource": "random-assumption-0-400C",
+      "atomCount": 81,
+      "structureHash": "ba4299f02b2147de9ab11868e9a26987ad18b0f3",
+      "triggerRmsdA": 0.645197,
+      "triggerReason": "persistent-pbc-rmsd-reconstruction",
+      "representativeFrameSpan": [
+        2005,
+        9703
+      ],
+      "mergedFrameCount": 13,
+      "coordinatesUrl": "../models/AIMD-T003-SM-00056.json"
+    },
+    {
+      "id": "AIMD-T003-SM-00057",
+      "trajectoryId": "Pd-CeO2",
+      "trajectoryFile": "Pd-CeO2.xyz",
+      "material": "Pd-CeO2",
+      "sourceFile": "Pd-CeO2.xyz",
+      "frame": 2412,
+      "sourceIndex": 2412,
+      "time": null,
+      "energy": -634.47480372,
+      "temperatureC": 63,
+      "temperatureSource": "random-assumption-0-400C",
+      "atomCount": 81,
+      "structureHash": "67ee655b7650817823afc45a473490a09d619903",
+      "triggerRmsdA": 0.656733,
+      "triggerReason": "persistent-pbc-rmsd-reconstruction",
+      "representativeFrameSpan": [
+        2412,
+        9343
+      ],
+      "mergedFrameCount": 43,
+      "coordinatesUrl": "../models/AIMD-T003-SM-00057.json"
+    },
+    {
+      "id": "AIMD-T003-SM-00058",
+      "trajectoryId": "Pd-CeO2",
+      "trajectoryFile": "Pd-CeO2.xyz",
+      "material": "Pd-CeO2",
+      "sourceFile": "Pd-CeO2.xyz",
+      "frame": 2456,
+      "sourceIndex": 2456,
+      "time": null,
+      "energy": -633.44100385,
+      "temperatureC": 89,
+      "temperatureSource": "random-assumption-0-400C",
+      "atomCount": 81,
+      "structureHash": "5fd07db45f3bb1b4883494df5c7ac308e835197d",
+      "triggerRmsdA": 0.707472,
+      "triggerReason": "persistent-pbc-rmsd-reconstruction",
+      "representativeFrameSpan": [
+        2456,
+        7991
+      ],
+      "mergedFrameCount": 19,
+      "coordinatesUrl": "../models/AIMD-T003-SM-00058.json"
+    },
+    {
+      "id": "AIMD-T003-SM-00059",
+      "trajectoryId": "Pd-CeO2",
+      "trajectoryFile": "Pd-CeO2.xyz",
+      "material": "Pd-CeO2",
+      "sourceFile": "Pd-CeO2.xyz",
+      "frame": 2740,
+      "sourceIndex": 2740,
+      "time": null,
+      "energy": -634.23969613,
+      "temperatureC": 267,
+      "temperatureSource": "random-assumption-0-400C",
+      "atomCount": 81,
+      "structureHash": "c81d0c3341162508023f20142a3f75b069a6e653",
+      "triggerRmsdA": 0.923645,
+      "triggerReason": "persistent-pbc-rmsd-reconstruction",
+      "representativeFrameSpan": [
+        2740,
+        9386
+      ],
+      "mergedFrameCount": 8,
+      "coordinatesUrl": "../models/AIMD-T003-SM-00059.json"
+    },
+    {
+      "id": "AIMD-T003-SM-00060",
+      "trajectoryId": "Pd-CeO2",
+      "trajectoryFile": "Pd-CeO2.xyz",
+      "material": "Pd-CeO2",
+      "sourceFile": "Pd-CeO2.xyz",
+      "frame": 3255,
+      "sourceIndex": 3255,
+      "time": null,
+      "energy": -634.33301202,
+      "temperatureC": 145,
+      "temperatureSource": "random-assumption-0-400C",
+      "atomCount": 81,
+      "structureHash": "5fb4c250cd1e7cd98d695a593f1e0e5b0093594f",
+      "triggerRmsdA": 0.644746,
+      "triggerReason": "persistent-pbc-rmsd-reconstruction",
+      "representativeFrameSpan": [
+        3255,
+        9746
+      ],
+      "mergedFrameCount": 16,
+      "coordinatesUrl": "../models/AIMD-T003-SM-00060.json"
+    },
+    {
+      "id": "AIMD-T003-SM-00061",
+      "trajectoryId": "Pd-CeO2",
+      "trajectoryFile": "Pd-CeO2.xyz",
+      "material": "Pd-CeO2",
+      "sourceFile": "Pd-CeO2.xyz",
+      "frame": 3277,
+      "sourceIndex": 3277,
+      "time": null,
+      "energy": -633.88587882,
+      "temperatureC": 310,
+      "temperatureSource": "random-assumption-0-400C",
+      "atomCount": 81,
+      "structureHash": "7c7fcd49fc813718dcbe3aed7d71d19f788d4ad1",
+      "triggerRmsdA": 0.646858,
+      "triggerReason": "persistent-pbc-rmsd-reconstruction",
+      "representativeFrameSpan": [
+        3277,
+        8951
+      ],
+      "mergedFrameCount": 26,
+      "coordinatesUrl": "../models/AIMD-T003-SM-00061.json"
+    },
+    {
+      "id": "AIMD-T003-SM-00062",
+      "trajectoryId": "Pd-CeO2",
+      "trajectoryFile": "Pd-CeO2.xyz",
+      "material": "Pd-CeO2",
+      "sourceFile": "Pd-CeO2.xyz",
+      "frame": 3510,
+      "sourceIndex": 3510,
+      "time": null,
+      "energy": -633.83401007,
+      "temperatureC": 72,
+      "temperatureSource": "random-assumption-0-400C",
+      "atomCount": 81,
+      "structureHash": "984c1784b8822b7adf2506c2e04900f7fa545ede",
+      "triggerRmsdA": 0.69305,
+      "triggerReason": "persistent-pbc-rmsd-reconstruction",
+      "representativeFrameSpan": [
+        3510,
+        7932
+      ],
+      "mergedFrameCount": 6,
+      "coordinatesUrl": "../models/AIMD-T003-SM-00062.json"
+    },
+    {
+      "id": "AIMD-T003-SM-00063",
+      "trajectoryId": "Pd-CeO2",
+      "trajectoryFile": "Pd-CeO2.xyz",
+      "material": "Pd-CeO2",
+      "sourceFile": "Pd-CeO2.xyz",
+      "frame": 3512,
+      "sourceIndex": 3512,
+      "time": null,
+      "energy": -633.94648642,
+      "temperatureC": 237,
+      "temperatureSource": "random-assumption-0-400C",
+      "atomCount": 81,
+      "structureHash": "94c425439364f593e9d11a132c14baa4aed63251",
+      "triggerRmsdA": 0.645715,
+      "triggerReason": "persistent-pbc-rmsd-reconstruction",
+      "representativeFrameSpan": [
+        3512,
+        3530
+      ],
+      "mergedFrameCount": 19,
+      "coordinatesUrl": "../models/AIMD-T003-SM-00063.json"
+    },
+    {
+      "id": "AIMD-T003-SM-00064",
+      "trajectoryId": "Pd-CeO2",
+      "trajectoryFile": "Pd-CeO2.xyz",
+      "material": "Pd-CeO2",
+      "sourceFile": "Pd-CeO2.xyz",
+      "frame": 3576,
+      "sourceIndex": 3576,
+      "time": null,
+      "energy": -634.30877186,
+      "temperatureC": 184,
+      "temperatureSource": "random-assumption-0-400C",
+      "atomCount": 81,
+      "structureHash": "1296e940fcb1a631b87973119b4a30373d6862a0",
+      "triggerRmsdA": 0.703492,
+      "triggerReason": "persistent-pbc-rmsd-reconstruction",
+      "representativeFrameSpan": [
+        3576,
+        9721
+      ],
+      "mergedFrameCount": 21,
+      "coordinatesUrl": "../models/AIMD-T003-SM-00064.json"
+    },
+    {
+      "id": "AIMD-T003-SM-00065",
+      "trajectoryId": "Pd-CeO2",
+      "trajectoryFile": "Pd-CeO2.xyz",
+      "material": "Pd-CeO2",
+      "sourceFile": "Pd-CeO2.xyz",
+      "frame": 4181,
+      "sourceIndex": 4181,
+      "time": null,
+      "energy": -634.29714098,
+      "temperatureC": 258,
+      "temperatureSource": "random-assumption-0-400C",
+      "atomCount": 81,
+      "structureHash": "84825fe226b597286f55401b53ddcbe5d2311446",
+      "triggerRmsdA": 0.898368,
+      "triggerReason": "persistent-pbc-rmsd-reconstruction",
+      "representativeFrameSpan": [
+        4181,
+        9646
+      ],
+      "mergedFrameCount": 8,
+      "coordinatesUrl": "../models/AIMD-T003-SM-00065.json"
+    },
+    {
+      "id": "AIMD-T003-SM-00066",
+      "trajectoryId": "Pd-CeO2",
+      "trajectoryFile": "Pd-CeO2.xyz",
+      "material": "Pd-CeO2",
+      "sourceFile": "Pd-CeO2.xyz",
+      "frame": 4183,
+      "sourceIndex": 4183,
+      "time": null,
+      "energy": -634.29290771,
+      "temperatureC": 152,
+      "temperatureSource": "random-assumption-0-400C",
+      "atomCount": 81,
+      "structureHash": "2faf4498295eb657a9a8e0a929f6c02bfc41e20b",
+      "triggerRmsdA": 0.646882,
+      "triggerReason": "persistent-pbc-rmsd-reconstruction",
+      "representativeFrameSpan": [
+        4183,
+        9665
+      ],
+      "mergedFrameCount": 28,
+      "coordinatesUrl": "../models/AIMD-T003-SM-00066.json"
+    },
+    {
+      "id": "AIMD-T003-SM-00067",
+      "trajectoryId": "Pd-CeO2",
+      "trajectoryFile": "Pd-CeO2.xyz",
+      "material": "Pd-CeO2",
+      "sourceFile": "Pd-CeO2.xyz",
+      "frame": 4220,
+      "sourceIndex": 4220,
+      "time": null,
+      "energy": -634.49155421,
+      "temperatureC": 303,
+      "temperatureSource": "random-assumption-0-400C",
+      "atomCount": 81,
+      "structureHash": "597e642e248f730ce70fa19bca89a283f54dfca4",
+      "triggerRmsdA": 0.652413,
+      "triggerReason": "persistent-pbc-rmsd-reconstruction",
+      "representativeFrameSpan": [
+        4220,
+        9699
+      ],
+      "mergedFrameCount": 29,
+      "coordinatesUrl": "../models/AIMD-T003-SM-00067.json"
+    },
+    {
+      "id": "AIMD-T003-SM-00068",
+      "trajectoryId": "Pd-CeO2",
+      "trajectoryFile": "Pd-CeO2.xyz",
+      "material": "Pd-CeO2",
+      "sourceFile": "Pd-CeO2.xyz",
+      "frame": 4264,
+      "sourceIndex": 4264,
+      "time": null,
+      "energy": -633.28937927,
+      "temperatureC": 32,
+      "temperatureSource": "random-assumption-0-400C",
+      "atomCount": 81,
+      "structureHash": "993573a370a80448f8e4695afcfe84da1d0c91a7",
+      "triggerRmsdA": 0.65392,
+      "triggerReason": "persistent-pbc-rmsd-reconstruction",
+      "representativeFrameSpan": [
+        4264,
+        6029
+      ],
+      "mergedFrameCount": 14,
+      "coordinatesUrl": "../models/AIMD-T003-SM-00068.json"
+    },
+    {
+      "id": "AIMD-T003-SM-00069",
+      "trajectoryId": "Pd-CeO2",
+      "trajectoryFile": "Pd-CeO2.xyz",
+      "material": "Pd-CeO2",
+      "sourceFile": "Pd-CeO2.xyz",
+      "frame": 4397,
+      "sourceIndex": 4397,
+      "time": null,
+      "energy": -633.40412902,
+      "temperatureC": 73,
+      "temperatureSource": "random-assumption-0-400C",
+      "atomCount": 81,
+      "structureHash": "4680f95baa78655e0f0f7857ff55f6c8f13d7610",
+      "triggerRmsdA": 0.649234,
+      "triggerReason": "persistent-pbc-rmsd-reconstruction",
+      "representativeFrameSpan": [
+        4397,
+        6254
+      ],
+      "mergedFrameCount": 29,
+      "coordinatesUrl": "../models/AIMD-T003-SM-00069.json"
+    },
+    {
+      "id": "AIMD-T003-SM-00070",
+      "trajectoryId": "Pd-CeO2",
+      "trajectoryFile": "Pd-CeO2.xyz",
+      "material": "Pd-CeO2",
+      "sourceFile": "Pd-CeO2.xyz",
+      "frame": 5811,
+      "sourceIndex": 5811,
+      "time": null,
+      "energy": -634.72200168,
+      "temperatureC": 222,
+      "temperatureSource": "random-assumption-0-400C",
+      "atomCount": 81,
+      "structureHash": "b8381c4a74bd9a6e84f5f6054c665ca50eb06edf",
+      "triggerRmsdA": 0.648659,
+      "triggerReason": "persistent-pbc-rmsd-reconstruction",
+      "representativeFrameSpan": [
+        5811,
+        8969
+      ],
+      "mergedFrameCount": 10,
+      "coordinatesUrl": "../models/AIMD-T003-SM-00070.json"
+    },
+    {
+      "id": "AIMD-T003-SM-00071",
+      "trajectoryId": "Pd-CeO2",
+      "trajectoryFile": "Pd-CeO2.xyz",
+      "material": "Pd-CeO2",
+      "sourceFile": "Pd-CeO2.xyz",
+      "frame": 5819,
+      "sourceIndex": 5819,
+      "time": null,
+      "energy": -634.52073619,
+      "temperatureC": 60,
+      "temperatureSource": "random-assumption-0-400C",
+      "atomCount": 81,
+      "structureHash": "d518c2701d59d34fbc17e86468a0873df99965bb",
+      "triggerRmsdA": 0.648184,
+      "triggerReason": "persistent-pbc-rmsd-reconstruction",
+      "representativeFrameSpan": [
+        5819,
+        8967
+      ],
+      "mergedFrameCount": 10,
+      "coordinatesUrl": "../models/AIMD-T003-SM-00071.json"
+    },
+    {
+      "id": "AIMD-T003-SM-00072",
+      "trajectoryId": "Pd-CeO2",
+      "trajectoryFile": "Pd-CeO2.xyz",
+      "material": "Pd-CeO2",
+      "sourceFile": "Pd-CeO2.xyz",
+      "frame": 5992,
+      "sourceIndex": 5992,
+      "time": null,
+      "energy": -634.94987901,
+      "temperatureC": 276,
+      "temperatureSource": "random-assumption-0-400C",
+      "atomCount": 81,
+      "structureHash": "53255ca7bdb18ba467de927c66188d9d7caf5965",
+      "triggerRmsdA": 0.657488,
+      "triggerReason": "persistent-pbc-rmsd-reconstruction",
+      "representativeFrameSpan": [
+        5992,
+        9467
+      ],
+      "mergedFrameCount": 44,
+      "coordinatesUrl": "../models/AIMD-T003-SM-00072.json"
+    },
+    {
+      "id": "AIMD-T003-SM-00073",
+      "trajectoryId": "Pd-CeO2",
+      "trajectoryFile": "Pd-CeO2.xyz",
+      "material": "Pd-CeO2",
+      "sourceFile": "Pd-CeO2.xyz",
+      "frame": 6337,
+      "sourceIndex": 6337,
+      "time": null,
+      "energy": -634.40233909,
+      "temperatureC": 200,
+      "temperatureSource": "random-assumption-0-400C",
+      "atomCount": 81,
+      "structureHash": "f2a773da1dafbd36de136dcb611f13eda5857588",
+      "triggerRmsdA": 0.646577,
+      "triggerReason": "persistent-pbc-rmsd-reconstruction",
+      "representativeFrameSpan": [
+        6337,
+        6769
+      ],
+      "mergedFrameCount": 6,
+      "coordinatesUrl": "../models/AIMD-T003-SM-00073.json"
+    },
+    {
+      "id": "AIMD-T003-SM-00074",
+      "trajectoryId": "Pd-CeO2",
+      "trajectoryFile": "Pd-CeO2.xyz",
+      "material": "Pd-CeO2",
+      "sourceFile": "Pd-CeO2.xyz",
+      "frame": 6743,
+      "sourceIndex": 6743,
+      "time": null,
+      "energy": -634.2374413,
+      "temperatureC": 57,
+      "temperatureSource": "random-assumption-0-400C",
+      "atomCount": 81,
+      "structureHash": "9fde988c0ee5a56a474a1417b25a1d69e7610206",
+      "triggerRmsdA": 0.662219,
+      "triggerReason": "persistent-pbc-rmsd-reconstruction",
+      "representativeFrameSpan": [
+        6743,
+        6760
+      ],
+      "mergedFrameCount": 18,
+      "coordinatesUrl": "../models/AIMD-T003-SM-00074.json"
+    },
+    {
+      "id": "AIMD-T003-SM-00075",
+      "trajectoryId": "Pd-CeO2",
+      "trajectoryFile": "Pd-CeO2.xyz",
+      "material": "Pd-CeO2",
+      "sourceFile": "Pd-CeO2.xyz",
+      "frame": 8794,
+      "sourceIndex": 8794,
+      "time": null,
+      "energy": -633.70579578,
+      "temperatureC": 305,
+      "temperatureSource": "random-assumption-0-400C",
+      "atomCount": 81,
+      "structureHash": "bdc3b0526fdc1c0089e4a18c7a48ef229e28346b",
+      "triggerRmsdA": 0.654878,
+      "triggerReason": "persistent-pbc-rmsd-reconstruction",
+      "representativeFrameSpan": [
+        8794,
+        8801
+      ],
+      "mergedFrameCount": 8,
+      "coordinatesUrl": "../models/AIMD-T003-SM-00075.json"
+    },
+    {
+      "id": "AIMD-T003-SM-00076",
+      "trajectoryId": "Pd-CeO2",
+      "trajectoryFile": "Pd-CeO2.xyz",
+      "material": "Pd-CeO2",
+      "sourceFile": "Pd-CeO2.xyz",
+      "frame": 8802,
+      "sourceIndex": 8802,
+      "time": null,
+      "energy": -633.88856275,
+      "temperatureC": 133,
+      "temperatureSource": "random-assumption-0-400C",
+      "atomCount": 81,
+      "structureHash": "e0efd72cd52873072774ffd8e80eca7bd94c37c7",
+      "triggerRmsdA": 0.652213,
+      "triggerReason": "persistent-pbc-rmsd-reconstruction",
+      "representativeFrameSpan": [
+        8802,
+        8805
+      ],
+      "mergedFrameCount": 4,
+      "coordinatesUrl": "../models/AIMD-T003-SM-00076.json"
+    },
+    {
+      "id": "AIMD-T003-SM-00077",
+      "trajectoryId": "Pd-CeO2",
+      "trajectoryFile": "Pd-CeO2.xyz",
+      "material": "Pd-CeO2",
+      "sourceFile": "Pd-CeO2.xyz",
+      "frame": 8806,
+      "sourceIndex": 8806,
+      "time": null,
+      "energy": -633.94104403,
+      "temperatureC": 26,
+      "temperatureSource": "random-assumption-0-400C",
+      "atomCount": 81,
+      "structureHash": "5724ce6685585d93ebf871b9a7ee1b861ca11682",
+      "triggerRmsdA": 0.647914,
+      "triggerReason": "persistent-pbc-rmsd-reconstruction",
+      "representativeFrameSpan": [
+        8806,
+        8809
+      ],
+      "mergedFrameCount": 4,
+      "coordinatesUrl": "../models/AIMD-T003-SM-00077.json"
+    },
+    {
+      "id": "AIMD-T003-SM-00078",
+      "trajectoryId": "Pd-CeO2",
+      "trajectoryFile": "Pd-CeO2.xyz",
+      "material": "Pd-CeO2",
+      "sourceFile": "Pd-CeO2.xyz",
+      "frame": 8810,
+      "sourceIndex": 8810,
+      "time": null,
+      "energy": -633.96748863,
+      "temperatureC": 276,
+      "temperatureSource": "random-assumption-0-400C",
+      "atomCount": 81,
+      "structureHash": "90512e129cb9e077009d4bff2248bcca8adbb1cb",
+      "triggerRmsdA": 0.925329,
+      "triggerReason": "persistent-pbc-rmsd-reconstruction",
+      "representativeFrameSpan": [
+        8810,
+        8811
+      ],
+      "mergedFrameCount": 2,
+      "coordinatesUrl": "../models/AIMD-T003-SM-00078.json"
+    },
+    {
+      "id": "AIMD-T003-SM-00079",
+      "trajectoryId": "Pd-CeO2",
+      "trajectoryFile": "Pd-CeO2.xyz",
+      "material": "Pd-CeO2",
+      "sourceFile": "Pd-CeO2.xyz",
+      "frame": 9413,
+      "sourceIndex": 9413,
+      "time": null,
+      "energy": -633.40736433,
+      "temperatureC": 110,
+      "temperatureSource": "random-assumption-0-400C",
+      "atomCount": 81,
+      "structureHash": "b98804b1ba7c99cb6e830310ee2fcc713ed87058",
+      "triggerRmsdA": 0.658339,
+      "triggerReason": "persistent-pbc-rmsd-reconstruction",
+      "representativeFrameSpan": [
+        9413,
+        9414
+      ],
+      "mergedFrameCount": 2,
+      "coordinatesUrl": "../models/AIMD-T003-SM-00079.json"
+    },
+    {
+      "id": "AIMD-T003-SM-00080",
+      "trajectoryId": "Pd-CeO2",
+      "trajectoryFile": "Pd-CeO2.xyz",
+      "material": "Pd-CeO2",
+      "sourceFile": "Pd-CeO2.xyz",
+      "frame": 9415,
+      "sourceIndex": 9415,
+      "time": null,
+      "energy": -633.30566628,
+      "temperatureC": 382,
+      "temperatureSource": "random-assumption-0-400C",
+      "atomCount": 81,
+      "structureHash": "44aace56f1f71943e9bc31a800addf7a6b088ecd",
+      "triggerRmsdA": 0.64578,
+      "triggerReason": "persistent-pbc-rmsd-reconstruction",
+      "representativeFrameSpan": [
+        9415,
+        9435
+      ],
+      "mergedFrameCount": 21,
+      "coordinatesUrl": "../models/AIMD-T003-SM-00080.json"
+    },
+    {
+      "id": "AIMD-T003-SM-00081",
+      "trajectoryId": "Pd-CeO2",
+      "trajectoryFile": "Pd-CeO2.xyz",
+      "material": "Pd-CeO2",
+      "sourceFile": "Pd-CeO2.xyz",
+      "frame": 9737,
+      "sourceIndex": 9737,
+      "time": null,
+      "energy": -633.5511247,
+      "temperatureC": 25,
+      "temperatureSource": "random-assumption-0-400C",
+      "atomCount": 81,
+      "structureHash": "3b9705d5e2a14821899f1d143595cd8b7bccde86",
+      "triggerRmsdA": 0.648442,
+      "triggerReason": "persistent-pbc-rmsd-reconstruction",
+      "representativeFrameSpan": [
+        9737,
+        9740
+      ],
+      "mergedFrameCount": 4,
+      "coordinatesUrl": "../models/AIMD-T003-SM-00081.json"
+    },
+    {
+      "id": "AIMD-T003-SM-00082",
+      "trajectoryId": "Pd-CeO2",
+      "trajectoryFile": "Pd-CeO2.xyz",
+      "material": "Pd-CeO2",
+      "sourceFile": "Pd-CeO2.xyz",
+      "frame": 9871,
+      "sourceIndex": 9871,
+      "time": null,
+      "energy": -633.28786154,
+      "temperatureC": 133,
+      "temperatureSource": "random-assumption-0-400C",
+      "atomCount": 81,
+      "structureHash": "b4cfba0294300ae7ecdb47b19358dc971f125352",
+      "triggerRmsdA": 0.64709,
+      "triggerReason": "persistent-pbc-rmsd-reconstruction",
+      "representativeFrameSpan": [
+        9871,
+        9903
+      ],
+      "mergedFrameCount": 33,
+      "coordinatesUrl": "../models/AIMD-T003-SM-00082.json"
+    },
+    {
+      "id": "AIMD-T003-SM-00083",
+      "trajectoryId": "Pd-CeO2",
+      "trajectoryFile": "Pd-CeO2.xyz",
+      "material": "Pd-CeO2",
+      "sourceFile": "Pd-CeO2.xyz",
+      "frame": 9969,
+      "sourceIndex": 9969,
+      "time": null,
+      "energy": -633.24893854,
+      "temperatureC": 227,
+      "temperatureSource": "random-assumption-0-400C",
+      "atomCount": 81,
+      "structureHash": "54e3638ec060f23816cebd9769d7e41baed1afd0",
+      "triggerRmsdA": 0.648028,
+      "triggerReason": "persistent-pbc-rmsd-reconstruction",
+      "representativeFrameSpan": [
+        9969,
+        9987
+      ],
+      "mergedFrameCount": 19,
+      "coordinatesUrl": "../models/AIMD-T003-SM-00083.json"
+    }
+  ]
+}

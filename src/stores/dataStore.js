@@ -16,11 +16,19 @@ export const useDataStore = defineStore('data', () => {
   const structureStatsLoaded = ref(false);
   const structureStatsLoading = ref(false);
 
-  // 每个 XYZ 结构按 10 个有效数据（活性中心周围）折算
-  const STRUCTURE_DATA_FACTOR = 10;
+  // AIMD 有效结构模型统计：来自 public/aimd/analysis/index.json
+  const aimdEffectiveStructureCount = ref(0);
+  const aimdStatsLoaded = ref(false);
+  const aimdStatsLoading = ref(false);
+  const aimdTrajectoryCount = ref(0);
+
+  // 每个有效结构模型统一按 15 条数据折算
+  // 同时适用于静态 XYZ 结构库和 AIMD 有效结构模型。
+  const STRUCTURE_DATA_FACTOR = 15;
 
   const BASE_URL = import.meta.env.BASE_URL || '/';
   const STRUCTURE_INDEX_URL = `${BASE_URL}structures/index.json`;
+  const AIMD_ANALYSIS_INDEX_URL = `${BASE_URL}aimd/analysis/index.json`;
 
   // 所有数据（原始 + 用户上传）
   const allData = computed(() => {
@@ -77,6 +85,68 @@ export const useDataStore = defineStore('data', () => {
     } finally {
       structureStatsLoaded.value = true;
       structureStatsLoading.value = false;
+    }
+  }
+
+
+  // 只读取 AIMD 分析索引，不加载全部轨迹文件。
+  // 有效模型数量由分析脚本基于结构差异判定后写入 counts.effectiveStructureCount。
+  async function loadAimdStats() {
+    if (aimdStatsLoaded.value || aimdStatsLoading.value) {
+      return;
+    }
+
+    aimdStatsLoading.value = true;
+
+    try {
+      const response = await fetch(
+        `${AIMD_ANALYSIS_INDEX_URL}?v=${Date.now()}`,
+        {
+          cache: 'no-store',
+        }
+      );
+
+      if (!response.ok) {
+        throw new Error(`HTTP ${response.status}`);
+      }
+
+      const index = await response.json();
+
+      const trajectories = Array.isArray(index?.trajectories)
+        ? index.trajectories
+        : (Array.isArray(index?.models) ? index.models : []);
+
+      aimdTrajectoryCount.value = trajectories.length;
+
+      // 新版：逐条 AIMD 轨迹的有效结构模型数量求和。
+      const trajectoryTotal = trajectories.reduce((sum, item) => {
+        const count = Number(item?.effectiveStructureCount);
+        return sum + (Number.isFinite(count) && count >= 0 ? Math.floor(count) : 0);
+      }, 0);
+
+      // 兼容旧版合并索引：如果没有逐轨迹统计，则读取总数。
+      const counted = Number(
+        index?.counts?.totalEffectiveStructureCount ??
+        index?.counts?.effectiveStructureCount
+      );
+      const fallback = Array.isArray(index?.models)
+        ? index.models.length
+        : 0;
+
+      const modelCount = trajectories.length > 0
+        ? trajectoryTotal
+        : (Number.isFinite(counted) && counted >= 0 ? counted : fallback);
+
+      aimdEffectiveStructureCount.value = Math.max(0, Math.floor(modelCount));
+    } catch (error) {
+      console.warn(
+        '读取 AIMD 有效结构模型统计失败，将按 0 个 AIMD 有效模型计算：',
+        error
+      );
+      aimdEffectiveStructureCount.value = 0;
+    } finally {
+      aimdStatsLoaded.value = true;
+      aimdStatsLoading.value = false;
     }
   }
 
@@ -138,17 +208,24 @@ export const useDataStore = defineStore('data', () => {
       });
     }
 
-    // 4. 结构折算数据
+    // 4. XYZ 结构模型折算数据
     const structureDataPoints =
       structureModelCount.value *
       STRUCTURE_DATA_FACTOR;
 
-    // 5. 首页总条目数
+    // 5. AIMD 结构差异判定后的有效模型折算数据
+    //    仅对实际识别出的有效结构模型计数，不按原始轨迹帧数直接折算。
+    const aimdDataPoints =
+      aimdEffectiveStructureCount.value *
+      STRUCTURE_DATA_FACTOR;
+
+    // 6. 首页“已收录数据点”总数
     const totalDataPoints =
       tableDataPoints +
-      structureDataPoints;
+      structureDataPoints +
+      aimdDataPoints;
 
-    // 6. 全数据库涵盖元素：
+    // 7. 全数据库涵盖元素：
     //    数据表元素 ∪ 所有 XYZ 模型元素
     const allElements = new Set(tableElements);
 
@@ -168,7 +245,15 @@ export const useDataStore = defineStore('data', () => {
       tableDataPoints,
       structureModelCount: structureModelCount.value,
       structureDataPoints,
+
+      // AIMD 有效结构模型折算
+      aimdEffectiveStructureCount: aimdEffectiveStructureCount.value,
+      aimdTrajectoryCount: aimdTrajectoryCount.value,
+      aimdDataPoints,
+
+      // 当前两类结构模型统一按每个模型 15 条数据计入
       structureDataFactor: STRUCTURE_DATA_FACTOR,
+      aimdDataFactor: STRUCTURE_DATA_FACTOR,
 
       // 全数据库元素统计
       elementCount: mergedElements.length,
@@ -266,9 +351,9 @@ export const useDataStore = defineStore('data', () => {
     selectedElement.value = element;
   }
 
-  // 应用启动后只请求 index.json，
-  // 不加载任何 XYZ 文件。
+  // 应用启动后仅请求两个轻量统计索引，不加载具体 XYZ/轨迹数据。
   loadStructureStats();
+  loadAimdStats();
 
   return {
     rawData,
@@ -286,6 +371,12 @@ export const useDataStore = defineStore('data', () => {
     structureStatsLoaded,
     structureStatsLoading,
     loadStructureStats,
+
+    aimdEffectiveStructureCount,
+    aimdTrajectoryCount,
+    aimdStatsLoaded,
+    aimdStatsLoading,
+    loadAimdStats,
 
     loadBaseData,
     mergeUploadedData,
