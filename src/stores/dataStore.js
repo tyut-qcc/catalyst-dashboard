@@ -2,240 +2,294 @@
 import { defineStore } from 'pinia';
 import { ref, computed } from 'vue';
 
-const STORAGE_KEY = 'catalyst_dataset_changes_v1';
-
-function safeLoadChanges() {
-  try {
-    const raw = localStorage.getItem(STORAGE_KEY);
-    if (!raw) return { added: [], updated: {}, deleted: [] };
-    const parsed = JSON.parse(raw);
-    return {
-      added: Array.isArray(parsed.added) ? parsed.added : [],
-      updated: parsed.updated && typeof parsed.updated === 'object' ? parsed.updated : {},
-      deleted: Array.isArray(parsed.deleted) ? parsed.deleted : [],
-    };
-  } catch (e) {
-    console.warn('读取本地数据修改记录失败:', e);
-    return { added: [], updated: {}, deleted: [] };
-  }
-}
-
 export const useDataStore = defineStore('data', () => {
   const rawData = ref([]);
   const metadata = ref({});
+  const userUploadedData = ref([]);
   const selectedElement = ref('');
 
-  const addedData = ref([]);
-  const updatedData = ref({});
-  const deletedIds = ref(new Set());
+  // 结构库统计
+  // modelCount：所有 public/structures/**/*.xyz 文件数量
+  // elements：所有 XYZ 模型中实际出现的元素类型并集
+  const structureModelCount = ref(0);
+  const structureElements = ref([]);
+  const structureStatsLoaded = ref(false);
+  const structureStatsLoading = ref(false);
 
-  function persistChanges() {
-    localStorage.setItem(STORAGE_KEY, JSON.stringify({
-      added: addedData.value,
-      updated: updatedData.value,
-      deleted: [...deletedIds.value],
-    }));
+  // 每个 XYZ 结构按 10 个有效数据（活性中心周围）折算
+  const STRUCTURE_DATA_FACTOR = 10;
+
+  const BASE_URL = import.meta.env.BASE_URL || '/';
+  const STRUCTURE_INDEX_URL = `${BASE_URL}structures/index.json`;
+
+  // 所有数据（原始 + 用户上传）
+  const allData = computed(() => {
+    return [...rawData.value, ...userUploadedData.value];
+  });
+
+  // 只读取 structures/index.json，不读取具体 XYZ 文件
+  async function loadStructureStats() {
+    if (
+      structureStatsLoaded.value ||
+      structureStatsLoading.value
+    ) {
+      return;
+    }
+
+    structureStatsLoading.value = true;
+
+    try {
+      const response = await fetch(
+        `${STRUCTURE_INDEX_URL}?v=${Date.now()}`,
+        {
+          cache: 'no-store',
+        }
+      );
+
+      if (!response.ok) {
+        throw new Error(`HTTP ${response.status}`);
+      }
+
+      const index = await response.json();
+
+      const modelCount = Number(index?.modelCount);
+
+      structureModelCount.value =
+        Number.isFinite(modelCount) && modelCount >= 0
+          ? modelCount
+          : 0;
+
+      const elements = Array.isArray(index?.elements)
+        ? index.elements.filter(Boolean)
+        : [];
+
+      structureElements.value = [
+        ...new Set(elements.map(String)),
+      ].sort();
+    } catch (error) {
+      console.warn(
+        '读取结构库统计失败，将按 0 个结构、0 种结构元素计算：',
+        error
+      );
+
+      structureModelCount.value = 0;
+      structureElements.value = [];
+    } finally {
+      structureStatsLoaded.value = true;
+      structureStatsLoading.value = false;
+    }
   }
-
-  function applyChanges(baseRows) {
-    const deleted = deletedIds.value;
-    const updated = updatedData.value;
-    const base = baseRows
-      .filter(row => !deleted.has(row['催化剂_ID']))
-      .map(row => updated[row['催化剂_ID']] ? { ...row, ...updated[row['催化剂_ID']] } : { ...row });
-
-    const baseIds = new Set(base.map(row => row['催化剂_ID']));
-    const added = addedData.value.filter(row => row['催化剂_ID'] && !baseIds.has(row['催化剂_ID']) && !deleted.has(row['催化剂_ID']));
-    return [...base, ...added];
-  }
-
-  // 所有数据（基础数据 + 本地新增/修改，扣除本地删除）
-  const allData = computed(() => applyChanges(rawData.value));
 
   const stats = computed(() => {
     const list = allData.value;
-    const catalystIds = new Set(list.map(r => r['催化剂_ID']).filter(Boolean));
-    const allMetals = new Set();
-    list.forEach(r => {
-      const metal = r['掺杂金属'];
+
+    // 1. 催化剂种类数：按催化剂_ID 去重
+    const catalystIds = new Set(
+      list
+        .map(row => row['催化剂_ID'])
+        .filter(Boolean)
+    );
+
+    // 2. 数据表中的元素集合
+    const tableElements = new Set();
+
+    list.forEach(row => {
+      const metal = row['掺杂金属'];
+
       if (metal) {
-        String(metal).split('-').forEach(m => {
-          const trimmed = m.trim();
-          if (trimmed) allMetals.add(trimmed);
+        metal.split('-').forEach(item => {
+          const trimmed = item.trim();
+
+          if (trimmed) {
+            tableElements.add(trimmed);
+          }
         });
       }
     });
-    allMetals.add('Ce');
-    const reactions = ['CO氧化', 'HCs氧化', 'NH3-SCR'];
 
-    let totalDataPoints = 0;
+    // 与原有逻辑保持一致：Ce 始终计入数据表元素集合
+    tableElements.add('Ce');
+
+    // 3. 数据表有效数据条目
+    let tableDataPoints = 0;
+
     if (list.length > 0) {
-      const keySet = new Set();
-      list.forEach(row => Object.keys(row).forEach(k => keySet.add(k)));
-      const keys = [...keySet];
-      list.forEach(row => keys.forEach(key => {
-        const value = row[key];
-        if (value !== undefined && value !== null && value !== '') totalDataPoints++;
-      }));
+      // 使用所有记录字段的并集，避免不同记录字段数量不一致时漏计。
+      const keys = new Set();
+
+      list.forEach(row => {
+        Object.keys(row || {}).forEach(key => {
+          keys.add(key);
+        });
+      });
+
+      list.forEach(row => {
+        keys.forEach(key => {
+          const value = row?.[key];
+
+          if (
+            value !== undefined &&
+            value !== null &&
+            value !== ''
+          ) {
+            tableDataPoints++;
+          }
+        });
+      });
     }
+
+    // 4. 结构折算数据
+    const structureDataPoints =
+      structureModelCount.value *
+      STRUCTURE_DATA_FACTOR;
+
+    // 5. 首页总条目数
+    const totalDataPoints =
+      tableDataPoints +
+      structureDataPoints;
+
+    // 6. 全数据库涵盖元素：
+    //    数据表元素 ∪ 所有 XYZ 模型元素
+    const allElements = new Set(tableElements);
+
+    structureElements.value.forEach(element => {
+      allElements.add(element);
+    });
+
+    const mergedElements = [...allElements].sort();
 
     return {
       catalystCount: catalystIds.size,
+
+      // 首页总条目
       dataPoints: totalDataPoints,
-      elementCount: allMetals.size,
-      reactionTypes: reactions,
+
+      // 明细
+      tableDataPoints,
+      structureModelCount: structureModelCount.value,
+      structureDataPoints,
+      structureDataFactor: STRUCTURE_DATA_FACTOR,
+
+      // 全数据库元素统计
+      elementCount: mergedElements.length,
+      elements: mergedElements,
+      tableElements: [...tableElements].sort(),
+      structureElements: [...structureElements.value].sort(),
+
+      reactionTypes: [
+        'CO氧化',
+        'HCs氧化',
+        'NH3-SCR',
+      ],
     };
   });
 
+  // 元素下拉列表/周期表高亮：
+  // 数据表元素 + 结构 XYZ 元素
   const metals = computed(() => {
-    const set = new Set();
-    allData.value.forEach(r => {
-      const metal = r['掺杂金属'];
-      if (metal) {
-        String(metal).split('-').forEach(m => {
-          const trimmed = m.trim();
-          if (trimmed) set.add(trimmed);
-        });
-      }
-    });
-    set.add('Ce');
-    return [...set].sort((a, b) => a.localeCompare(b));
+    return stats.value.elements;
   });
 
   const filteredByElement = computed(() => {
     const data = allData.value;
     const element = selectedElement.value;
-    if (!element || element === 'Ce') return data;
+
+    if (!element) return data;
+
+    if (element === 'Ce') return data;
+
     return data.filter(row => {
       const metal = row['掺杂金属'] || '';
-      return String(metal).split('-').some(m => m.trim() === element);
+
+      return metal
+        .split('-')
+        .some(item => item.trim() === element);
     });
   });
 
   function loadBaseData(jsonData) {
     rawData.value = jsonData.data || [];
     metadata.value = jsonData.metadata || {};
-    const changes = safeLoadChanges();
-    addedData.value = changes.added;
-    updatedData.value = changes.updated;
-    deletedIds.value = new Set(changes.deleted);
   }
 
   function mergeUploadedData(newData) {
-    const existing = new Set(allData.value.map(row => row['催化剂_ID']));
-    let count = 0;
-    const incoming = Array.isArray(newData) ? newData : [];
-    incoming.forEach(row => {
-      const id = String(row?.['催化剂_ID'] ?? '').trim();
-      if (!id || existing.has(id)) return;
-      addedData.value.push({ ...row, 催化剂_ID: id });
-      existing.add(id);
-      count += 1;
-    });
-    if (count) persistChanges();
-    return count;
+    const existingIds = new Set(
+      userUploadedData.value.map(
+        item => item['催化剂_ID']
+      )
+    );
+
+    const filteredNew = newData.filter(
+      item =>
+        !existingIds.has(
+          item['催化剂_ID']
+        )
+    );
+
+    userUploadedData.value = [
+      ...userUploadedData.value,
+      ...filteredNew,
+    ];
+
+    localStorage.setItem(
+      'catalyst_uploaded',
+      JSON.stringify(
+        userUploadedData.value
+      )
+    );
+
+    return filteredNew.length;
   }
 
   function loadUploadedFromStorage() {
-    // 兼容旧版 catalyst_uploaded：迁移到新增数据集合
+    const stored =
+      localStorage.getItem(
+        'catalyst_uploaded'
+      );
+
+    if (!stored) return;
+
     try {
-      const stored = localStorage.getItem('catalyst_uploaded');
-      if (!stored) return;
-      const oldRows = JSON.parse(stored);
-      if (!Array.isArray(oldRows) || oldRows.length === 0) return;
-      const currentIds = new Set(allData.value.map(r => r['催化剂_ID']));
-      let changed = false;
-      oldRows.forEach(row => {
-        const id = row['催化剂_ID'];
-        if (id && !currentIds.has(id)) {
-          addedData.value.push(row);
-          currentIds.add(id);
-          changed = true;
-        }
-      });
-      if (changed) persistChanges();
-    } catch (e) {
-      console.warn('迁移旧上传数据失败:', e);
+      userUploadedData.value =
+        JSON.parse(stored);
+    } catch (error) {
+      console.warn(
+        '读取本地上传数据失败：',
+        error
+      );
+
+      userUploadedData.value = [];
     }
-  }
-
-  function isDuplicateId(id, exceptId = null) {
-    return allData.value.some(row => row['催化剂_ID'] === id && row['催化剂_ID'] !== exceptId);
-  }
-
-  function addRecord(record) {
-    const id = String(record['催化剂_ID'] ?? '').trim();
-    if (!id) throw new Error('催化剂_ID 不能为空');
-    if (isDuplicateId(id)) throw new Error(`催化剂_ID「${id}」已存在`);
-    if (deletedIds.value.has(id)) {
-      deletedIds.value.delete(id);
-      deletedIds.value = new Set(deletedIds.value);
-    }
-    addedData.value.push({ ...record, 催化剂_ID: id });
-    persistChanges();
-    return record;
-  }
-
-  function updateRecord(originalId, record) {
-    const oldId = String(originalId ?? '').trim();
-    if (!oldId) throw new Error('原催化剂_ID 无效');
-    if (!allData.value.some(row => row['催化剂_ID'] === oldId)) throw new Error('找不到要修改的记录');
-    const next = { ...record, 催化剂_ID: oldId };
-
-    const addedIndex = addedData.value.findIndex(row => row['催化剂_ID'] === oldId);
-    if (addedIndex >= 0) {
-      addedData.value[addedIndex] = next;
-    } else {
-      updatedData.value[oldId] = next;
-    }
-    persistChanges();
-    return next;
-  }
-
-  function deleteRecord(id) {
-    const targetId = String(id ?? '').trim();
-    const addedIndex = addedData.value.findIndex(row => row['催化剂_ID'] === targetId);
-    if (addedIndex >= 0) {
-      addedData.value.splice(addedIndex, 1);
-    } else {
-      deletedIds.value.add(targetId);
-      delete updatedData.value[targetId];
-      // 触发 Vue 对 Set 的依赖更新：重新赋值
-      deletedIds.value = new Set(deletedIds.value);
-    }
-    persistChanges();
-  }
-
-  function resetLocalChanges() {
-    addedData.value = [];
-    updatedData.value = {};
-    deletedIds.value = new Set();
-    localStorage.removeItem(STORAGE_KEY);
   }
 
   function setSelectedElement(element) {
     selectedElement.value = element;
   }
 
+  // 应用启动后只请求 index.json，
+  // 不加载任何 XYZ 文件。
+  loadStructureStats();
+
   return {
     rawData,
     metadata,
-    addedData,
-    updatedData,
-    deletedIds,
+    userUploadedData,
     allData,
+
     stats,
     metals,
     selectedElement,
     filteredByElement,
+
+    structureModelCount,
+    structureElements,
+    structureStatsLoaded,
+    structureStatsLoading,
+    loadStructureStats,
+
     loadBaseData,
-    loadUploadedFromStorage,
     mergeUploadedData,
-    addRecord,
-    updateRecord,
-    deleteRecord,
-    resetLocalChanges,
-    isDuplicateId,
+    loadUploadedFromStorage,
     setSelectedElement,
   };
 });
