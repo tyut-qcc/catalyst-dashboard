@@ -1,0 +1,56 @@
+{
+  "version": 5,
+  "generatedAt": "2026-09-21T04:47:07.936Z",
+  "trajectoryCount": 3,
+  "counts": {
+    "trajectoryCount": 3,
+    "frameCount": 30000,
+    "candidateFrameCount": 30000,
+    "effectiveStructureCount": 146,
+    "totalEffectiveStructureCount": 146,
+    "energyFrameCount": 30000,
+    "reconstructionEvents": 1047,
+    "recurringStructureMerges": 904
+  },
+  "assumptions": {
+    "temperatureAssignment": "默认仅读取 XYZ 注释中的真实温度；缺失时不显示温度分布。可显式设置 AIMD_TEMPERATURE_MODE=linear 或 random 作假设性演示。",
+    "temperatureSeed": "aimd-2026",
+    "dataPointFactor": 15,
+    "uniquenessScope": "每条 AIMD 轨迹独立进行结构有效性判定。"
+  },
+  "trajectories": [
+    {
+      "id": "Cu-CeO2",
+      "key": "T001",
+      "name": "Cu-CeO2",
+      "file": "Cu-CeO2.xyz",
+      "url": "./aimd/Cu-CeO2.xyz",
+      "frames": 10000,
+      "effectiveStructureCount": 62,
+      "analysisUrl": "./trajectories/T001.json",
+      "size": 49900000
+    },
+    {
+      "id": "Fe-CeO2",
+      "key": "T002",
+      "name": "Fe-CeO2",
+      "file": "Fe-CeO2.xyz",
+      "url": "./aimd/Fe-CeO2.xyz",
+      "frames": 10000,
+      "effectiveStructureCount": 1,
+      "analysisUrl": "./trajectories/T002.json",
+      "size": 49900000
+    },
+    {
+      "id": "Pd-CeO2",
+      "key": "T003",
+      "name": "Pd-CeO2",
+      "file": "Pd-CeO2.xyz",
+      "url": "./aimd/Pd-CeO2.xyz",
+      "frames": 10000,
+      "effectiveStructureCount": 83,
+      "analysisUrl": "./trajectories/T003.json",
+      "size": 49900000
+    }
+  ]
+}
