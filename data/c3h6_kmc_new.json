@@ -1,0 +1,1937 @@
+[
+ {
+  "catalyst": "Pd-CeO2",
+  "temperature_K": 423.15,
+  "feed": "C3H6(g)-CH2(g)",
+  "elementary_steps": [
+   "C3H6_adsorption_fwd",
+   "C3H6_adsorption_rev",
+   "O2_adsorption_fwd",
+   "O2_adsorption_rev",
+   "H2O_des",
+   "CO2_des_fwd",
+   "CO2_des_rev",
+   "CH2_des",
+   "CH2_des#2",
+   "C3H6_dehydrogenation_to_C3H5+OH_fwd",
+   "C3H6_dehydrogenation_to_C3H5+OH_rev",
+   "C3H5_dehydrogenation_to_C3H4+OH_fwd",
+   "C3H5_dehydrogenation_to_C3H4+OH_rev",
+   "H*+OH*_dehydrogenation_to_H2O_fwd",
+   "H*+OH*_dehydrogenation_to_H2O_rev",
+   "C3H4*+O*_to_C3H4O*_fwd",
+   "C3H4*+O*_to_C3H4O*_rev",
+   "C3H4O*_to_CH2*+CH2CO2*_fwd",
+   "C3H4O*_to_CH2*+CH2CO2*_rev",
+   "CH2CO2*_to_CH2*+CO2*_fwd",
+   "CH2CO2*_to_CH2*+CO2*_rev"
+  ],
+  "steady_state_rate": 0.571306470912228,
+  "curve": [
+   {
+    "config": 1,
+    "steps": 0,
+    "rate": 0,
+    "marker": 0
+   },
+   {
+    "config": 16,
+    "steps": 7500000,
+    "rate": 0.445414288166897,
+    "marker": 3340607.16125173
+   },
+   {
+    "config": 32,
+    "steps": 15500000,
+    "rate": 136.01688986428,
+    "marker": 2108261792.89634
+   },
+   {
+    "config": 47,
+    "steps": 23000000,
+    "rate": 0.505511722472273,
+    "marker": 11626769.6168622
+   },
+   {
+    "config": 62,
+    "steps": 30500000,
+    "rate": 0.513523713023193,
+    "marker": 15662473.2472073
+   },
+   {
+    "config": 78,
+    "steps": 38500000,
+    "rate": 135.783737942891,
+    "marker": 5227673910.80133
+   },
+   {
+    "config": 93,
+    "steps": 46000000,
+    "rate": 0.533751997287251,
+    "marker": 24552591.8752135
+   },
+   {
+    "config": 109,
+    "steps": 54000000,
+    "rate": 135.630498994773,
+    "marker": 7324046945.71776
+   },
+   {
+    "config": 124,
+    "steps": 61500000,
+    "rate": 0.544839371347672,
+    "marker": 33507621.3378818
+   },
+   {
+    "config": 140,
+    "steps": 69500000,
+    "rate": 135.435705954926,
+    "marker": 9412781563.86739
+   },
+   {
+    "config": 155,
+    "steps": 77000000,
+    "rate": 135.285085065651,
+    "marker": 10416951550.0551
+   },
+   {
+    "config": 170,
+    "steps": 84500000,
+    "rate": 0.559733506834884,
+    "marker": 47297481.3275477
+   },
+   {
+    "config": 186,
+    "steps": 92500000,
+    "rate": 135.05593265695,
+    "marker": 12492673770.7679
+   },
+   {
+    "config": 201,
+    "steps": 100000000,
+    "rate": 0.571306470912228,
+    "marker": 57130647.0912228
+   }
+  ],
+  "step_rates": {
+   "C3H6_adsorption_fwd": 0.0,
+   "C3H6_adsorption_rev": 0.0,
+   "O2_adsorption_fwd": 0.0,
+   "O2_adsorption_rev": 0,
+   "H2O_des": 0.69058,
+   "CO2_des_fwd": 0.0,
+   "CO2_des_rev": 0,
+   "CH2_des": 0,
+   "CH2_des#2": 0,
+   "C3H6_dehydrogenation_to_C3H5+OH_fwd": 0.686088,
+   "C3H6_dehydrogenation_to_C3H5+OH_rev": 0,
+   "C3H5_dehydrogenation_to_C3H4+OH_fwd": 0.351476,
+   "C3H5_dehydrogenation_to_C3H4+OH_rev": 0,
+   "H*+OH*_dehydrogenation_to_H2O_fwd": 0.521282,
+   "H*+OH*_dehydrogenation_to_H2O_rev": 0.681113,
+   "C3H4*+O*_to_C3H4O*_fwd": 3.4e-05,
+   "C3H4*+O*_to_C3H4O*_rev": 0.0,
+   "C3H4O*_to_CH2*+CH2CO2*_fwd": 65.818842,
+   "C3H4O*_to_CH2*+CH2CO2*_rev": 0,
+   "CH2CO2*_to_CH2*+CO2*_fwd": 5.701536,
+   "CH2CO2*_to_CH2*+CO2*_rev": 0.0
+  },
+  "step_counts": {
+   "C3H6_adsorption_fwd": 664035,
+   "C3H6_adsorption_rev": 664035,
+   "O2_adsorption_fwd": 664035,
+   "O2_adsorption_rev": 0,
+   "H2O_des": 663135,
+   "CO2_des_fwd": 663135,
+   "CO2_des_rev": 0,
+   "CH2_des": 0,
+   "CH2_des#2": 0,
+   "C3H6_dehydrogenation_to_C3H5+OH_fwd": 664035,
+   "C3H6_dehydrogenation_to_C3H5+OH_rev": 0,
+   "C3H5_dehydrogenation_to_C3H4+OH_fwd": 664035,
+   "C3H5_dehydrogenation_to_C3H4+OH_rev": 0,
+   "H*+OH*_dehydrogenation_to_H2O_fwd": 46936298,
+   "H*+OH*_dehydrogenation_to_H2O_rev": 46272264,
+   "C3H4*+O*_to_C3H4O*_fwd": 1404064,
+   "C3H4*+O*_to_C3H4O*_rev": 740929,
+   "C3H4O*_to_CH2*+CH2CO2*_fwd": 4610195,
+   "C3H4O*_to_CH2*+CH2CO2*_rev": 0,
+   "CH2CO2*_to_CH2*+CO2*_fwd": 5186268,
+   "CH2CO2*_to_CH2*+CO2*_rev": 576073
+  }
+ },
+ {
+  "catalyst": "Pd-CeO2",
+  "temperature_K": 523.15,
+  "feed": "C3H6(g)-CH2(g)",
+  "elementary_steps": [
+   "C3H6_adsorption_fwd",
+   "C3H6_adsorption_rev",
+   "O2_adsorption_fwd",
+   "O2_adsorption_rev",
+   "H2O_des",
+   "CO2_des_fwd",
+   "CO2_des_rev",
+   "CH2_des",
+   "CH2_des#2",
+   "C3H6_dehydrogenation_to_C3H5+OH_fwd",
+   "C3H6_dehydrogenation_to_C3H5+OH_rev",
+   "C3H5_dehydrogenation_to_C3H4+OH_fwd",
+   "C3H5_dehydrogenation_to_C3H4+OH_rev",
+   "H*+OH*_dehydrogenation_to_H2O_fwd",
+   "H*+OH*_dehydrogenation_to_H2O_rev",
+   "C3H4*+O*_to_C3H4O*_fwd",
+   "C3H4*+O*_to_C3H4O*_rev",
+   "C3H4O*_to_CH2*+CH2CO2*_fwd",
+   "C3H4O*_to_CH2*+CH2CO2*_rev",
+   "CH2CO2*_to_CH2*+CO2*_fwd",
+   "CH2CO2*_to_CH2*+CO2*_rev"
+  ],
+  "steady_state_rate": 0.000570092526839673,
+  "curve": [
+   {
+    "config": 1,
+    "steps": 0,
+    "rate": 0,
+    "marker": 0
+   },
+   {
+    "config": 16,
+    "steps": 7500000,
+    "rate": 0.000505632618338237,
+    "marker": 3792.24463753677
+   },
+   {
+    "config": 32,
+    "steps": 15500000,
+    "rate": 0.0259644474379163,
+    "marker": 402448.935287702
+   },
+   {
+    "config": 47,
+    "steps": 23000000,
+    "rate": 0.000531883037120128,
+    "marker": 12233.3098537629
+   },
+   {
+    "config": 62,
+    "steps": 30500000,
+    "rate": 0.000537929853764993,
+    "marker": 16406.8605398322
+   },
+   {
+    "config": 78,
+    "steps": 38500000,
+    "rate": 0.0259702640945692,
+    "marker": 999855.167640916
+   },
+   {
+    "config": 93,
+    "steps": 46000000,
+    "rate": 0.000546270948790338,
+    "marker": 25128.4636443555
+   },
+   {
+    "config": 109,
+    "steps": 54000000,
+    "rate": 0.0259648223815765,
+    "marker": 1402100.40860513
+   },
+   {
+    "config": 124,
+    "steps": 61500000,
+    "rate": 0.000552317951811227,
+    "marker": 33967.5540363904
+   },
+   {
+    "config": 140,
+    "steps": 69500000,
+    "rate": 0.025965396164596,
+    "marker": 1804595.03343942
+   },
+   {
+    "config": 155,
+    "steps": 77000000,
+    "rate": 0.0259610500405154,
+    "marker": 1999000.85311969
+   },
+   {
+    "config": 170,
+    "steps": 84500000,
+    "rate": 0.000564061878448905,
+    "marker": 47663.2287289325
+   },
+   {
+    "config": 186,
+    "steps": 92500000,
+    "rate": 0.0259596209231152,
+    "marker": 2401264.93538816
+   },
+   {
+    "config": 201,
+    "steps": 100000000,
+    "rate": 0.000570092526839673,
+    "marker": 57009.2526839673
+   }
+  ],
+  "step_rates": {
+   "C3H6_adsorption_fwd": 0.0,
+   "C3H6_adsorption_rev": 0.0,
+   "O2_adsorption_fwd": 0.0,
+   "O2_adsorption_rev": 0,
+   "H2O_des": 0.00145,
+   "CO2_des_fwd": 0.0,
+   "CO2_des_rev": 0,
+   "CH2_des": 0,
+   "CH2_des#2": 0,
+   "C3H6_dehydrogenation_to_C3H5+OH_fwd": 0.001434,
+   "C3H6_dehydrogenation_to_C3H5+OH_rev": 0,
+   "C3H5_dehydrogenation_to_C3H4+OH_fwd": 0.000876,
+   "C3H5_dehydrogenation_to_C3H4+OH_rev": 0,
+   "H*+OH*_dehydrogenation_to_H2O_fwd": 0.001237,
+   "H*+OH*_dehydrogenation_to_H2O_rev": 0.001406,
+   "C3H4*+O*_to_C3H4O*_fwd": 3e-06,
+   "C3H4*+O*_to_C3H4O*_rev": 0.0,
+   "C3H4O*_to_CH2*+CH2CO2*_fwd": 0.034005,
+   "C3H4O*_to_CH2*+CH2CO2*_rev": 0,
+   "CH2CO2*_to_CH2*+CO2*_fwd": 0.007108,
+   "CH2CO2*_to_CH2*+CO2*_rev": 0.0
+  },
+  "step_counts": {
+   "C3H6_adsorption_fwd": 292602,
+   "C3H6_adsorption_rev": 292603,
+   "O2_adsorption_fwd": 292602,
+   "O2_adsorption_rev": 0,
+   "H2O_des": 291703,
+   "CO2_des_fwd": 291702,
+   "CO2_des_rev": 0,
+   "CH2_des": 0,
+   "CH2_des#2": 0,
+   "C3H6_dehydrogenation_to_C3H5+OH_fwd": 292602,
+   "C3H6_dehydrogenation_to_C3H5+OH_rev": 0,
+   "C3H5_dehydrogenation_to_C3H4+OH_fwd": 292602,
+   "C3H5_dehydrogenation_to_C3H4+OH_rev": 0,
+   "H*+OH*_dehydrogenation_to_H2O_fwd": 21285156,
+   "H*+OH*_dehydrogenation_to_H2O_rev": 20992558,
+   "C3H4*+O*_to_C3H4O*_fwd": 27983786,
+   "C3H4*+O*_to_C3H4O*_rev": 27692084,
+   "C3H4O*_to_CH2*+CH2CO2*_fwd": 4990552,
+   "C3H4O*_to_CH2*+CH2CO2*_rev": 0,
+   "CH2CO2*_to_CH2*+CO2*_fwd": 5023444,
+   "CH2CO2*_to_CH2*+CO2*_rev": 32893
+  }
+ },
+ {
+  "catalyst": "Pd-CeO2",
+  "temperature_K": 623.15,
+  "feed": "C3H6(g)-CH2(g)",
+  "elementary_steps": [
+   "C3H6_adsorption_fwd",
+   "C3H6_adsorption_rev",
+   "O2_adsorption_fwd",
+   "O2_adsorption_rev",
+   "H2O_des",
+   "CO2_des_fwd",
+   "CO2_des_rev",
+   "CH2_des",
+   "CH2_des#2",
+   "C3H6_dehydrogenation_to_C3H5+OH_fwd",
+   "C3H6_dehydrogenation_to_C3H5+OH_rev",
+   "C3H5_dehydrogenation_to_C3H4+OH_fwd",
+   "C3H5_dehydrogenation_to_C3H4+OH_rev",
+   "H*+OH*_dehydrogenation_to_H2O_fwd",
+   "H*+OH*_dehydrogenation_to_H2O_rev",
+   "C3H4*+O*_to_C3H4O*_fwd",
+   "C3H4*+O*_to_C3H4O*_rev",
+   "C3H4O*_to_CH2*+CH2CO2*_fwd",
+   "C3H4O*_to_CH2*+CH2CO2*_rev",
+   "CH2CO2*_to_CH2*+CO2*_fwd",
+   "CH2CO2*_to_CH2*+CO2*_rev"
+  ],
+  "steady_state_rate": 0.0209470787002831,
+  "curve": [
+   {
+    "config": 1,
+    "steps": 0,
+    "rate": 0,
+    "marker": 0
+   },
+   {
+    "config": 16,
+    "steps": 7500000,
+    "rate": 0.0209584542545867,
+    "marker": 157188.4069094
+   },
+   {
+    "config": 32,
+    "steps": 15500000,
+    "rate": 4.99243761885743e-08,
+    "marker": 0.773827830922902
+   },
+   {
+    "config": 47,
+    "steps": 23000000,
+    "rate": 0.0209608376662244,
+    "marker": 482099.266323161
+   },
+   {
+    "config": 62,
+    "steps": 30500000,
+    "rate": 0.0209611557181764,
+    "marker": 639315.24940438
+   },
+   {
+    "config": 78,
+    "steps": 38500000,
+    "rate": 5.09410088038384e-08,
+    "marker": 1.96122883894778
+   },
+   {
+    "config": 93,
+    "steps": 46000000,
+    "rate": 0.0209531521154696,
+    "marker": 963844.997311602
+   },
+   {
+    "config": 109,
+    "steps": 54000000,
+    "rate": 5.13091896554112e-08,
+    "marker": 2.7706962413922
+   },
+   {
+    "config": 124,
+    "steps": 61500000,
+    "rate": 0.0209512636346312,
+    "marker": 1288502.71352982
+   },
+   {
+    "config": 140,
+    "steps": 69500000,
+    "rate": 5.12553794591136e-08,
+    "marker": 3.56224887240839
+   },
+   {
+    "config": 155,
+    "steps": 77000000,
+    "rate": 5.09059419171314e-08,
+    "marker": 3.91975752761912
+   },
+   {
+    "config": 170,
+    "steps": 84500000,
+    "rate": 0.0209491316275749,
+    "marker": 1770201.62253008
+   },
+   {
+    "config": 186,
+    "steps": 92500000,
+    "rate": 5.00986362168098e-08,
+    "marker": 4.6341238500549
+   },
+   {
+    "config": 201,
+    "steps": 100000000,
+    "rate": 0.0209470787002831,
+    "marker": 2094707.87002831
+   }
+  ],
+  "step_rates": {
+   "C3H6_adsorption_fwd": 0.0,
+   "C3H6_adsorption_rev": 0.0,
+   "O2_adsorption_fwd": 0.0,
+   "O2_adsorption_rev": 0,
+   "H2O_des": 0.100392,
+   "CO2_des_fwd": 0.0,
+   "CO2_des_rev": 0,
+   "CH2_des": 0,
+   "CH2_des#2": 0,
+   "C3H6_dehydrogenation_to_C3H5+OH_fwd": 0.100192,
+   "C3H6_dehydrogenation_to_C3H5+OH_rev": 0,
+   "C3H5_dehydrogenation_to_C3H4+OH_fwd": 4.5e-05,
+   "C3H5_dehydrogenation_to_C3H4+OH_rev": 0,
+   "H*+OH*_dehydrogenation_to_H2O_fwd": 0.0,
+   "H*+OH*_dehydrogenation_to_H2O_rev": 0.0,
+   "C3H4*+O*_to_C3H4O*_fwd": 0.0,
+   "C3H4*+O*_to_C3H4O*_rev": 0,
+   "C3H4O*_to_CH2*+CH2CO2*_fwd": 0.0,
+   "C3H4O*_to_CH2*+CH2CO2*_rev": 0,
+   "CH2CO2*_to_CH2*+CO2*_fwd": 0.0,
+   "CH2CO2*_to_CH2*+CO2*_rev": 0.0
+  },
+  "step_counts": {
+   "C3H6_adsorption_fwd": 10441972,
+   "C3H6_adsorption_rev": 10441201,
+   "O2_adsorption_fwd": 10441073,
+   "O2_adsorption_rev": 0,
+   "H2O_des": 10440301,
+   "CO2_des_fwd": 10440173,
+   "CO2_des_rev": 0,
+   "CH2_des": 0,
+   "CH2_des#2": 0,
+   "C3H6_dehydrogenation_to_C3H5+OH_fwd": 10441073,
+   "C3H6_dehydrogenation_to_C3H5+OH_rev": 0,
+   "C3H5_dehydrogenation_to_C3H4+OH_fwd": 10441073,
+   "C3H5_dehydrogenation_to_C3H4+OH_rev": 0,
+   "H*+OH*_dehydrogenation_to_H2O_fwd": 13456567,
+   "H*+OH*_dehydrogenation_to_H2O_rev": 3015495,
+   "C3H4*+O*_to_C3H4O*_fwd": 10441072,
+   "C3H4*+O*_to_C3H4O*_rev": 0,
+   "C3H4O*_to_CH2*+CH2CO2*_fwd": 8199,
+   "C3H4O*_to_CH2*+CH2CO2*_rev": 0,
+   "CH2CO2*_to_CH2*+CO2*_fwd": 8863,
+   "CH2CO2*_to_CH2*+CO2*_rev": 664
+  }
+ },
+ {
+  "catalyst": "Pd-CeO2",
+  "temperature_K": 723.15,
+  "feed": "C3H6(g)-CH2(g)",
+  "elementary_steps": [
+   "C3H6_adsorption_fwd",
+   "C3H6_adsorption_rev",
+   "O2_adsorption_fwd",
+   "O2_adsorption_rev",
+   "H2O_des",
+   "CO2_des_fwd",
+   "CO2_des_rev",
+   "CH2_des",
+   "CH2_des#2",
+   "C3H6_dehydrogenation_to_C3H5+OH_fwd",
+   "C3H6_dehydrogenation_to_C3H5+OH_rev",
+   "C3H5_dehydrogenation_to_C3H4+OH_fwd",
+   "C3H5_dehydrogenation_to_C3H4+OH_rev",
+   "H*+OH*_dehydrogenation_to_H2O_fwd",
+   "H*+OH*_dehydrogenation_to_H2O_rev",
+   "C3H4*+O*_to_C3H4O*_fwd",
+   "C3H4*+O*_to_C3H4O*_rev",
+   "C3H4O*_to_CH2*+CH2CO2*_fwd",
+   "C3H4O*_to_CH2*+CH2CO2*_rev",
+   "CH2CO2*_to_CH2*+CO2*_fwd",
+   "CH2CO2*_to_CH2*+CO2*_rev"
+  ],
+  "steady_state_rate": 3.01050527516524e-07,
+  "curve": [
+   {
+    "config": 1,
+    "steps": 0,
+    "rate": 0,
+    "marker": 0
+   },
+   {
+    "config": 16,
+    "steps": 7500000,
+    "rate": 2.73167306680647e-07,
+    "marker": 2.04875480010485
+   },
+   {
+    "config": 32,
+    "steps": 15500000,
+    "rate": 1.79945504534591e-06,
+    "marker": 27.8915532028617
+   },
+   {
+    "config": 47,
+    "steps": 23000000,
+    "rate": 2.93363557657569e-07,
+    "marker": 6.7473618261241
+   },
+   {
+    "config": 62,
+    "steps": 30500000,
+    "rate": 2.95593314980097e-07,
+    "marker": 9.01559610689298
+   },
+   {
+    "config": 78,
+    "steps": 38500000,
+    "rate": 1.79903400787432e-06,
+    "marker": 69.2628093031613
+   },
+   {
+    "config": 93,
+    "steps": 46000000,
+    "rate": 2.98471234354754e-07,
+    "marker": 13.7296767803187
+   },
+   {
+    "config": 109,
+    "steps": 54000000,
+    "rate": 1.79931605111394e-06,
+    "marker": 97.163066760153
+   },
+   {
+    "config": 124,
+    "steps": 61500000,
+    "rate": 2.99252741613408e-07,
+    "marker": 18.4040436092246
+   },
+   {
+    "config": 140,
+    "steps": 69500000,
+    "rate": 1.79957986444991e-06,
+    "marker": 125.070800579269
+   },
+   {
+    "config": 155,
+    "steps": 77000000,
+    "rate": 1.79941716092379e-06,
+    "marker": 138.555121391132
+   },
+   {
+    "config": 170,
+    "steps": 84500000,
+    "rate": 2.99762024257427e-07,
+    "marker": 25.3298910497526
+   },
+   {
+    "config": 186,
+    "steps": 92500000,
+    "rate": 1.79924425821419e-06,
+    "marker": 166.430093884812
+   },
+   {
+    "config": 201,
+    "steps": 100000000,
+    "rate": 3.01050527516524e-07,
+    "marker": 30.1050527516524
+   }
+  ],
+  "step_rates": {
+   "C3H6_adsorption_fwd": 0.0,
+   "C3H6_adsorption_rev": 0.0,
+   "O2_adsorption_fwd": 0.0,
+   "O2_adsorption_rev": 0,
+   "H2O_des": 1e-06,
+   "CO2_des_fwd": 0.0,
+   "CO2_des_rev": 0,
+   "CH2_des": 1e-06,
+   "CH2_des#2": 0,
+   "C3H6_dehydrogenation_to_C3H5+OH_fwd": 1e-06,
+   "C3H6_dehydrogenation_to_C3H5+OH_rev": 0,
+   "C3H5_dehydrogenation_to_C3H4+OH_fwd": 1e-06,
+   "C3H5_dehydrogenation_to_C3H4+OH_rev": 0,
+   "H*+OH*_dehydrogenation_to_H2O_fwd": 1e-06,
+   "H*+OH*_dehydrogenation_to_H2O_rev": 1e-06,
+   "C3H4*+O*_to_C3H4O*_fwd": 0.0,
+   "C3H4*+O*_to_C3H4O*_rev": 0.0,
+   "C3H4O*_to_CH2*+CH2CO2*_fwd": 3e-06,
+   "C3H4O*_to_CH2*+CH2CO2*_rev": 0,
+   "CH2CO2*_to_CH2*+CO2*_fwd": 2e-06,
+   "CH2CO2*_to_CH2*+CO2*_rev": 0.0
+  },
+  "step_counts": {
+   "C3H6_adsorption_fwd": 184080,
+   "C3H6_adsorption_rev": 184087,
+   "O2_adsorption_fwd": 184083,
+   "O2_adsorption_rev": 0,
+   "H2O_des": 183187,
+   "CO2_des_fwd": 183180,
+   "CO2_des_rev": 0,
+   "CH2_des": 3,
+   "CH2_des#2": 0,
+   "C3H6_dehydrogenation_to_C3H5+OH_fwd": 184084,
+   "C3H6_dehydrogenation_to_C3H5+OH_rev": 0,
+   "C3H5_dehydrogenation_to_C3H4+OH_fwd": 184083,
+   "C3H5_dehydrogenation_to_C3H4+OH_rev": 0,
+   "H*+OH*_dehydrogenation_to_H2O_fwd": 13867129,
+   "H*+OH*_dehydrogenation_to_H2O_rev": 13683054,
+   "C3H4*+O*_to_C3H4O*_fwd": 35673105,
+   "C3H4*+O*_to_C3H4O*_rev": 35489925,
+   "C3H4O*_to_CH2*+CH2CO2*_fwd": 2901382,
+   "C3H4O*_to_CH2*+CH2CO2*_rev": 0,
+   "CH2CO2*_to_CH2*+CO2*_fwd": 4548573,
+   "CH2CO2*_to_CH2*+CO2*_rev": 1647191
+  }
+ },
+ {
+  "catalyst": "Pd-CeO2",
+  "temperature_K": 823.15,
+  "feed": "C3H6(g)-CH2(g)",
+  "elementary_steps": [
+   "C3H6_adsorption_fwd",
+   "C3H6_adsorption_rev",
+   "O2_adsorption_fwd",
+   "O2_adsorption_rev",
+   "H2O_des",
+   "CO2_des_fwd",
+   "CO2_des_rev",
+   "CH2_des",
+   "CH2_des#2",
+   "C3H6_dehydrogenation_to_C3H5+OH_fwd",
+   "C3H6_dehydrogenation_to_C3H5+OH_rev",
+   "C3H5_dehydrogenation_to_C3H4+OH_fwd",
+   "C3H5_dehydrogenation_to_C3H4+OH_rev",
+   "H*+OH*_dehydrogenation_to_H2O_fwd",
+   "H*+OH*_dehydrogenation_to_H2O_rev",
+   "C3H4*+O*_to_C3H4O*_fwd",
+   "C3H4*+O*_to_C3H4O*_rev",
+   "C3H4O*_to_CH2*+CH2CO2*_fwd",
+   "C3H4O*_to_CH2*+CH2CO2*_rev",
+   "CH2CO2*_to_CH2*+CO2*_fwd",
+   "CH2CO2*_to_CH2*+CO2*_rev"
+  ],
+  "steady_state_rate": 9.16666828453137e-08,
+  "curve": [
+   {
+    "config": 1,
+    "steps": 0,
+    "rate": 0,
+    "marker": 0
+   },
+   {
+    "config": 16,
+    "steps": 7500000,
+    "rate": 9.16966748799199e-08,
+    "marker": 0.687725061599399
+   },
+   {
+    "config": 32,
+    "steps": 15500000,
+    "rate": 9.17135181498389e-08,
+    "marker": 1.4215595313225
+   },
+   {
+    "config": 47,
+    "steps": 23000000,
+    "rate": 9.16710807382492e-08,
+    "marker": 2.10843485697973
+   },
+   {
+    "config": 63,
+    "steps": 31000000,
+    "rate": 9.17415118872784e-08,
+    "marker": 2.84398686850563
+   },
+   {
+    "config": 78,
+    "steps": 38500000,
+    "rate": 9.17150850695158e-08,
+    "marker": 3.53103077517635
+   },
+   {
+    "config": 93,
+    "steps": 46000000,
+    "rate": 9.17144256320027e-08,
+    "marker": 4.21886357907212
+   },
+   {
+    "config": 109,
+    "steps": 54000000,
+    "rate": 9.17226347400711e-08,
+    "marker": 4.95302227596384
+   },
+   {
+    "config": 124,
+    "steps": 61500000,
+    "rate": 9.17249676311782e-08,
+    "marker": 5.64108550931746
+   },
+   {
+    "config": 139,
+    "steps": 69000000,
+    "rate": 9.17041412851051e-08,
+    "marker": 6.32758574867225
+   },
+   {
+    "config": 155,
+    "steps": 77000000,
+    "rate": 9.16866136333639e-08,
+    "marker": 7.05986924976902
+   },
+   {
+    "config": 170,
+    "steps": 84500000,
+    "rate": 9.16864836698635e-08,
+    "marker": 7.74750787010347
+   },
+   {
+    "config": 186,
+    "steps": 92500000,
+    "rate": 9.16554354815017e-08,
+    "marker": 8.47812778203891
+   },
+   {
+    "config": 201,
+    "steps": 100000000,
+    "rate": 9.16666828453137e-08,
+    "marker": 9.16666828453137
+   }
+  ],
+  "step_rates": {
+   "C3H6_adsorption_fwd": 0.0,
+   "C3H6_adsorption_rev": 0.0,
+   "O2_adsorption_fwd": 0.0,
+   "O2_adsorption_rev": 0,
+   "H2O_des": 0.0,
+   "CO2_des_fwd": 0.0,
+   "CO2_des_rev": 0,
+   "CH2_des": 0.0,
+   "CH2_des#2": 0.0,
+   "C3H6_dehydrogenation_to_C3H5+OH_fwd": 0.0,
+   "C3H6_dehydrogenation_to_C3H5+OH_rev": 0.0,
+   "C3H5_dehydrogenation_to_C3H4+OH_fwd": 0.0,
+   "C3H5_dehydrogenation_to_C3H4+OH_rev": 0.0,
+   "H*+OH*_dehydrogenation_to_H2O_fwd": 0.0,
+   "H*+OH*_dehydrogenation_to_H2O_rev": 0.0,
+   "C3H4*+O*_to_C3H4O*_fwd": 0.0,
+   "C3H4*+O*_to_C3H4O*_rev": 0.0,
+   "C3H4O*_to_CH2*+CH2CO2*_fwd": 0.0,
+   "C3H4O*_to_CH2*+CH2CO2*_rev": 0,
+   "CH2CO2*_to_CH2*+CO2*_fwd": 0.0,
+   "CH2CO2*_to_CH2*+CO2*_rev": 0.0
+  },
+  "step_counts": {
+   "C3H6_adsorption_fwd": 9128156,
+   "C3H6_adsorption_rev": 7688255,
+   "O2_adsorption_fwd": 4317964,
+   "O2_adsorption_rev": 0,
+   "H2O_des": 1438677,
+   "CO2_des_fwd": 1439001,
+   "CO2_des_rev": 0,
+   "CH2_des": 1439001,
+   "CH2_des#2": 1439001,
+   "C3H6_dehydrogenation_to_C3H5+OH_fwd": 1441457,
+   "C3H6_dehydrogenation_to_C3H5+OH_rev": 1556,
+   "C3H5_dehydrogenation_to_C3H4+OH_fwd": 27389644,
+   "C3H5_dehydrogenation_to_C3H4+OH_rev": 25950068,
+   "H*+OH*_dehydrogenation_to_H2O_fwd": 2867283,
+   "H*+OH*_dehydrogenation_to_H2O_rev": 1427896,
+   "C3H4*+O*_to_C3H4O*_fwd": 2591617,
+   "C3H4*+O*_to_C3H4O*_rev": 1152230,
+   "C3H4O*_to_CH2*+CH2CO2*_fwd": 1439001,
+   "C3H4O*_to_CH2*+CH2CO2*_rev": 0,
+   "CH2CO2*_to_CH2*+CO2*_fwd": 5144097,
+   "CH2CO2*_to_CH2*+CO2*_rev": 3705096
+  }
+ },
+ {
+  "catalyst": "Pt-CeO2",
+  "temperature_K": 623.15,
+  "feed": "C3H6(g)-CH2(g)",
+  "elementary_steps": [
+   "C3H6_adsorption_fwd",
+   "C3H6_adsorption_rev",
+   "1/2O2_adsorption_fwd",
+   "1/2O2_adsorption_rev",
+   "H2O_des_fwd",
+   "H2O_des_rev",
+   "CO2_des_fwd",
+   "CO2_des_rev",
+   "CH2_des",
+   "CH2_des#2",
+   "C3H6_dehydrogenation_to_C3H5+OH_fwd",
+   "C3H6_dehydrogenation_to_C3H5+OH_rev",
+   "C3H5_dehydrogenation_to_C3H4+OH_fwd",
+   "C3H5_dehydrogenation_to_C3H4+OH_rev",
+   "H*+OH*_dehydrogenation_to_H2O_fwd",
+   "H*+OH*_dehydrogenation_to_H2O_rev",
+   "C3H4*+O*_to_C3H4O*_fwd",
+   "C3H4*+O*_to_C3H4O*_rev",
+   "C3H4O*_to_CH2*+CH2CO2*_fwd",
+   "C3H4O*_to_CH2*+CH2CO2*_rev",
+   "CH2CO2*_to_CH2*+CO2*_fwd",
+   "CH2CO2*_to_CH2*+CO2*_rev"
+  ],
+  "steady_state_rate": 2.82881140169875e-07,
+  "curve": [
+   {
+    "config": 1,
+    "steps": 0,
+    "rate": 0,
+    "marker": 0
+   },
+   {
+    "config": 16,
+    "steps": 7500000,
+    "rate": 2.12061398702339e-07,
+    "marker": 1.59046049026754
+   },
+   {
+    "config": 32,
+    "steps": 15500000,
+    "rate": 0.554232039569865,
+    "marker": 8590596.6133329
+   },
+   {
+    "config": 47,
+    "steps": 23000000,
+    "rate": 2.62265345654613e-07,
+    "marker": 6.0321029500561
+   },
+   {
+    "config": 62,
+    "steps": 30500000,
+    "rate": 2.68212928253507e-07,
+    "marker": 8.18049431173198
+   },
+   {
+    "config": 78,
+    "steps": 38500000,
+    "rate": 0.535242890703898,
+    "marker": 20606851.2921
+   },
+   {
+    "config": 93,
+    "steps": 46000000,
+    "rate": 2.768661739514e-07,
+    "marker": 12.7358440017644
+   },
+   {
+    "config": 109,
+    "steps": 54000000,
+    "rate": 0.491607921959797,
+    "marker": 26546827.785829
+   },
+   {
+    "config": 124,
+    "steps": 61500000,
+    "rate": 2.79973033959537e-07,
+    "marker": 17.2183415885115
+   },
+   {
+    "config": 140,
+    "steps": 69500000,
+    "rate": 0.467986129289507,
+    "marker": 32525035.9856207
+   },
+   {
+    "config": 155,
+    "steps": 77000000,
+    "rate": 0.447929651172424,
+    "marker": 34490583.1402767
+   },
+   {
+    "config": 170,
+    "steps": 84500000,
+    "rate": 2.83148212799115e-07,
+    "marker": 23.9260239815252
+   },
+   {
+    "config": 186,
+    "steps": 92500000,
+    "rate": 0.403476305086338,
+    "marker": 37321558.2204863
+   },
+   {
+    "config": 201,
+    "steps": 100000000,
+    "rate": 2.82881140169875e-07,
+    "marker": 28.2881140169875
+   }
+  ],
+  "step_rates": {
+   "C3H6_adsorption_fwd": 0.0,
+   "C3H6_adsorption_rev": 0.0,
+   "1/2O2_adsorption_fwd": 0.0,
+   "1/2O2_adsorption_rev": 0,
+   "H2O_des_fwd": 0.000273,
+   "H2O_des_rev": 0.000173,
+   "CO2_des_fwd": 0,
+   "CO2_des_rev": 0,
+   "CH2_des": 0,
+   "CH2_des#2": 0.0,
+   "C3H6_dehydrogenation_to_C3H5+OH_fwd": 0,
+   "C3H6_dehydrogenation_to_C3H5+OH_rev": 2.1e-05,
+   "C3H5_dehydrogenation_to_C3H4+OH_fwd": 0,
+   "C3H5_dehydrogenation_to_C3H4+OH_rev": 2.3e-05,
+   "H*+OH*_dehydrogenation_to_H2O_fwd": 0.0,
+   "H*+OH*_dehydrogenation_to_H2O_rev": 0.0,
+   "C3H4*+O*_to_C3H4O*_fwd": 0.0,
+   "C3H4*+O*_to_C3H4O*_rev": 0,
+   "C3H4O*_to_CH2*+CH2CO2*_fwd": 1.162792,
+   "C3H4O*_to_CH2*+CH2CO2*_rev": 0,
+   "CH2CO2*_to_CH2*+CO2*_fwd": 0.008566,
+   "CH2CO2*_to_CH2*+CO2*_rev": 0.0
+  },
+  "step_counts": {
+   "C3H6_adsorption_fwd": 53424,
+   "C3H6_adsorption_rev": 53425,
+   "1/2O2_adsorption_fwd": 53394,
+   "1/2O2_adsorption_rev": 0,
+   "H2O_des_fwd": 51655,
+   "H2O_des_rev": 52494,
+   "CO2_des_fwd": 0,
+   "CO2_des_rev": 0,
+   "CH2_des": 0,
+   "CH2_des#2": 52555,
+   "C3H6_dehydrogenation_to_C3H5+OH_fwd": 0,
+   "C3H6_dehydrogenation_to_C3H5+OH_rev": 52525,
+   "C3H5_dehydrogenation_to_C3H4+OH_fwd": 0,
+   "C3H5_dehydrogenation_to_C3H4+OH_rev": 52923,
+   "H*+OH*_dehydrogenation_to_H2O_fwd": 398,
+   "H*+OH*_dehydrogenation_to_H2O_rev": 49814866,
+   "C3H4*+O*_to_C3H4O*_fwd": 49762341,
+   "C3H4*+O*_to_C3H4O*_rev": 0,
+   "C3H4O*_to_CH2*+CH2CO2*_fwd": 78569,
+   "C3H4O*_to_CH2*+CH2CO2*_rev": 0,
+   "CH2CO2*_to_CH2*+CO2*_fwd": 17403390,
+   "CH2CO2*_to_CH2*+CO2*_rev": 17324821
+  }
+ },
+ {
+  "catalyst": "Cu-CeO2",
+  "temperature_K": 423.15,
+  "feed": "C3H6(g)-CH2(g)",
+  "elementary_steps": [
+   "C3H6_adsorption_fwd",
+   "C3H6_adsorption_rev",
+   "1/2O2_adsorption_fwd",
+   "1/2O2_adsorption_rev",
+   "H2O_des",
+   "CO2_des_fwd",
+   "CO2_des_rev",
+   "CH2_des",
+   "CH2_des#2",
+   "C3H6_dehydrogenation_to_C3H5+OH_fwd",
+   "C3H6_dehydrogenation_to_C3H5+OH_rev",
+   "C3H5_dehydrogenation_to_C3H4+OH_fwd",
+   "C3H5_dehydrogenation_to_C3H4+OH_rev",
+   "H*+OH*_dehydrogenation_to_H2O_fwd",
+   "H*+OH*_dehydrogenation_to_H2O_rev",
+   "C3H4*+O*_to_C3H4O*_fwd",
+   "C3H4*+O*_to_C3H4O*_rev",
+   "C3H4O*_to_CH2*+CH2CO2*_fwd",
+   "C3H4O*_to_CH2*+CH2CO2*_rev",
+   "CH2CO2*_to_CH2*+CO2*_fwd",
+   "CH2CO2*_to_CH2*+CO2*_rev"
+  ],
+  "steady_state_rate": 0.116666308514716,
+  "curve": [
+   {
+    "config": 1,
+    "steps": 0,
+    "rate": 0,
+    "marker": 0
+   },
+   {
+    "config": 16,
+    "steps": 7500000,
+    "rate": 0.116514298306673,
+    "marker": 873857.237300052
+   },
+   {
+    "config": 32,
+    "steps": 15500000,
+    "rate": 0.00115001692157293,
+    "marker": 17825.2622843804
+   },
+   {
+    "config": 47,
+    "steps": 23000000,
+    "rate": 0.116610140845928,
+    "marker": 2682033.23945636
+   },
+   {
+    "config": 62,
+    "steps": 30500000,
+    "rate": 0.116593417929795,
+    "marker": 3556099.24685875
+   },
+   {
+    "config": 78,
+    "steps": 38500000,
+    "rate": 0.0012956084390484,
+    "marker": 49880.9249033634
+   },
+   {
+    "config": 93,
+    "steps": 46000000,
+    "rate": 0.116617614661646,
+    "marker": 5364410.27443574
+   },
+   {
+    "config": 109,
+    "steps": 54000000,
+    "rate": 0.00132468040296046,
+    "marker": 71532.7417598651
+   },
+   {
+    "config": 124,
+    "steps": 61500000,
+    "rate": 0.116622405741377,
+    "marker": 7172277.95309471
+   },
+   {
+    "config": 140,
+    "steps": 69500000,
+    "rate": 0.00132289366142899,
+    "marker": 91941.1094693154
+   },
+   {
+    "config": 155,
+    "steps": 77000000,
+    "rate": 0.00132942270759443,
+    "marker": 102365.548484771
+   },
+   {
+    "config": 170,
+    "steps": 84500000,
+    "rate": 0.116645314067264,
+    "marker": 9856529.03868384
+   },
+   {
+    "config": 186,
+    "steps": 92500000,
+    "rate": 0.00134061519311706,
+    "marker": 124006.905363328
+   },
+   {
+    "config": 201,
+    "steps": 100000000,
+    "rate": 0.116666308514716,
+    "marker": 11666630.8514716
+   }
+  ],
+  "step_rates": {
+   "C3H6_adsorption_fwd": 0.0,
+   "C3H6_adsorption_rev": 0.0,
+   "1/2O2_adsorption_fwd": 0.0,
+   "1/2O2_adsorption_rev": 0,
+   "H2O_des": 0.830052,
+   "CO2_des_fwd": 0.220158,
+   "CO2_des_rev": 0,
+   "CH2_des": 0,
+   "CH2_des#2": 0,
+   "C3H6_dehydrogenation_to_C3H5+OH_fwd": 6e-06,
+   "C3H6_dehydrogenation_to_C3H5+OH_rev": 0,
+   "C3H5_dehydrogenation_to_C3H4+OH_fwd": 4e-06,
+   "C3H5_dehydrogenation_to_C3H4+OH_rev": 0,
+   "H*+OH*_dehydrogenation_to_H2O_fwd": 0.0,
+   "H*+OH*_dehydrogenation_to_H2O_rev": 0,
+   "C3H4*+O*_to_C3H4O*_fwd": 0.0,
+   "C3H4*+O*_to_C3H4O*_rev": 0,
+   "C3H4O*_to_CH2*+CH2CO2*_fwd": 4e-06,
+   "C3H4O*_to_CH2*+CH2CO2*_rev": 0,
+   "CH2CO2*_to_CH2*+CO2*_fwd": 0.002929,
+   "CH2CO2*_to_CH2*+CO2*_rev": 0.0
+  },
+  "step_counts": {
+   "C3H6_adsorption_fwd": 11110358,
+   "C3H6_adsorption_rev": 11109459,
+   "1/2O2_adsorption_fwd": 11110358,
+   "1/2O2_adsorption_rev": 0,
+   "H2O_des": 11108559,
+   "CO2_des_fwd": 11109458,
+   "CO2_des_rev": 0,
+   "CH2_des": 0,
+   "CH2_des#2": 0,
+   "C3H6_dehydrogenation_to_C3H5+OH_fwd": 11109459,
+   "C3H6_dehydrogenation_to_C3H5+OH_rev": 0,
+   "C3H5_dehydrogenation_to_C3H4+OH_fwd": 11116423,
+   "C3H5_dehydrogenation_to_C3H4+OH_rev": 6964,
+   "H*+OH*_dehydrogenation_to_H2O_fwd": 11109481,
+   "H*+OH*_dehydrogenation_to_H2O_rev": 23,
+   "C3H4*+O*_to_C3H4O*_fwd": 11109458,
+   "C3H4*+O*_to_C3H4O*_rev": 0,
+   "C3H4O*_to_CH2*+CH2CO2*_fwd": 31,
+   "C3H4O*_to_CH2*+CH2CO2*_rev": 0,
+   "CH2CO2*_to_CH2*+CO2*_fwd": 51,
+   "CH2CO2*_to_CH2*+CO2*_rev": 20
+  }
+ },
+ {
+  "catalyst": "Cu-CeO2",
+  "temperature_K": 523.15,
+  "feed": "C3H6(g)-CH2(g)",
+  "elementary_steps": [
+   "C3H6_adsorption_fwd",
+   "C3H6_adsorption_rev",
+   "1/2O2_adsorption_fwd",
+   "1/2O2_adsorption_rev",
+   "H2O_des",
+   "CO2_des_fwd",
+   "CO2_des_rev",
+   "CH2_des",
+   "CH2_des#2",
+   "C3H6_dehydrogenation_to_C3H5+OH_fwd",
+   "C3H6_dehydrogenation_to_C3H5+OH_rev",
+   "C3H5_dehydrogenation_to_C3H4+OH_fwd",
+   "C3H5_dehydrogenation_to_C3H4+OH_rev",
+   "H*+OH*_dehydrogenation_to_H2O_fwd",
+   "H*+OH*_dehydrogenation_to_H2O_rev",
+   "C3H4*+O*_to_C3H4O*_fwd",
+   "C3H4*+O*_to_C3H4O*_rev",
+   "C3H4O*_to_CH2*+CH2CO2*_fwd",
+   "C3H4O*_to_CH2*+CH2CO2*_rev",
+   "CH2CO2*_to_CH2*+CO2*_fwd",
+   "CH2CO2*_to_CH2*+CO2*_rev"
+  ],
+  "steady_state_rate": 0.000612895946478737,
+  "curve": [
+   {
+    "config": 1,
+    "steps": 0,
+    "rate": 0,
+    "marker": 0
+   },
+   {
+    "config": 16,
+    "steps": 7500000,
+    "rate": 0.00061262789304965,
+    "marker": 4594.70919787238
+   },
+   {
+    "config": 32,
+    "steps": 15500000,
+    "rate": 6.82768612173762e-06,
+    "marker": 105.829134886933
+   },
+   {
+    "config": 47,
+    "steps": 23000000,
+    "rate": 0.000613014588698721,
+    "marker": 14099.3355400706
+   },
+   {
+    "config": 62,
+    "steps": 30500000,
+    "rate": 0.000612749558055664,
+    "marker": 18688.8615206977
+   },
+   {
+    "config": 78,
+    "steps": 38500000,
+    "rate": 6.93971157899093e-06,
+    "marker": 267.17889579115
+   },
+   {
+    "config": 93,
+    "steps": 46000000,
+    "rate": 0.00061311503762648,
+    "marker": 28203.291730818
+   },
+   {
+    "config": 109,
+    "steps": 54000000,
+    "rate": 6.96246350591594e-06,
+    "marker": 375.97302931946
+   },
+   {
+    "config": 124,
+    "steps": 61500000,
+    "rate": 0.000612869544562752,
+    "marker": 37691.4769906092
+   },
+   {
+    "config": 140,
+    "steps": 69500000,
+    "rate": 6.97532711909523e-06,
+    "marker": 484.785234777118
+   },
+   {
+    "config": 155,
+    "steps": 77000000,
+    "rate": 6.97892502339518e-06,
+    "marker": 537.377226801429
+   },
+   {
+    "config": 170,
+    "steps": 84500000,
+    "rate": 0.000612887882845871,
+    "marker": 51789.0261004761
+   },
+   {
+    "config": 186,
+    "steps": 92500000,
+    "rate": 6.98700942966414e-06,
+    "marker": 646.298372243933
+   },
+   {
+    "config": 201,
+    "steps": 100000000,
+    "rate": 0.000612895946478737,
+    "marker": 61289.5946478737
+   }
+  ],
+  "step_rates": {
+   "C3H6_adsorption_fwd": 0.0,
+   "C3H6_adsorption_rev": 0.0,
+   "1/2O2_adsorption_fwd": 0.0,
+   "1/2O2_adsorption_rev": 0,
+   "H2O_des": 0.003233,
+   "CO2_des_fwd": 0.002282,
+   "CO2_des_rev": 0,
+   "CH2_des": 0,
+   "CH2_des#2": 0,
+   "C3H6_dehydrogenation_to_C3H5+OH_fwd": 2e-06,
+   "C3H6_dehydrogenation_to_C3H5+OH_rev": 0,
+   "C3H5_dehydrogenation_to_C3H4+OH_fwd": 0.0,
+   "C3H5_dehydrogenation_to_C3H4+OH_rev": 0,
+   "H*+OH*_dehydrogenation_to_H2O_fwd": 0.0,
+   "H*+OH*_dehydrogenation_to_H2O_rev": 0,
+   "C3H4*+O*_to_C3H4O*_fwd": 0.0,
+   "C3H4*+O*_to_C3H4O*_rev": 0,
+   "C3H4O*_to_CH2*+CH2CO2*_fwd": 0.0,
+   "C3H4O*_to_CH2*+CH2CO2*_rev": 0,
+   "CH2CO2*_to_CH2*+CO2*_fwd": 1.4e-05,
+   "CH2CO2*_to_CH2*+CO2*_rev": 0.0
+  },
+  "step_counts": {
+   "C3H6_adsorption_fwd": 11111776,
+   "C3H6_adsorption_rev": 11110876,
+   "1/2O2_adsorption_fwd": 11111775,
+   "1/2O2_adsorption_rev": 0,
+   "H2O_des": 11109976,
+   "CO2_des_fwd": 11110875,
+   "CO2_des_rev": 0,
+   "CH2_des": 0,
+   "CH2_des#2": 0,
+   "C3H6_dehydrogenation_to_C3H5+OH_fwd": 11110876,
+   "C3H6_dehydrogenation_to_C3H5+OH_rev": 0,
+   "C3H5_dehydrogenation_to_C3H4+OH_fwd": 11111484,
+   "C3H5_dehydrogenation_to_C3H4+OH_rev": 608,
+   "H*+OH*_dehydrogenation_to_H2O_fwd": 11110877,
+   "H*+OH*_dehydrogenation_to_H2O_rev": 1,
+   "C3H4*+O*_to_C3H4O*_fwd": 11110876,
+   "C3H4*+O*_to_C3H4O*_rev": 0,
+   "C3H4O*_to_CH2*+CH2CO2*_fwd": 1045,
+   "C3H4O*_to_CH2*+CH2CO2*_rev": 0,
+   "CH2CO2*_to_CH2*+CO2*_fwd": 5029,
+   "CH2CO2*_to_CH2*+CO2*_rev": 3985
+  }
+ },
+ {
+  "catalyst": "Cu-CeO2",
+  "temperature_K": 623.15,
+  "feed": "C3H6(g)-CH2(g)",
+  "elementary_steps": [
+   "C3H6_adsorption_fwd",
+   "C3H6_adsorption_rev",
+   "1/2O2_adsorption_fwd",
+   "1/2O2_adsorption_rev",
+   "H2O_des",
+   "CO2_des_fwd",
+   "CO2_des_rev",
+   "CH2_des",
+   "CH2_des#2",
+   "C3H6_dehydrogenation_to_C3H5+OH_fwd",
+   "C3H6_dehydrogenation_to_C3H5+OH_rev",
+   "C3H5_dehydrogenation_to_C3H4+OH_fwd",
+   "C3H5_dehydrogenation_to_C3H4+OH_rev",
+   "H*+OH*_dehydrogenation_to_H2O_fwd",
+   "H*+OH*_dehydrogenation_to_H2O_rev",
+   "C3H4*+O*_to_C3H4O*_fwd",
+   "C3H4*+O*_to_C3H4O*_rev",
+   "C3H4O*_to_CH2*+CH2CO2*_fwd",
+   "C3H4O*_to_CH2*+CH2CO2*_rev",
+   "CH2CO2*_to_CH2*+CO2*_fwd",
+   "CH2CO2*_to_CH2*+CO2*_rev"
+  ],
+  "steady_state_rate": 1.7718225946496e-05,
+  "curve": [
+   {
+    "config": 1,
+    "steps": 0,
+    "rate": 0,
+    "marker": 0
+   },
+   {
+    "config": 16,
+    "steps": 7500000,
+    "rate": 1.77015660526328e-05,
+    "marker": 132.761745394746
+   },
+   {
+    "config": 32,
+    "steps": 15500000,
+    "rate": 1.82700777094911e-07,
+    "marker": 2.83186204497113
+   },
+   {
+    "config": 47,
+    "steps": 23000000,
+    "rate": 1.76996147695137e-05,
+    "marker": 407.091139698817
+   },
+   {
+    "config": 62,
+    "steps": 30500000,
+    "rate": 1.77037253888759e-05,
+    "marker": 539.963624360715
+   },
+   {
+    "config": 78,
+    "steps": 38500000,
+    "rate": 1.83038070706589e-07,
+    "marker": 7.04696572220371
+   },
+   {
+    "config": 93,
+    "steps": 46000000,
+    "rate": 1.77159662759711e-05,
+    "marker": 814.934448694671
+   },
+   {
+    "config": 109,
+    "steps": 54000000,
+    "rate": 1.83230273415628e-07,
+    "marker": 9.89443476444394
+   },
+   {
+    "config": 124,
+    "steps": 61500000,
+    "rate": 1.77147818037991e-05,
+    "marker": 1089.45908093364
+   },
+   {
+    "config": 140,
+    "steps": 69500000,
+    "rate": 1.83233316463088e-07,
+    "marker": 12.7347154941846
+   },
+   {
+    "config": 155,
+    "steps": 77000000,
+    "rate": 1.83300640097459e-07,
+    "marker": 14.1141492875043
+   },
+   {
+    "config": 170,
+    "steps": 84500000,
+    "rate": 1.77153062347838e-05,
+    "marker": 1496.94337683923
+   },
+   {
+    "config": 186,
+    "steps": 92500000,
+    "rate": 1.83364646899429e-07,
+    "marker": 16.9612298381972
+   },
+   {
+    "config": 201,
+    "steps": 100000000,
+    "rate": 1.7718225946496e-05,
+    "marker": 1771.8225946496
+   }
+  ],
+  "step_rates": {
+   "C3H6_adsorption_fwd": 0.0,
+   "C3H6_adsorption_rev": 0.0,
+   "1/2O2_adsorption_fwd": 0.0,
+   "1/2O2_adsorption_rev": 0,
+   "H2O_des": 8.4e-05,
+   "CO2_des_fwd": 7.5e-05,
+   "CO2_des_rev": 0,
+   "CH2_des": 0,
+   "CH2_des#2": 0,
+   "C3H6_dehydrogenation_to_C3H5+OH_fwd": 0.0,
+   "C3H6_dehydrogenation_to_C3H5+OH_rev": 0,
+   "C3H5_dehydrogenation_to_C3H4+OH_fwd": 0.0,
+   "C3H5_dehydrogenation_to_C3H4+OH_rev": 0,
+   "H*+OH*_dehydrogenation_to_H2O_fwd": 0.0,
+   "H*+OH*_dehydrogenation_to_H2O_rev": 0,
+   "C3H4*+O*_to_C3H4O*_fwd": 0.0,
+   "C3H4*+O*_to_C3H4O*_rev": 0,
+   "C3H4O*_to_CH2*+CH2CO2*_fwd": 0.0,
+   "C3H4O*_to_CH2*+CH2CO2*_rev": 0,
+   "CH2CO2*_to_CH2*+CO2*_fwd": 0.0,
+   "CH2CO2*_to_CH2*+CO2*_rev": 0.0
+  },
+  "step_counts": {
+   "C3H6_adsorption_fwd": 11111880,
+   "C3H6_adsorption_rev": 11110980,
+   "1/2O2_adsorption_fwd": 11111877,
+   "1/2O2_adsorption_rev": 0,
+   "H2O_des": 11110080,
+   "CO2_des_fwd": 11110977,
+   "CO2_des_rev": 0,
+   "CH2_des": 0,
+   "CH2_des#2": 0,
+   "C3H6_dehydrogenation_to_C3H5+OH_fwd": 11110980,
+   "C3H6_dehydrogenation_to_C3H5+OH_rev": 0,
+   "C3H5_dehydrogenation_to_C3H4+OH_fwd": 11111123,
+   "C3H5_dehydrogenation_to_C3H4+OH_rev": 143,
+   "H*+OH*_dehydrogenation_to_H2O_fwd": 11110980,
+   "H*+OH*_dehydrogenation_to_H2O_rev": 0,
+   "C3H4*+O*_to_C3H4O*_fwd": 11110980,
+   "C3H4*+O*_to_C3H4O*_rev": 0,
+   "C3H4O*_to_CH2*+CH2CO2*_fwd": 12154,
+   "C3H4O*_to_CH2*+CH2CO2*_rev": 0,
+   "CH2CO2*_to_CH2*+CO2*_fwd": 172865,
+   "CH2CO2*_to_CH2*+CO2*_rev": 160729
+  }
+ },
+ {
+  "catalyst": "Cu-CeO2",
+  "temperature_K": 723.15,
+  "feed": "C3H6(g)-CH2(g)",
+  "elementary_steps": [
+   "C3H6_adsorption_fwd",
+   "C3H6_adsorption_rev",
+   "1/2O2_adsorption_fwd",
+   "1/2O2_adsorption_rev",
+   "H2O_des",
+   "CO2_des_fwd",
+   "CO2_des_rev",
+   "CH2_des",
+   "CH2_des#2",
+   "C3H6_dehydrogenation_to_C3H5+OH_fwd",
+   "C3H6_dehydrogenation_to_C3H5+OH_rev",
+   "C3H5_dehydrogenation_to_C3H4+OH_fwd",
+   "C3H5_dehydrogenation_to_C3H4+OH_rev",
+   "H*+OH*_dehydrogenation_to_H2O_fwd",
+   "H*+OH*_dehydrogenation_to_H2O_rev",
+   "C3H4*+O*_to_C3H4O*_fwd",
+   "C3H4*+O*_to_C3H4O*_rev",
+   "C3H4O*_to_CH2*+CH2CO2*_fwd",
+   "C3H4O*_to_CH2*+CH2CO2*_rev",
+   "CH2CO2*_to_CH2*+CO2*_fwd",
+   "CH2CO2*_to_CH2*+CO2*_rev"
+  ],
+  "steady_state_rate": 1.07757760583616e-08,
+  "curve": [
+   {
+    "config": 1,
+    "steps": 0,
+    "rate": 0,
+    "marker": 0
+   },
+   {
+    "config": 16,
+    "steps": 7500000,
+    "rate": 1.06721048882622e-08,
+    "marker": 0.0800407866619671
+   },
+   {
+    "config": 32,
+    "steps": 15500000,
+    "rate": 1.06970156219889e-08,
+    "marker": 0.165803742140828
+   },
+   {
+    "config": 47,
+    "steps": 23000000,
+    "rate": 1.07038884748461e-08,
+    "marker": 0.246189434921462
+   },
+   {
+    "config": 63,
+    "steps": 31000000,
+    "rate": 1.07157016987855e-08,
+    "marker": 0.332186752662351
+   },
+   {
+    "config": 78,
+    "steps": 38500000,
+    "rate": 1.07367428222102e-08,
+    "marker": 0.413364598655096
+   },
+   {
+    "config": 93,
+    "steps": 46000000,
+    "rate": 1.07349866090915e-08,
+    "marker": 0.493809384018212
+   },
+   {
+    "config": 109,
+    "steps": 54000000,
+    "rate": 1.07558271408899e-08,
+    "marker": 0.580814665608056
+   },
+   {
+    "config": 124,
+    "steps": 61500000,
+    "rate": 1.07533899340103e-08,
+    "marker": 0.661333480941636
+   },
+   {
+    "config": 139,
+    "steps": 69000000,
+    "rate": 1.07550180781598e-08,
+    "marker": 0.74209624739303
+   },
+   {
+    "config": 155,
+    "steps": 77000000,
+    "rate": 1.07607214849782e-08,
+    "marker": 0.828575554343323
+   },
+   {
+    "config": 170,
+    "steps": 84500000,
+    "rate": 1.0765183248971e-08,
+    "marker": 0.909657984538056
+   },
+   {
+    "config": 186,
+    "steps": 92500000,
+    "rate": 1.07743222429312e-08,
+    "marker": 0.99662480747114
+   },
+   {
+    "config": 201,
+    "steps": 100000000,
+    "rate": 1.07757760583616e-08,
+    "marker": 1.07757760583616
+   }
+  ],
+  "step_rates": {
+   "C3H6_adsorption_fwd": 0.0,
+   "C3H6_adsorption_rev": 0.0,
+   "1/2O2_adsorption_fwd": 0.0,
+   "1/2O2_adsorption_rev": 0,
+   "H2O_des": 0.0,
+   "CO2_des_fwd": 0.0,
+   "CO2_des_rev": 0,
+   "CH2_des": 0.0,
+   "CH2_des#2": 0.0,
+   "C3H6_dehydrogenation_to_C3H5+OH_fwd": 0.0,
+   "C3H6_dehydrogenation_to_C3H5+OH_rev": 0.0,
+   "C3H5_dehydrogenation_to_C3H4+OH_fwd": 0.0,
+   "C3H5_dehydrogenation_to_C3H4+OH_rev": 0.0,
+   "H*+OH*_dehydrogenation_to_H2O_fwd": 0.0,
+   "H*+OH*_dehydrogenation_to_H2O_rev": 0.0,
+   "C3H4*+O*_to_C3H4O*_fwd": 0.0,
+   "C3H4*+O*_to_C3H4O*_rev": 0,
+   "C3H4O*_to_CH2*+CH2CO2*_fwd": 0.0,
+   "C3H4O*_to_CH2*+CH2CO2*_rev": 0,
+   "CH2CO2*_to_CH2*+CO2*_fwd": 0.0,
+   "CH2CO2*_to_CH2*+CO2*_rev": 0.0
+  },
+  "step_counts": {
+   "C3H6_adsorption_fwd": 11497473,
+   "C3H6_adsorption_rev": 11441490,
+   "1/2O2_adsorption_fwd": 166140,
+   "1/2O2_adsorption_rev": 0,
+   "H2O_des": 55076,
+   "CO2_des_fwd": 55053,
+   "CO2_des_rev": 0,
+   "CH2_des": 55111,
+   "CH2_des#2": 55053,
+   "C3H6_dehydrogenation_to_C3H5+OH_fwd": 56114,
+   "C3H6_dehydrogenation_to_C3H5+OH_rev": 140,
+   "C3H5_dehydrogenation_to_C3H4+OH_fwd": 36360019,
+   "C3H5_dehydrogenation_to_C3H4+OH_rev": 36304074,
+   "H*+OH*_dehydrogenation_to_H2O_fwd": 56264,
+   "H*+OH*_dehydrogenation_to_H2O_rev": 1188,
+   "C3H4*+O*_to_C3H4O*_fwd": 55111,
+   "C3H4*+O*_to_C3H4O*_rev": 0,
+   "C3H4O*_to_CH2*+CH2CO2*_fwd": 55111,
+   "C3H4O*_to_CH2*+CH2CO2*_rev": 0,
+   "CH2CO2*_to_CH2*+CO2*_fwd": 1920818,
+   "CH2CO2*_to_CH2*+CO2*_rev": 1865765
+  }
+ },
+ {
+  "catalyst": "Cu-CeO2",
+  "temperature_K": 823.15,
+  "feed": "C3H6(g)-CH2(g)",
+  "elementary_steps": [
+   "C3H6_adsorption_fwd",
+   "C3H6_adsorption_rev",
+   "1/2O2_adsorption_fwd",
+   "1/2O2_adsorption_rev",
+   "H2O_des",
+   "CO2_des_fwd",
+   "CO2_des_rev",
+   "CH2_des",
+   "CH2_des#2",
+   "C3H6_dehydrogenation_to_C3H5+OH_fwd",
+   "C3H6_dehydrogenation_to_C3H5+OH_rev",
+   "C3H5_dehydrogenation_to_C3H4+OH_fwd",
+   "C3H5_dehydrogenation_to_C3H4+OH_rev",
+   "H*+OH*_dehydrogenation_to_H2O_fwd",
+   "H*+OH*_dehydrogenation_to_H2O_rev",
+   "C3H4*+O*_to_C3H4O*_fwd",
+   "C3H4*+O*_to_C3H4O*_rev",
+   "C3H4O*_to_CH2*+CH2CO2*_fwd",
+   "C3H4O*_to_CH2*+CH2CO2*_rev",
+   "CH2CO2*_to_CH2*+CO2*_fwd",
+   "CH2CO2*_to_CH2*+CO2*_rev"
+  ],
+  "steady_state_rate": 8.65343795768899e-10,
+  "curve": [
+   {
+    "config": 1,
+    "steps": 0,
+    "rate": 0,
+    "marker": 0
+   },
+   {
+    "config": 16,
+    "steps": 7500000,
+    "rate": 8.28216251243494e-10,
+    "marker": 0.00621162188432621
+   },
+   {
+    "config": 32,
+    "steps": 15500000,
+    "rate": 8.40279153086719e-10,
+    "marker": 0.0130243268728441
+   },
+   {
+    "config": 47,
+    "steps": 23000000,
+    "rate": 8.541224933625e-10,
+    "marker": 0.0196448173473375
+   },
+   {
+    "config": 63,
+    "steps": 31000000,
+    "rate": 8.51373485149384e-10,
+    "marker": 0.0263925780396309
+   },
+   {
+    "config": 78,
+    "steps": 38500000,
+    "rate": 8.51314295615619e-10,
+    "marker": 0.0327756003812013
+   },
+   {
+    "config": 93,
+    "steps": 46000000,
+    "rate": 8.52642581669024e-10,
+    "marker": 0.0392215587567751
+   },
+   {
+    "config": 109,
+    "steps": 54000000,
+    "rate": 8.55519764992124e-10,
+    "marker": 0.0461980673095747
+   },
+   {
+    "config": 124,
+    "steps": 61500000,
+    "rate": 8.58882360574001e-10,
+    "marker": 0.052821265175301
+   },
+   {
+    "config": 139,
+    "steps": 69000000,
+    "rate": 8.6035754772506e-10,
+    "marker": 0.0593646707930291
+   },
+   {
+    "config": 155,
+    "steps": 77000000,
+    "rate": 8.61659641223459e-10,
+    "marker": 0.0663477923742063
+   },
+   {
+    "config": 170,
+    "steps": 84500000,
+    "rate": 8.63509268486365e-10,
+    "marker": 0.0729665331870978
+   },
+   {
+    "config": 186,
+    "steps": 92500000,
+    "rate": 8.65004706763103e-10,
+    "marker": 0.080012935375587
+   },
+   {
+    "config": 201,
+    "steps": 100000000,
+    "rate": 8.65343795768899e-10,
+    "marker": 0.0865343795768899
+   }
+  ],
+  "step_rates": {
+   "C3H6_adsorption_fwd": 0.0,
+   "C3H6_adsorption_rev": 0.0,
+   "1/2O2_adsorption_fwd": 0.0,
+   "1/2O2_adsorption_rev": 0,
+   "H2O_des": 0.0,
+   "CO2_des_fwd": 0.0,
+   "CO2_des_rev": 0,
+   "CH2_des": 0.0,
+   "CH2_des#2": 0.0,
+   "C3H6_dehydrogenation_to_C3H5+OH_fwd": 0.0,
+   "C3H6_dehydrogenation_to_C3H5+OH_rev": 0.0,
+   "C3H5_dehydrogenation_to_C3H4+OH_fwd": 0.0,
+   "C3H5_dehydrogenation_to_C3H4+OH_rev": 0.0,
+   "H*+OH*_dehydrogenation_to_H2O_fwd": 0.0,
+   "H*+OH*_dehydrogenation_to_H2O_rev": 0.0,
+   "C3H4*+O*_to_C3H4O*_fwd": 0.0,
+   "C3H4*+O*_to_C3H4O*_rev": 0,
+   "C3H4O*_to_CH2*+CH2CO2*_fwd": 0.0,
+   "C3H4O*_to_CH2*+CH2CO2*_rev": 0,
+   "CH2CO2*_to_CH2*+CO2*_fwd": 0.0,
+   "CH2CO2*_to_CH2*+CO2*_rev": 0.0
+  },
+  "step_counts": {
+   "C3H6_adsorption_fwd": 22055235,
+   "C3H6_adsorption_rev": 21949496,
+   "1/2O2_adsorption_fwd": 315454,
+   "1/2O2_adsorption_rev": 0,
+   "H2O_des": 104848,
+   "CO2_des_fwd": 104753,
+   "CO2_des_rev": 0,
+   "CH2_des": 104953,
+   "CH2_des#2": 104753,
+   "C3H6_dehydrogenation_to_C3H5+OH_fwd": 106205,
+   "C3H6_dehydrogenation_to_C3H5+OH_rev": 490,
+   "C3H5_dehydrogenation_to_C3H4+OH_fwd": 20086549,
+   "C3H5_dehydrogenation_to_C3H4+OH_rev": 19980921,
+   "H*+OH*_dehydrogenation_to_H2O_fwd": 116478,
+   "H*+OH*_dehydrogenation_to_H2O_rev": 11630,
+   "C3H4*+O*_to_C3H4O*_fwd": 104953,
+   "C3H4*+O*_to_C3H4O*_rev": 0,
+   "C3H4O*_to_CH2*+CH2CO2*_fwd": 104953,
+   "C3H4O*_to_CH2*+CH2CO2*_rev": 0,
+   "CH2CO2*_to_CH2*+CO2*_fwd": 7426541,
+   "CH2CO2*_to_CH2*+CO2*_rev": 7321788
+  }
+ },
+ {
+  "catalyst": "Zr-CeO2",
+  "temperature_K": 623.15,
+  "feed": "C3H6(g)-CH2(g)",
+  "elementary_steps": [
+   "C3H6_adsorption_fwd",
+   "C3H6_adsorption_rev",
+   "1/2O2_adsorption_fwd",
+   "1/2O2_adsorption_rev",
+   "H2O_des",
+   "CO2_des_fwd",
+   "CO2_des_rev",
+   "CH2_des",
+   "CH2_des#2",
+   "C3H6_dehydrogenation_to_C3H5+OH_fwd",
+   "C3H6_dehydrogenation_to_C3H5+OH_rev",
+   "C3H5_dehydrogenation_to_C3H4+OH_fwd",
+   "C3H5_dehydrogenation_to_C3H4+OH_rev",
+   "H*+OH*_dehydrogenation_to_H2O_fwd",
+   "H*+OH*_dehydrogenation_to_H2O_rev",
+   "C3H4*+O*_to_C3H4O*_fwd",
+   "C3H4*+O*_to_C3H4O*_rev",
+   "C3H4O*_to_CH2*+CH2CO2*_fwd",
+   "C3H4O*_to_CH2*+CH2CO2*_rev",
+   "CH2CO2*_to_CH2*+CO2*_fwd",
+   "CH2CO2*_to_CH2*+CO2*_rev"
+  ],
+  "steady_state_rate": 4.71726420018231e-05,
+  "curve": [
+   {
+    "config": 1,
+    "steps": 0,
+    "rate": 0,
+    "marker": 0
+   },
+   {
+    "config": 16,
+    "steps": 7500000,
+    "rate": 4.71045505877788e-05,
+    "marker": 353.284129408341
+   },
+   {
+    "config": 32,
+    "steps": 15500000,
+    "rate": 0.0601297483183611,
+    "marker": 932011.098934597
+   },
+   {
+    "config": 47,
+    "steps": 23000000,
+    "rate": 4.71585150939238e-05,
+    "marker": 1084.64584716024
+   },
+   {
+    "config": 62,
+    "steps": 30500000,
+    "rate": 4.71551876704004e-05,
+    "marker": 1438.23322394721
+   },
+   {
+    "config": 78,
+    "steps": 38500000,
+    "rate": 0.0697766984380351,
+    "marker": 2686402.88986435
+   },
+   {
+    "config": 93,
+    "steps": 46000000,
+    "rate": 4.71713222219763e-05,
+    "marker": 2169.88082221091
+   },
+   {
+    "config": 109,
+    "steps": 54000000,
+    "rate": 0.0699177739603208,
+    "marker": 3775559.79385732
+   },
+   {
+    "config": 124,
+    "steps": 61500000,
+    "rate": 4.71702410808099e-05,
+    "marker": 2900.96982646981
+   },
+   {
+    "config": 140,
+    "steps": 69500000,
+    "rate": 0.0767272370323427,
+    "marker": 5332542.97374782
+   },
+   {
+    "config": 155,
+    "steps": 77000000,
+    "rate": 0.0897607640028119,
+    "marker": 6911578.82821652
+   },
+   {
+    "config": 170,
+    "steps": 84500000,
+    "rate": 4.71674046653941e-05,
+    "marker": 3985.6456942258
+   },
+   {
+    "config": 186,
+    "steps": 92500000,
+    "rate": 0.104754829050308,
+    "marker": 9689821.68715357
+   },
+   {
+    "config": 201,
+    "steps": 100000000,
+    "rate": 4.71726420018231e-05,
+    "marker": 4717.26420018231
+   }
+  ],
+  "step_rates": {
+   "C3H6_adsorption_fwd": 0.0,
+   "C3H6_adsorption_rev": 0.0,
+   "1/2O2_adsorption_fwd": 0.0,
+   "1/2O2_adsorption_rev": 0,
+   "H2O_des": 0.000196,
+   "CO2_des_fwd": 1.2e-05,
+   "CO2_des_rev": 0,
+   "CH2_des": 0.0,
+   "CH2_des#2": 0,
+   "C3H6_dehydrogenation_to_C3H5+OH_fwd": 0.0,
+   "C3H6_dehydrogenation_to_C3H5+OH_rev": 0,
+   "C3H5_dehydrogenation_to_C3H4+OH_fwd": 0.0,
+   "C3H5_dehydrogenation_to_C3H4+OH_rev": 0.0,
+   "H*+OH*_dehydrogenation_to_H2O_fwd": 0.000216,
+   "H*+OH*_dehydrogenation_to_H2O_rev": 0.0,
+   "C3H4*+O*_to_C3H4O*_fwd": 0.0,
+   "C3H4*+O*_to_C3H4O*_rev": 0.0,
+   "C3H4O*_to_CH2*+CH2CO2*_fwd": 0.000524,
+   "C3H4O*_to_CH2*+CH2CO2*_rev": 0,
+   "CH2CO2*_to_CH2*+CO2*_fwd": 0.000917,
+   "CH2CO2*_to_CH2*+CO2*_rev": 0.0
+  },
+  "step_counts": {
+   "C3H6_adsorption_fwd": 10659316,
+   "C3H6_adsorption_rev": 11133363,
+   "1/2O2_adsorption_fwd": 11132463,
+   "1/2O2_adsorption_rev": 0,
+   "H2O_des": 11131563,
+   "CO2_des_fwd": 10658416,
+   "CO2_des_rev": 0,
+   "CH2_des": 473156,
+   "CH2_des#2": 0,
+   "C3H6_dehydrogenation_to_C3H5+OH_fwd": 11132463,
+   "C3H6_dehydrogenation_to_C3H5+OH_rev": 0,
+   "C3H5_dehydrogenation_to_C3H4+OH_fwd": 11132872,
+   "C3H5_dehydrogenation_to_C3H4+OH_rev": 409,
+   "H*+OH*_dehydrogenation_to_H2O_fwd": 11131587,
+   "H*+OH*_dehydrogenation_to_H2O_rev": 14,
+   "C3H4*+O*_to_C3H4O*_fwd": 11036397,
+   "C3H4*+O*_to_C3H4O*_rev": 377981,
+   "C3H4O*_to_CH2*+CH2CO2*_fwd": 27250,
+   "C3H4O*_to_CH2*+CH2CO2*_rev": 0,
+   "CH2CO2*_to_CH2*+CO2*_fwd": 9113093,
+   "CH2CO2*_to_CH2*+CO2*_rev": 9085843
+  }
+ }
+]

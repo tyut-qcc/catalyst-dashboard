@@ -1,22 +1,32 @@
-# 依赖
+# Dependencies (none expected — buildless — but keep ignored just in case)
 node_modules/
 
-# 构建产物
+# Build / deploy output
 dist/
 
-# 日志
-*.log
-npm-debug.log*
-
-# 编辑器
-.vscode/
-.idea/
-
-# 系统
+# OS generated files
 .DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
 Thumbs.db
 
-# 环境变量（如果有敏感信息）
-.env
-.env.local
-.env.*.local
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Logs / temp
+*.log
+tmp/
+temp/
+
+# Cache files
+.npm_cache
+
+# Agent files
+.agent/
